@@ -92,9 +92,18 @@ def main():
     descs = load(dpath, {})
 
     videos, added, skipped = [], 0, 0
+    resolved = {}
     for ch in channels:
-        cid, cname, playlist = resolve(ch)
+        try:
+            cid, cname, playlist = resolve(ch)
+        except Exception as e:  # a bad id/handle shouldn't stop the other channels
+            print(f"!! could not resolve {ch}: {e}")
+            resolved[ch.get("id") or ch.get("handle")] = {"error": str(e)}
+            # keep this channel's existing videos rather than dropping them
+            videos += [v for v in old.values() if v.get("channelId") == ch.get("id")]
+            continue
         name = ch.get("name") or cname
+        resolved[cid] = {"youtubeTitle": cname, "name": name, "area": ch.get("area")}
         for item in details(uploads(playlist)):
             vid = item["id"]
             secs = iso_seconds(item["contentDetails"].get("duration"))
@@ -110,6 +119,7 @@ def main():
                 "title": item["snippet"]["title"],
                 "channel": name,
                 "channelId": cid,
+                "area": ch.get("area", "other"),
                 "published": item["snippet"]["publishedAt"],
                 "seconds": secs,
                 "topics": prev.get("topics", []),
@@ -117,6 +127,8 @@ def main():
             descs[vid] = item["snippet"].get("description", "")
         print(f"{name}: {sum(v['channelId'] == cid for v in videos)} videos")
 
+    seen = set()
+    videos = [v for v in videos if not (v["id"] in seen or seen.add(v["id"]))]
     keep = {v["id"] for v in videos}
     descs = {k: v for k, v in descs.items() if k in keep}
     videos.sort(key=lambda v: v["published"], reverse=True)
@@ -125,6 +137,7 @@ def main():
         "videos": videos,
     })
     save(dpath, descs)
+    save(os.path.join(ROOT, "data", "channels-resolved.json"), resolved)
     untagged = sum(not v["topics"] for v in videos)
     print(f"total {len(videos)}, new {added}, skipped shorts/live/private {skipped}, untagged {untagged}")
 

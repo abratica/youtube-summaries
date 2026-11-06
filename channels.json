@@ -1,3 +1,5 @@
 [
-  { "handle": "hubermanlab", "name": "Huberman Lab" }
+  { "id": "UC2D2CMWXMOVWx7giW1n3LIg", "name": "Huberman Lab", "area": "health" },
+  { "id": "UCSOBjw_aNHbKUBpndBFw4Ag", "name": "EDMProd", "area": "music" },
+  { "id": "UC2vitamJHo7kSiiuA598u-g", "name": "EDM Tips", "area": "music" }
 ]

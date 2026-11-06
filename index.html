@@ -29,11 +29,13 @@
 </header>
 
 <div class="controls">
+  <nav id="areas" class="tabs" role="tablist" aria-label="Areas"></nav>
   <label class="search">
     <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M11 18a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm5-2 4 4"/></svg>
-    <input id="q" type="search" placeholder="Search titles and guests" autocomplete="off">
+    <input id="q" type="search" placeholder="Search videos" autocomplete="off">
   </label>
   <div id="topics" class="chips" role="tablist" aria-label="Topics"></div>
+  <div id="subs" class="chips subs" role="tablist" aria-label="Sub-topics" hidden></div>
   <div class="row2">
     <div id="lengths" class="seg" aria-label="Length"></div>
     <select id="channel" class="channel" aria-label="Channel" hidden></select>
