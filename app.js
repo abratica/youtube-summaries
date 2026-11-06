@@ -167,4 +167,73 @@
   });
 
   if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(() => {});
+
+  /* ── Install bar (same pattern as PS Sports) ──
+     Android/Chrome: Chrome fires "beforeinstallprompt" once the app is installable;
+     the bar's button opens Chrome's real install prompt.
+     iPhone/iPad: there is no install prompt, so the bar opens a short Add to Home Screen guide.
+     Closing the bar hides it for this visit only. */
+  const DISMISS_KEY = "pt-install-dismissed";
+  const standalone = () =>
+    (window.matchMedia && matchMedia("(display-mode: standalone)").matches) || navigator.standalone === true;
+  const dismissed = () => { try { return sessionStorage.getItem(DISMISS_KEY) === "1"; } catch { return false; } };
+  const isIOS = /iPhone|iPad|iPod/.test(navigator.userAgent) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+  let deferred = null;
+
+  function installBar(label, onGo) {
+    if (standalone() || dismissed() || document.querySelector(".install-bar")) return;
+    const bar = document.createElement("div");
+    bar.className = "install-bar";
+    bar.innerHTML = `<img src="icons/icon-192.png" alt="" width="40" height="40">
+      <span class="install-text"><b>Get the PS Tube app</b><span>Your video library on your home screen</span></span>
+      <button type="button" class="install-go">${label}</button>
+      <button type="button" class="install-x" aria-label="Not now">×</button>`;
+    bar.querySelector(".install-go").addEventListener("click", onGo);
+    bar.querySelector(".install-x").addEventListener("click", () => {
+      try { sessionStorage.setItem(DISMISS_KEY, "1"); } catch {}
+      bar.remove();
+    });
+    document.body.appendChild(bar);
+  }
+
+  window.addEventListener("beforeinstallprompt", (e) => {
+    e.preventDefault();
+    deferred = e;
+    installBar("Install", async () => {
+      if (!deferred) return;
+      deferred.prompt();
+      try { await deferred.userChoice; } catch {}
+      deferred = null;
+      document.querySelector(".install-bar")?.remove();
+    });
+  });
+  window.addEventListener("appinstalled", () => document.querySelector(".install-bar")?.remove());
+
+  if (isIOS && !standalone()) {
+    setTimeout(() => installBar("How", () => {
+      const sheet = document.createElement("div");
+      sheet.className = "install-sheet";
+      // iOS 26 moved Safari's Share button behind the ••• menu next to the address bar.
+      const ua = navigator.userAgent;
+      const chrome = /CriOS/.test(ua);
+      const safariVer = +((ua.match(/Version\/(\d+)/) || [])[1] || 0);
+      const MORE = `<span class="install-chip" aria-label="three dots">•••</span>`;
+      const SHARE = `<span class="install-chip"><svg width="13" height="15" viewBox="0 0 13 15" aria-hidden="true"><path d="M6.5 1v8.5M3.5 4l3-3 3 3M2.5 6.5H1.5v7.5h10V6.5h-1" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>`;
+      const steps = chrome
+        ? [`Tap the <b>Share</b> button ${SHARE} in the address bar at the top`, `Tap <b>Add to Home Screen</b> (you may need to tap <b>More</b> first)`, `Tap <b>Add</b>. PS Tube shows up with your other apps`]
+        : safariVer >= 26
+        ? [`Tap the ${MORE} button next to the address bar`, `Tap <b>Share</b> ${SHARE}, then scroll down and tap <b>Add to Home Screen</b>`, `Keep <b>Open as Web App</b> switched on and tap <b>Add</b>`]
+        : [`Tap the <b>Share</b> button ${SHARE} at the bottom of Safari`, `Scroll down and tap <b>Add to Home Screen</b>`, `Tap <b>Add</b>. PS Tube shows up with your other apps`];
+      sheet.innerHTML = `<div class="install-card" role="dialog" aria-label="Add PS Tube to your Home Screen">
+        <h2>Add PS Tube to your Home Screen</h2>
+        <ol>${steps.map((x) => `<li>${x}</li>`).join("")}</ol>
+        <p class="install-note">It takes about 10 seconds, and then PS Tube opens full screen like any other app.</p>
+        <button type="button" class="install-done">Got it</button>
+      </div>`;
+      sheet.addEventListener("click", (ev) => {
+        if (ev.target === sheet || ev.target.closest(".install-done")) sheet.remove();
+      });
+      document.body.appendChild(sheet);
+    }), 1500);
+  }
 })();

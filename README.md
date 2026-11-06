@@ -1,7 +1,9 @@
-# YouTube Summaries
+# PS Tube
 
 A personal library of YouTube videos from the channels in `channels.json`,
 filterable by topic, length and channel. Installable on a phone home screen.
+
+Live at https://abratica.github.io/youtube-summaries/ — open it in Chrome on Android and tap Install, or follow the Add to Home Screen guide on iPhone.
 
 - `tools/fetch_catalog.py` + `.github/workflows/update.yml`: a daily GitHub job
   pulls every upload for each channel (Shorts skipped) using the
