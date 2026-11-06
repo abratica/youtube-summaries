@@ -12,5 +12,7 @@ Live at https://abratica.github.io/youtube-summaries/ — open it in Chrome on A
   videos one or two topics from `topics.json`.
 - `index.html`, `app.js`, `styles.css`, `sw.js`: the app, served by GitHub Pages.
 
-To add a channel, add `{ "handle": "theirhandle", "name": "Display Name" }`
-to `channels.json` and push. The job runs right away and pulls its catalog.
+To add a channel, add `{ "handle": "theirhandle", "name": "Display Name", "area": "music" }`
+(or `"id": "UC..."` instead of a handle) to `channels.json` and push. The job runs
+right away and pulls its catalog. Areas and their topics live in `topics.json`:
+health, music, poker, sales, reality-tv.
