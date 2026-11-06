@@ -1,0 +1,4091 @@
+{
+ "updated": "2026-11-06T03:45:44Z",
+ "videos": [
+  {
+   "id": "yUdg7drjrZY",
+   "title": "Essentials: Cold & Heat Exposure for Metabolic Health | Dr. Susanna Søberg",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2026-11-05T13:00:08Z",
+   "seconds": 2302,
+   "topics": []
+  },
+  {
+   "id": "y-fRFiTrrg4",
+   "title": "Access the Sublime & Live Your Best Life | Robert Greene",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2026-11-02T13:00:28Z",
+   "seconds": 8305,
+   "topics": []
+  },
+  {
+   "id": "arMMF0ISRRM",
+   "title": "Essentials: How Smells Influence Our Hormones, Health & Behavior | Dr. Noam Sobel",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2026-10-29T12:00:06Z",
+   "seconds": 2096,
+   "topics": []
+  },
+  {
+   "id": "NlVu0P1RdHs",
+   "title": "Unlocking Persistent Motivation & Extreme Resilience | Ross Edgley",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2026-10-26T12:00:00Z",
+   "seconds": 9818,
+   "topics": []
+  },
+  {
+   "id": "eYSOabR3YP0",
+   "title": "Essentials: Developing a Rational Approach to Supplementation for Health & Performance",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2026-10-22T12:00:33Z",
+   "seconds": 2062,
+   "topics": []
+  },
+  {
+   "id": "2oqBvTRYcv0",
+   "title": "What Makes Great Leaders & How to Live an Extraordinary Life | Dr. Jared Diamond",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2026-10-19T12:00:21Z",
+   "seconds": 6800,
+   "topics": []
+  },
+  {
+   "id": "YdIJW8RTptU",
+   "title": "Essentials: Neuralink & Technologies to Enhance Human Brains | Dr. Matt MacDougall",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2026-10-15T12:00:25Z",
+   "seconds": 1818,
+   "topics": []
+  },
+  {
+   "id": "PXHRYbr3mp4",
+   "title": "How Food Choices Shape Memory, Cognition & Cravings | Dr. Scott Kanoski",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2026-10-12T12:00:30Z",
+   "seconds": 7327,
+   "topics": []
+  },
+  {
+   "id": "RqMWvhvt0DQ",
+   "title": "Essentials: Manage Stress & Build Resilience | Dr. Elissa Epel",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2026-10-08T12:00:29Z",
+   "seconds": 1846,
+   "topics": []
+  },
+  {
+   "id": "SFX8FIHFLE4",
+   "title": "Bringing Extinct Species Back to Life | Dr. Beth Shapiro",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2026-10-05T12:00:01Z",
+   "seconds": 8137,
+   "topics": []
+  },
+  {
+   "id": "8e3RC1L5V_Y",
+   "title": "Tools to Improve Your Focus & Concentration | Huberman Lab Essentials",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2026-10-01T12:00:35Z",
+   "seconds": 2242,
+   "topics": []
+  },
+  {
+   "id": "nk15CT41MFc",
+   "title": "What Humans, Animals and Plants Tell Us About Consciousness | Michael Pollan",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2026-09-28T12:00:07Z",
+   "seconds": 7339,
+   "topics": []
+  },
+  {
+   "id": "Gu04f6aFuBY",
+   "title": "Essentials: Optimal Protocols to Build Strength & Grow Muscles | Dr. Andy Galpin",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2026-09-24T12:00:24Z",
+   "seconds": 2134,
+   "topics": []
+  },
+  {
+   "id": "ecjEM3NJ0lU",
+   "title": "Best Tools for Gut Health & Weight Loss | Dr. Chris Thompson",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2026-09-21T12:00:15Z",
+   "seconds": 8874,
+   "topics": []
+  },
+  {
+   "id": "VjaPWC4VPPU",
+   "title": "Essentials: How to Assess & Improve All Aspects of Your Fitness | Dr. Andy Galpin",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2026-09-17T12:00:35Z",
+   "seconds": 1891,
+   "topics": []
+  },
+  {
+   "id": "Gk2ArbsrZwE",
+   "title": "The Art of True Happiness | Dr. Arthur Brooks",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2026-09-14T12:00:13Z",
+   "seconds": 10199,
+   "topics": []
+  },
+  {
+   "id": "1_iNTFSw4Nc",
+   "title": "Essentials: Genes & the Inheritance of Memories Across Generations | Dr. Oded Rechavi",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2026-09-10T12:00:15Z",
+   "seconds": 1889,
+   "topics": []
+  },
+  {
+   "id": "bv56Cuq-fyY",
+   "title": "How Mitochondria Control Your Metabolism | Dr. Jared Rutter",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2026-09-07T12:00:18Z",
+   "seconds": 7427,
+   "topics": []
+  },
+  {
+   "id": "f1NNmiz547U",
+   "title": "Essentials: Use Sleep to Enhance Learning, Memory & Emotional State | Dr. Gina Poe",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2026-09-03T12:00:39Z",
+   "seconds": 1789,
+   "topics": []
+  },
+  {
+   "id": "Uzoe1RYVjiA",
+   "title": "How to Accelerate Learning & Improve Education | Joe Liemandt",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2026-08-31T12:00:33Z",
+   "seconds": 9223,
+   "topics": []
+  },
+  {
+   "id": "E56LSFCNdkI",
+   "title": "Essentials: Diet & Nutrition for Mental Health | Dr. Chris Palmer",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2026-08-27T12:00:25Z",
+   "seconds": 2086,
+   "topics": []
+  },
+  {
+   "id": "58-k4F7-AoA",
+   "title": "How to Improve Motivation & Overcome Procrastination | Dr. Masud Husain",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2026-08-24T12:00:32Z",
+   "seconds": 8422,
+   "topics": []
+  },
+  {
+   "id": "QP8Kpf1UQwM",
+   "title": "Essentials: How to Access Your Creativity | Rick Rubin",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2026-08-20T12:00:13Z",
+   "seconds": 1948,
+   "topics": []
+  },
+  {
+   "id": "P-h5WSQG1Sw",
+   "title": "Neuroscience of Emotions & Tools for Improving Emotion Regulation | Dr. Ralph Adolphs",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2026-08-17T12:00:17Z",
+   "seconds": 7771,
+   "topics": []
+  },
+  {
+   "id": "wbuPQPu-03Y",
+   "title": "Essentials: How to Optimize Female Hormone Health for Vitality & Longevity | Dr. Sara Gottfried",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2026-08-13T12:00:10Z",
+   "seconds": 2041,
+   "topics": []
+  },
+  {
+   "id": "N5AQFYtqx8Q",
+   "title": "Using AI to Increase Your Intelligence & Enrich Humanity | Dr. Fei-Fei Li",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2026-08-10T12:00:30Z",
+   "seconds": 7693,
+   "topics": []
+  },
+  {
+   "id": "xKvlK7OqZso",
+   "title": "Control Your Brain Chemistry for Focus, Motivation & Well-Being | Huberman Lab Essentials",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2026-08-06T12:00:35Z",
+   "seconds": 1851,
+   "topics": []
+  },
+  {
+   "id": "s_tkMm5U9aY",
+   "title": "How Your Immune System Works & How to Improve It | Dr. Max Krummel",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2026-08-03T12:00:30Z",
+   "seconds": 8861,
+   "topics": []
+  },
+  {
+   "id": "lxDf8uEypJU",
+   "title": "Essentials: How to Become Resilient, Forge Your Identity & Lead Others | Jocko Willink",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2026-07-30T12:00:03Z",
+   "seconds": 1988,
+   "topics": []
+  },
+  {
+   "id": "ssP31IenzYA",
+   "title": "Your Top Health Questions Answered",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2026-07-27T12:00:06Z",
+   "seconds": 6255,
+   "topics": []
+  },
+  {
+   "id": "LQI8tl8S2PE",
+   "title": "Essentials: Using Meditation to Focus, View Consciousness & Expand Your Mind | Dr. Sam Harris",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2026-07-23T12:00:10Z",
+   "seconds": 2221,
+   "topics": []
+  },
+  {
+   "id": "bPd9NnOzx78",
+   "title": "Accelerate Learning & Increase Cognitive Capacity | Dr. Tommy Wood",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2026-07-20T12:00:13Z",
+   "seconds": 9686,
+   "topics": []
+  },
+  {
+   "id": "UTB5gAkjevk",
+   "title": "The Science & Treatment of Bipolar Disorder | Huberman Lab Essentials",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2026-07-16T12:00:15Z",
+   "seconds": 1873,
+   "topics": []
+  },
+  {
+   "id": "EIhilBpn8Ow",
+   "title": "How to Improve Your Memory & Cognitive Function at Any Age | Dr. Alan Castel",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2026-07-13T12:00:32Z",
+   "seconds": 8920,
+   "topics": []
+  },
+  {
+   "id": "AtU3EvMzZDY",
+   "title": "The Science & Treatment of Obsessive Compulsive Disorder (OCD) | Huberman Lab Essentials",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2026-07-09T12:00:07Z",
+   "seconds": 1898,
+   "topics": []
+  },
+  {
+   "id": "n_qKxNcMvtM",
+   "title": "Raising a Dog & Mastering Calm Assertive Energy | Cesar Millan",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2026-07-06T12:00:30Z",
+   "seconds": 9504,
+   "topics": []
+  },
+  {
+   "id": "O-groYMqrQw",
+   "title": "Essentials: Tools for Hormone Optimization in Males | Dr. Kyle Gillett",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2026-07-02T12:00:35Z",
+   "seconds": 2178,
+   "topics": []
+  },
+  {
+   "id": "Zz8chJwh3S4",
+   "title": "Movement Practice to Strengthen Your Mind-Body Connection | Ido Portal",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2026-06-29T12:00:18Z",
+   "seconds": 10789,
+   "topics": []
+  },
+  {
+   "id": "WWe4up63hb4",
+   "title": "Essentials: The Science of Eating for Health, Fat Loss & Lean Muscle | Dr. Layne Norton",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2026-06-25T12:00:33Z",
+   "seconds": 1922,
+   "topics": []
+  },
+  {
+   "id": "CV0GtUlJ6NM",
+   "title": "Science of Attraction, Compatibility & Romance | Dr. Paul Eastwick",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2026-06-22T12:00:17Z",
+   "seconds": 10216,
+   "topics": []
+  },
+  {
+   "id": "syJYZm5OZhE",
+   "title": "Improve Flexibility with Research-Supported Stretching Protocols | Huberman Lab Essentials",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2026-06-18T12:00:18Z",
+   "seconds": 1936,
+   "topics": []
+  },
+  {
+   "id": "baecUt1GaPk",
+   "title": "The Mental Frame & Specific Daily Actions to Succeed | Andy Stumpf",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2026-06-15T12:00:23Z",
+   "seconds": 10511,
+   "topics": []
+  },
+  {
+   "id": "RTgJSQtvo88",
+   "title": "Essentials: Sleep Toolkit for Optimizing Sleep & Sleep-Wake Timing",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2026-06-11T12:00:33Z",
+   "seconds": 2099,
+   "topics": []
+  },
+  {
+   "id": "jjaFnKtytqI",
+   "title": "Eating for Better Sleep & Foods that Improve Metabolic Health | Dr. Marie-Pierre St-Onge",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2026-06-08T12:00:22Z",
+   "seconds": 7025,
+   "topics": []
+  },
+  {
+   "id": "GkG1hMhIQ_Q",
+   "title": "Essentials: Psychedelics & Neurostimulation for Brain Rewiring | Dr. Nolan Williams",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2026-06-04T12:00:17Z",
+   "seconds": 2204,
+   "topics": []
+  },
+  {
+   "id": "_DfqnpSbMfE",
+   "title": "Peptides: The Science, Uses & Safety | Dr. Abud Bakri",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2026-06-01T12:00:36Z",
+   "seconds": 10103,
+   "topics": []
+  },
+  {
+   "id": "PlQyGIIAGNo",
+   "title": "The Science & Process of Healing from Grief | Huberman Lab Essentials",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2026-05-28T12:00:26Z",
+   "seconds": 2111,
+   "topics": []
+  },
+  {
+   "id": "s95KFJ2efm4",
+   "title": "Build Muscle, Great Posture & Resilience to Injury | Jeff Cavaliere",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2026-05-25T12:00:01Z",
+   "seconds": 8210,
+   "topics": []
+  },
+  {
+   "id": "MOPqSEK6GvA",
+   "title": "Essentials: The Science of Learning & Speaking Languages | Dr. Eddie Chang",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2026-05-21T12:00:25Z",
+   "seconds": 1713,
+   "topics": []
+  },
+  {
+   "id": "Q2hOryHdgAk",
+   "title": "How to Overcome Social Anxiety | Dr. Nick Epley",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2026-05-18T12:00:48Z",
+   "seconds": 9025,
+   "topics": []
+  },
+  {
+   "id": "916vhhUsmgE",
+   "title": "Understanding & Controlling Aggression | Huberman Lab Essentials",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2026-05-14T12:00:14Z",
+   "seconds": 1999,
+   "topics": []
+  },
+  {
+   "id": "e89rVf4Pf0k",
+   "title": "Master Self Control & Overcome Procrastination | Dr. Kentaro Fujita",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2026-05-11T12:01:11Z",
+   "seconds": 8870,
+   "topics": []
+  },
+  {
+   "id": "aKDzF_fMMrc",
+   "title": "Essentials: Compulsive Behaviors & Deep Brain Stimulation | Dr. Casey Halpern",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2026-05-07T12:00:01Z",
+   "seconds": 2020,
+   "topics": []
+  },
+  {
+   "id": "cWCs7dxrt-A",
+   "title": "Tools to Bolster Your Mental Health & Confidence | Dr. Paul Conti",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2026-05-04T12:01:08Z",
+   "seconds": 7803,
+   "topics": []
+  },
+  {
+   "id": "qUUfucHC7tU",
+   "title": "Control Sugar Cravings & Metabolism with Science-Based Tools | Huberman Lab Essentials",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2026-04-30T12:01:28Z",
+   "seconds": 1779,
+   "topics": []
+  },
+  {
+   "id": "sQcS6f2qYoQ",
+   "title": "Male Roles, Obligations and Options for Building a Fulfilling Life | Scott Galloway",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2026-04-27T12:01:38Z",
+   "seconds": 9352,
+   "topics": []
+  },
+  {
+   "id": "3bnLgOxHMB8",
+   "title": "Essentials: The Neuroscience of Speech, Language & Music | Dr. Erich Jarvis",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2026-04-23T12:00:06Z",
+   "seconds": 2128,
+   "topics": []
+  },
+  {
+   "id": "FBgM7jndkLQ",
+   "title": "How to Better Regulate Your Emotions | Dr. Marc Brackett",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2026-04-20T12:00:22Z",
+   "seconds": 8858,
+   "topics": []
+  },
+  {
+   "id": "U6dnOVth7-I",
+   "title": "Understand & Improve Memory Using Science-Based Tools | Huberman Lab Essentials",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2026-04-16T12:00:52Z",
+   "seconds": 2150,
+   "topics": []
+  },
+  {
+   "id": "RTPNJgHeZBI",
+   "title": "How Women Can Improve Their Fertility & Hormone Health | Dr. Natalie Crawford",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2026-04-13T12:00:49Z",
+   "seconds": 9363,
+   "topics": []
+  },
+  {
+   "id": "xZ4I2aE8zQA",
+   "title": "Essentials: The Biology of Aggression, Mating & Arousal | Dr. David Anderson",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2026-04-09T12:01:51Z",
+   "seconds": 2048,
+   "topics": []
+  },
+  {
+   "id": "Tmw2dW0a9DY",
+   "title": "Cultivating Awe & Emotional Connection in Daily Life | Dr. Dacher Keltner",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2026-04-06T12:01:00Z",
+   "seconds": 8420,
+   "topics": []
+  },
+  {
+   "id": "0VSOoMuStvg",
+   "title": "Essentials: How to Build Strength, Muscle Size & Endurance | Dr. Andy Galpin",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2026-04-02T12:00:02Z",
+   "seconds": 2066,
+   "topics": []
+  },
+  {
+   "id": "6-mEiwe2NhE",
+   "title": "How Hormones Shape Sexual Orientation & Behavior | Dr. Marc Breedlove",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2026-03-30T12:00:07Z",
+   "seconds": 7878,
+   "topics": []
+  },
+  {
+   "id": "hnzrPKvRBD8",
+   "title": "Using Salt to Optimize Mental & Physical Performance | Huberman Lab Essentials",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2026-03-26T12:01:18Z",
+   "seconds": 2034,
+   "topics": []
+  },
+  {
+   "id": "C0DMdUqF73Q",
+   "title": "The Best Vitality & Health Protocols | Dr. Rhonda Patrick",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2026-03-23T12:00:15Z",
+   "seconds": 12668,
+   "topics": []
+  },
+  {
+   "id": "RECLTp_YxSU",
+   "title": "Essentials: Tools for Setting & Achieving Goals | Dr. Emily Balcetis",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2026-03-19T12:00:51Z",
+   "seconds": 1922,
+   "topics": []
+  },
+  {
+   "id": "hlOA8ObQJXo",
+   "title": "Science-Based Meditation Tools to Improve Your Brain & Health | Dr. Richard Davidson",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2026-03-16T12:01:17Z",
+   "seconds": 9825,
+   "topics": []
+  },
+  {
+   "id": "iuPQmw4Ax00",
+   "title": "Benefits of Sauna & Deliberate Heat Exposure | Huberman Lab Essentials",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2026-03-12T12:01:17Z",
+   "seconds": 2360,
+   "topics": []
+  },
+  {
+   "id": "u4VTFb4awrQ",
+   "title": "Avoiding, Treating & Curing Cancer | Dr. Alex Marson",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2026-03-09T12:01:37Z",
+   "seconds": 8833,
+   "topics": []
+  },
+  {
+   "id": "cru_4P6qVYQ",
+   "title": "Essentials: The Biology of Taste Perception & Sugar Craving | Dr. Charles Zuker",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2026-03-05T13:01:12Z",
+   "seconds": 1853,
+   "topics": []
+  },
+  {
+   "id": "9G2MRFs4vac",
+   "title": "Unlearn Negative Thoughts & Behaviors Patterns | Dr. Alok Kanojia (Healthy Gamer)",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2026-03-02T13:00:12Z",
+   "seconds": 11324,
+   "topics": []
+  },
+  {
+   "id": "7UeojKTzeHE",
+   "title": "Using Light (Sunlight, Blue Light & Red Light) to Optimize Health | Huberman Lab Essentials",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2026-02-26T13:00:12Z",
+   "seconds": 2309,
+   "topics": []
+  },
+  {
+   "id": "Ew0-Lg_Evj0",
+   "title": "Restore Youthfulness & Vitality to the Aging Brain & Body | Dr. Tony Wyss-Coray",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2026-02-23T13:00:31Z",
+   "seconds": 7154,
+   "topics": []
+  },
+  {
+   "id": "9GzlbLIU5dU",
+   "title": "Essentials: Optimize Your Exercise Program with Science-Based Tools | Jeff Cavaliere",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2026-02-19T13:00:15Z",
+   "seconds": 2091,
+   "topics": []
+  },
+  {
+   "id": "_Q4XT82yd-Q",
+   "title": "The Most Effective Weight Training, Cardio & Nutrition for Women | Dr. Lauren Colenso-Semple",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2026-02-16T13:01:09Z",
+   "seconds": 9118,
+   "topics": []
+  },
+  {
+   "id": "NEkUNahduWY",
+   "title": "The Science of Love, Desire & Attachment | Huberman Lab Essentials",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2026-02-12T13:00:41Z",
+   "seconds": 2149,
+   "topics": []
+  },
+  {
+   "id": "rAbJC-Qaw7Q",
+   "title": "How Genes Shape Your Risk Taking & Morals | Dr. Kathryn Paige Harden",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2026-02-09T13:01:36Z",
+   "seconds": 9723,
+   "topics": []
+  },
+  {
+   "id": "JsICN9ZiSjA",
+   "title": "Essentials: The Science & Practice of Movement | Ido Portal",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2026-02-05T13:00:40Z",
+   "seconds": 2170,
+   "topics": []
+  },
+  {
+   "id": "VPi_eWiaqdg",
+   "title": "How Dopamine & Serotonin Shape Decisions, Motivation & Learning | Dr. Read Montague",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2026-02-02T13:00:55Z",
+   "seconds": 9685,
+   "topics": []
+  },
+  {
+   "id": "BRG4_KfTxbs",
+   "title": "Using Play to Rewire & Improve Your Brain | Huberman Lab Essentials",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2026-01-29T13:00:31Z",
+   "seconds": 1909,
+   "topics": []
+  },
+  {
+   "id": "lEULFeUVYf0",
+   "title": "Science & Tools of Learning & Memory | Dr. David Eagleman",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2026-01-26T13:01:26Z",
+   "seconds": 8652,
+   "topics": []
+  },
+  {
+   "id": "iNL_BFlHYZ8",
+   "title": "Essentials: Therapy, Treating Trauma & Other Life Challenges | Dr. Paul Conti",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2026-01-22T13:01:20Z",
+   "seconds": 2004,
+   "topics": []
+  },
+  {
+   "id": "qzXU390N3vs",
+   "title": "Build Muscle & Strength & Forge Your Life Path | Dorian Yates",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2026-01-19T13:01:43Z",
+   "seconds": 10044,
+   "topics": []
+  },
+  {
+   "id": "RmwbNdyrilk",
+   "title": "Essentials: Tools to Boost Attention & Memory | Dr. Wendy Suzuki",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2026-01-15T13:00:59Z",
+   "seconds": 2212,
+   "topics": []
+  },
+  {
+   "id": "t6RCTP4fc9Q",
+   "title": "How to Overcome Addiction to Substances or Behaviors | Dr. Keith Humphreys",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2026-01-12T13:01:59Z",
+   "seconds": 12421,
+   "topics": []
+  },
+  {
+   "id": "23t_ynq2tmk",
+   "title": "Optimizing Workspace for Productivity, Focus & Creativity | Huberman Lab Essentials",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2026-01-08T13:00:05Z",
+   "seconds": 1812,
+   "topics": []
+  },
+  {
+   "id": "bdsc3Spm6Sw",
+   "title": "Best Ways to Build Better Habits & Break Bad Ones | James Clear",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2026-01-05T13:01:25Z",
+   "seconds": 9319,
+   "topics": []
+  },
+  {
+   "id": "fh2dBmLN-ZM",
+   "title": "Essentials: Micronutrients for Health & Longevity | Dr. Rhonda Patrick",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2026-01-01T13:01:21Z",
+   "seconds": 2137,
+   "topics": []
+  },
+  {
+   "id": "qGb7hYMlA3o",
+   "title": "Defining Healthy Masculinity & How to Build It | Terry Real",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2025-12-29T13:01:48Z",
+   "seconds": 10231,
+   "topics": []
+  },
+  {
+   "id": "fYhY-vC000A",
+   "title": "Essentials: How to Optimize Your Hormones for Health & Vitality | Dr. Kyle Gillett",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2025-12-25T13:01:24Z",
+   "seconds": 2236,
+   "topics": []
+  },
+  {
+   "id": "zHyvVajsqMw",
+   "title": "Transform Pain & Trauma Into Creative Expression | David Choe",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2025-12-22T13:01:57Z",
+   "seconds": 14034,
+   "topics": []
+  },
+  {
+   "id": "zYuw-8pwnp8",
+   "title": "How to Set & Achieve Goals | Huberman Lab Essentials",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2025-12-18T13:01:56Z",
+   "seconds": 1998,
+   "topics": []
+  },
+  {
+   "id": "nMkQUlBtFlk",
+   "title": "Improve Energy & Longevity by Optimizing Mitochondria | Dr. Martin Picard",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2025-12-15T13:01:43Z",
+   "seconds": 11806,
+   "topics": []
+  },
+  {
+   "id": "n_MVhE63ZQQ",
+   "title": "Essentials: Build a Healthy Gut Microbiome | Dr. Justin Sonnenburg",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2025-12-11T13:01:46Z",
+   "seconds": 2089,
+   "topics": []
+  },
+  {
+   "id": "VnPQ4mLRG-c",
+   "title": "Master the Creative Process | Twyla Tharp",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2025-12-08T13:01:09Z",
+   "seconds": 8992,
+   "topics": []
+  },
+  {
+   "id": "HXuj7wAt7u8",
+   "title": "The Science of Making & Breaking Habits | Huberman Lab Essentials",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2025-12-04T13:00:39Z",
+   "seconds": 2176,
+   "topics": []
+  },
+  {
+   "id": "iT8W6kaD-RA",
+   "title": "Dr. Glen Jeffery: Using Red Light to Improve Your Health & the Harmful Effects of LEDs",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2025-12-01T13:01:34Z",
+   "seconds": 8066,
+   "topics": []
+  },
+  {
+   "id": "SOo4yNoaAoc",
+   "title": "Essentials: Using Hypnosis to Enhance Mental & Physical Health & Performance | Dr. David Spiegel",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2025-11-27T13:01:02Z",
+   "seconds": 2098,
+   "topics": []
+  },
+  {
+   "id": "hMzfGZnaPN8",
+   "title": "Female Hormone Health, PCOS, Endometriosis, Fertility & Breast Cancer | Dr. Thaïs Aliabadi",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2025-11-24T13:01:27Z",
+   "seconds": 11248,
+   "topics": []
+  },
+  {
+   "id": "25PtptE7mWk",
+   "title": "Essentials: Science of Building Strong Social Bonds with Family, Friends & Romantic Partners",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2025-11-20T13:00:09Z",
+   "seconds": 1935,
+   "topics": []
+  },
+  {
+   "id": "ZtTUfMHuioA",
+   "title": "How to Speak Clearly & With Confidence | Matt Abrahams",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2025-11-17T13:01:15Z",
+   "seconds": 8781,
+   "topics": []
+  },
+  {
+   "id": "Y3NUEPNZDMA",
+   "title": "Essentials: Breathing for Mental & Physical Health & Performance | Dr. Jack Feldman",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2025-11-13T13:01:11Z",
+   "seconds": 2748,
+   "topics": []
+  },
+  {
+   "id": "tb6ApBIXr1k",
+   "title": "How Your Thoughts Are Built & How You Can Shape Them | Dr. Jennifer Groh",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2025-11-10T13:01:56Z",
+   "seconds": 8195,
+   "topics": []
+  },
+  {
+   "id": "tpntW9Tte4M",
+   "title": "Erasing Fears & Traumas Using Modern Neuroscience | Huberman Lab Essentials",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2025-11-06T13:01:56Z",
+   "seconds": 2105,
+   "topics": []
+  },
+  {
+   "id": "PCbD3hFyfCk",
+   "title": "How A Doctor Cured His Own Terminal Disease | Dr. David Fajgenbaum",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2025-11-03T13:00:55Z",
+   "seconds": 7134,
+   "topics": []
+  },
+  {
+   "id": "Ykvkg2Jz3X8",
+   "title": "Essentials: The Biology of Slowing & Reversing Aging | Dr. David Sinclair",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2025-10-30T12:01:11Z",
+   "seconds": 2040,
+   "topics": []
+  },
+  {
+   "id": "KBkl3I645c8",
+   "title": "Improve Your Lymphatic System for Overall Health & Appearance",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2025-10-27T12:00:41Z",
+   "seconds": 5987,
+   "topics": []
+  },
+  {
+   "id": "9gJLWk3W5GQ",
+   "title": "The Science of Gratitude & How to Build a Gratitude Practice | Huberman Lab Essentials",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2025-10-23T12:00:31Z",
+   "seconds": 2086,
+   "topics": []
+  },
+  {
+   "id": "cpKsogGdem4",
+   "title": "How to Overcome Inner Resistance | Steven Pressfield",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2025-10-20T12:01:12Z",
+   "seconds": 8103,
+   "topics": []
+  },
+  {
+   "id": "-zI0ZgKM0xA",
+   "title": "Essentials: How Your Brain Functions & Interprets the World | Dr. David Berson",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2025-10-16T12:00:01Z",
+   "seconds": 2144,
+   "topics": []
+  },
+  {
+   "id": "xGmGBFpmdhQ",
+   "title": "Protect & Improve Your Hearing & Brain Health | Dr. Konstantina Stankovic",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2025-10-13T12:01:44Z",
+   "seconds": 8863,
+   "topics": []
+  },
+  {
+   "id": "vXTK0Ac9i1Q",
+   "title": "Time Perception, Memory & Focus | Huberman Lab Essentials",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2025-10-09T12:01:51Z",
+   "seconds": 1856,
+   "topics": []
+  },
+  {
+   "id": "WwRc2SEo-VI",
+   "title": "How to Make Yourself Unbreakable | DJ Shipley",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2025-10-06T12:01:04Z",
+   "seconds": 13356,
+   "topics": []
+  },
+  {
+   "id": "VqiPNN4Jblk",
+   "title": "Essentials: How Humans Select & Keep Romantic Partners in the Short & Long Term | Dr. David Buss",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2025-10-02T12:01:03Z",
+   "seconds": 1862,
+   "topics": []
+  },
+  {
+   "id": "MlmFj1-mOtg",
+   "title": "Enhance Your Learning Speed & Health Using Neuroscience Based Protocols | Dr. Poppy Crum",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2025-09-29T12:00:42Z",
+   "seconds": 9351,
+   "topics": []
+  },
+  {
+   "id": "pN1UL1M9sqc",
+   "title": "Using Your Nervous System to Enhance Your Immune System | Huberman Lab Essentials",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2025-09-25T12:01:39Z",
+   "seconds": 2182,
+   "topics": []
+  },
+  {
+   "id": "7SIjcX5B1Vs",
+   "title": "Build Your Ideal Physique | Dr. Bret Contreras",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2025-09-22T12:00:11Z",
+   "seconds": 11037,
+   "topics": []
+  },
+  {
+   "id": "dy_iLCJggO0",
+   "title": "Essentials: How to Exercise for Strength Gains & Hormone Optimization | Dr. Duncan French",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2025-09-18T12:01:18Z",
+   "seconds": 2097,
+   "topics": []
+  },
+  {
+   "id": "2t4vswC-3mY",
+   "title": "How to Expand Your Consciousness | Dr. Christof Koch",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2025-09-15T12:00:06Z",
+   "seconds": 7903,
+   "topics": []
+  },
+  {
+   "id": "cIla9axQRyM",
+   "title": "Food & Supplements for Brain Health & Cognitive Performance | Huberman Lab Essentials",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2025-09-11T12:01:19Z",
+   "seconds": 1955,
+   "topics": []
+  },
+  {
+   "id": "cjAvD-U5so0",
+   "title": "Transform Your Metabolic Health & Longevity by Knowing Your Unique Biology | Dr. Michael Snyder",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2025-09-08T12:01:12Z",
+   "seconds": 9905,
+   "topics": []
+  },
+  {
+   "id": "alVWRl_X_AA",
+   "title": "Essentials: Science of Mindsets for Health & Performance | Dr. Alia Crum",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2025-09-04T12:00:06Z",
+   "seconds": 2053,
+   "topics": []
+  },
+  {
+   "id": "4TsOnsPDKKY",
+   "title": "How to Set & Achieve Massive Goals | Alex Honnold",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2025-09-01T12:00:08Z",
+   "seconds": 6553,
+   "topics": []
+  },
+  {
+   "id": "D61jJJPIQeo",
+   "title": "Effects of Fasting & Time Restricted Eating on Fat Loss & Health | Huberman Lab Essentials",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2025-08-28T12:00:22Z",
+   "seconds": 2303,
+   "topics": []
+  },
+  {
+   "id": "Whe2Jh9q6jI",
+   "title": "Science & Health Benefits of Belief in God & Religion | Dr. David DeSteno",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2025-08-25T12:00:56Z",
+   "seconds": 8658,
+   "topics": []
+  },
+  {
+   "id": "2XMb3MD6g6Q",
+   "title": "Essentials: Timing Light for Better Sleep, Energy & Mood | Dr. Samer Hattar",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2025-08-21T12:00:05Z",
+   "seconds": 1845,
+   "topics": []
+  },
+  {
+   "id": "H4mMZ0vliMo",
+   "title": "Curing Autism, Epilepsy & Schizophrenia with Stem Cells | Dr. Sergiu Pașca",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2025-08-18T12:00:28Z",
+   "seconds": 8595,
+   "topics": []
+  },
+  {
+   "id": "XeN6eGO6FVQ",
+   "title": "Controlling Your Dopamine for Motivation, Focus & Satisfaction | Huberman Lab Essentials",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2025-08-14T12:00:59Z",
+   "seconds": 1974,
+   "topics": []
+  },
+  {
+   "id": "rcAyjg-oy84",
+   "title": "How to Rewire Your Brain & Learn Faster | Dr. Michael Kilgard",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2025-08-11T12:01:48Z",
+   "seconds": 11376,
+   "topics": []
+  },
+  {
+   "id": "aZklQpFa2kE",
+   "title": "Essentials: Increase Strength & Endurance with Cooling Protocols | Dr. Craig Heller",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2025-08-07T12:00:03Z",
+   "seconds": 1881,
+   "topics": []
+  },
+  {
+   "id": "Ibj1k3IZTNU",
+   "title": "How to Control Your Cortisol & Overcome Burnout",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2025-08-04T12:00:37Z",
+   "seconds": 8176,
+   "topics": []
+  },
+  {
+   "id": "LAwBdRR4wQk",
+   "title": "ADHD & How Anyone Can Improve Their Focus | Huberman Lab Essentials",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2025-07-31T12:00:38Z",
+   "seconds": 2275,
+   "topics": []
+  },
+  {
+   "id": "k8SBJzsIWAo",
+   "title": "Male vs. Female Brain Differences & How They Arise From Genes & Hormones | Dr. Nirao Shah",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2025-07-28T12:01:28Z",
+   "seconds": 8804,
+   "topics": []
+  },
+  {
+   "id": "OvHbhzArbfE",
+   "title": "Essentials: Psychedelics for Treating Mental Disorders | Dr. Matthew Johnson",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2025-07-24T12:00:47Z",
+   "seconds": 2088,
+   "topics": []
+  },
+  {
+   "id": "gyE6Z4GLEeM",
+   "title": "Health Effects & Risks of Kratom, Opioids & Other Natural Occurring Medicines | Dr. Chris McCurdy",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2025-07-21T12:01:30Z",
+   "seconds": 9773,
+   "topics": []
+  },
+  {
+   "id": "mJv1_esiJ8g",
+   "title": "Healthy Eating & Eating Disorders - Anorexia, Bulimia, Binging | Huberman Lab Essentials",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2025-07-17T12:01:38Z",
+   "seconds": 2373,
+   "topics": []
+  },
+  {
+   "id": "ewnvjnuFTOY",
+   "title": "How Nature & Other Physical Environments Impact Your Focus, Cognition & Health | Dr. Marc Berman",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2025-07-14T12:01:19Z",
+   "seconds": 7906,
+   "topics": []
+  },
+  {
+   "id": "WxtxzRdJFTI",
+   "title": "Essentials: Science of Stress, Testosterone, Aggression & Motivation | Dr. Robert Sapolsky",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2025-07-10T12:01:04Z",
+   "seconds": 1855,
+   "topics": []
+  },
+  {
+   "id": "h_1zlead9ZU",
+   "title": "How to Lose Fat & Gain Muscle With Nutrition | Alan Aragon",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2025-07-07T12:01:25Z",
+   "seconds": 9249,
+   "topics": []
+  },
+  {
+   "id": "HWcphoKlbxY",
+   "title": "Understanding & Conquering Depression | Huberman Lab Essentials",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2025-07-03T12:00:30Z",
+   "seconds": 2141,
+   "topics": []
+  },
+  {
+   "id": "zqANjUGarAw",
+   "title": "The Chemistry of Food & Taste | Dr. Harold McGee",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2025-06-30T12:02:01Z",
+   "seconds": 8000,
+   "topics": []
+  },
+  {
+   "id": "i4gvIeA3RcI",
+   "title": "Essentials: Understanding & Treating Addiction | Dr. Anna Lembke",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2025-06-26T12:01:16Z",
+   "seconds": 1911,
+   "topics": []
+  },
+  {
+   "id": "CLbVW3Pj46A",
+   "title": "Control Your Vagus Nerve to Improve Mood, Alertness & Neuroplasticity",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2025-06-23T12:00:32Z",
+   "seconds": 6675,
+   "topics": []
+  },
+  {
+   "id": "vm1GbSPx48g",
+   "title": "How to Control Your Sense of Pain & Pleasure | Huberman Lab Essentials",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2025-06-19T12:01:43Z",
+   "seconds": 1965,
+   "topics": []
+  },
+  {
+   "id": "SsKkZTjUJEk",
+   "title": "How to Grow From Doing Hard Things | Michael Easter",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2025-06-16T12:00:57Z",
+   "seconds": 11141,
+   "topics": []
+  },
+  {
+   "id": "JaRGJVrJBQ8",
+   "title": "The Science & Practice of Perfecting Your Sleep | Huberman Lab Essentials",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2025-06-12T12:00:29Z",
+   "seconds": 2138,
+   "topics": []
+  },
+  {
+   "id": "2Y_PxTxLFVg",
+   "title": "Improving Science & Restoring Trust in Public Health | Dr. Jay Bhattacharya",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2025-06-09T13:42:21Z",
+   "seconds": 15994,
+   "topics": []
+  },
+  {
+   "id": "2ZkJtIouKzE",
+   "title": "Improving Health With Stronger Brain-Body Connection | Huberman Lab Essentials",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2025-06-05T12:00:07Z",
+   "seconds": 2121,
+   "topics": []
+  },
+  {
+   "id": "inUkNZe5H3k",
+   "title": "Healing From Grief & Loss | Dr. Mary-Frances O'Connor",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2025-06-02T12:01:24Z",
+   "seconds": 9156,
+   "topics": []
+  },
+  {
+   "id": "SCzecagKBjY",
+   "title": "Essentials: Machines, Creativity & Love | Dr. Lex Fridman",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2025-05-29T12:00:52Z",
+   "seconds": 2537,
+   "topics": []
+  },
+  {
+   "id": "ijdpvG24IkE",
+   "title": "Behaviors That Alter Your Genes to Improve Your Health & Performance | Dr. Melissa Ilardo",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2025-05-26T12:01:19Z",
+   "seconds": 6731,
+   "topics": []
+  },
+  {
+   "id": "Pmd6knanPKw",
+   "title": "Maximize Productivity, Physical & Mental Health With Daily Tools | Huberman Lab Essentials",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2025-05-22T12:00:47Z",
+   "seconds": 1913,
+   "topics": []
+  },
+  {
+   "id": "HTJ8lDtJOg4",
+   "title": "The Science & Art of Comedy & Creativity | Tom Segura",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2025-05-19T12:00:37Z",
+   "seconds": 8239,
+   "topics": []
+  },
+  {
+   "id": "RSnol_TVrzQ",
+   "title": "Essentials: Understanding & Healing the Mind | Dr. Karl Deisseroth",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2025-05-15T12:00:50Z",
+   "seconds": 2315,
+   "topics": []
+  },
+  {
+   "id": "9vQZT2igXN4",
+   "title": "How Different Diets Impact Your Health | Dr. Christopher Gardner",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2025-05-12T12:00:14Z",
+   "seconds": 10229,
+   "topics": []
+  },
+  {
+   "id": "fSBgDq2ttCw",
+   "title": "How Hearing & Balance Enhance Focus & Learning | Huberman Lab Essentials",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2025-05-08T12:01:12Z",
+   "seconds": 1991,
+   "topics": []
+  },
+  {
+   "id": "zpkwefXtbfk",
+   "title": "Contracts of Love & Money That Make or Break Relationships | James Sexton",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2025-05-05T12:01:44Z",
+   "seconds": 13090,
+   "topics": []
+  },
+  {
+   "id": "_eDg9yOvvrQ",
+   "title": "How Smell, Taste & Pheromones Shape Behavior | Huberman Lab Essentials",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2025-05-01T12:01:00Z",
+   "seconds": 2068,
+   "topics": []
+  },
+  {
+   "id": "6ck9fa6_C8c",
+   "title": "What Pets Actually Want & Need | Dr. Karolina Westlund",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2025-04-28T12:00:18Z",
+   "seconds": 7524,
+   "topics": []
+  },
+  {
+   "id": "q-wRvsiGYIs",
+   "title": "AMA #19: Collagen vs. Whey Protein, Creatine, Smelling Salts, Stimulants & More",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2025-04-25T17:15:06Z",
+   "seconds": 1097,
+   "topics": []
+  },
+  {
+   "id": "ssmwxKPFMFU",
+   "title": "Protocols to Improve Vision & Eyesight | Huberman Lab Essentials",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2025-04-24T12:01:39Z",
+   "seconds": 1770,
+   "topics": []
+  },
+  {
+   "id": "J7yn4tJEmJU",
+   "title": "Tools for Overcoming Substance & Behavioral Addictions | Ryan Soave",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2025-04-21T12:00:28Z",
+   "seconds": 11253,
+   "topics": []
+  },
+  {
+   "id": "7MEhDlw1e9k",
+   "title": "How to Build Endurance | Huberman Lab Essentials",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2025-04-17T12:00:21Z",
+   "seconds": 2247,
+   "topics": []
+  },
+  {
+   "id": "UyneMnERmnI",
+   "title": "How to Improve Your Vitality & Heal From Disease | Dr. Mark Hyman",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2025-04-14T12:00:52Z",
+   "seconds": 9741,
+   "topics": []
+  },
+  {
+   "id": "jgaoLdS82vw",
+   "title": "Build Muscle Size, Increase Strength & Improve Recovery | Huberman Lab Essentials",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2025-04-10T12:01:11Z",
+   "seconds": 1669,
+   "topics": []
+  },
+  {
+   "id": "lYK4UFf8mlc",
+   "title": "How to Find & Be a Great Romantic Partner | Lori Gottlieb",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2025-04-07T12:01:18Z",
+   "seconds": 12179,
+   "topics": []
+  },
+  {
+   "id": "f4cdu-QiKHo",
+   "title": "Lose Fat With Science-Based Tools | Huberman Lab Essentials",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2025-04-03T12:00:58Z",
+   "seconds": 2016,
+   "topics": []
+  },
+  {
+   "id": "hCyvqRq5YmM",
+   "title": "Transform Your Mental Health With Diet & Lifestyle | Dr. Chris Palmer",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2025-03-31T12:00:52Z",
+   "seconds": 11523,
+   "topics": []
+  },
+  {
+   "id": "VnEy78RL2YY",
+   "title": "How to Learn Skills Faster | Huberman Lab Essentials",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2025-03-27T12:00:46Z",
+   "seconds": 1841,
+   "topics": []
+  },
+  {
+   "id": "_oOEKKiwdDE",
+   "title": "How to Improve Your Teeth & Oral Microbiome for Brain & Body Health | Dr. Staci Whitman",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2025-03-24T12:01:01Z",
+   "seconds": 10487,
+   "topics": []
+  },
+  {
+   "id": "5--yogtN6oM",
+   "title": "Supercharge Exercise Performance & Recovery with Cooling | Huberman Lab Essentials",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2025-03-20T12:00:07Z",
+   "seconds": 1741,
+   "topics": []
+  },
+  {
+   "id": "U3cSnzdyyXU",
+   "title": "How to Increase Your Speed, Mobility & Longevity with Plyometrics & Sprinting | Stuart McMillan",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2025-03-17T12:00:43Z",
+   "seconds": 10866,
+   "topics": []
+  },
+  {
+   "id": "wFucddupQlk",
+   "title": "Boost Your Energy & Immune System with Cortisol & Adrenaline | Huberman Lab Essentials",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2025-03-13T12:01:31Z",
+   "seconds": 1847,
+   "topics": []
+  },
+  {
+   "id": "NtQ-kdLlQiU",
+   "title": "Improve Focus with Behavioral Tools & Medication for ADHD | Dr. John Kruse",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2025-03-10T12:00:35Z",
+   "seconds": 9486,
+   "topics": []
+  },
+  {
+   "id": "Nmo4bxfFzM0",
+   "title": "How to Control Your Metabolism by Thyroid & Growth Hormone | Huberman Lab Essentials",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2025-03-06T13:00:36Z",
+   "seconds": 1886,
+   "topics": []
+  },
+  {
+   "id": "KuuoLT-fq4s",
+   "title": "How to Achieve Inner Peace & Healing | Dr. Richard Schwartz",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2025-03-03T13:00:28Z",
+   "seconds": 7989,
+   "topics": []
+  },
+  {
+   "id": "c9JmHOUp6VU",
+   "title": "How to Control Hunger, Eating & Satiety | Huberman Lab Essentials",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2025-02-27T13:01:01Z",
+   "seconds": 2093,
+   "topics": []
+  },
+  {
+   "id": "N5DAW8mkJ6Y",
+   "title": "How to Enhance Your Immune System | Dr. Roger Seheult",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2025-02-24T13:00:35Z",
+   "seconds": 12493,
+   "topics": []
+  },
+  {
+   "id": "v4HRWgwjP_k",
+   "title": "How to Optimize Testosterone & Estrogen | Huberman Lab Essentials",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2025-02-20T13:01:30Z",
+   "seconds": 1961,
+   "topics": []
+  },
+  {
+   "id": "bAWUYuygS_U",
+   "title": "How to Make Better Decisions | Dr. Michael Platt",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2025-02-17T13:00:47Z",
+   "seconds": 13732,
+   "topics": []
+  },
+  {
+   "id": "FCFQx3cA0Lg",
+   "title": "How Hormones Shape Sexual Development | Huberman Lab Essentials",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2025-02-13T13:00:19Z",
+   "seconds": 2363,
+   "topics": []
+  },
+  {
+   "id": "Z3OpxT65fKw",
+   "title": "How to Build Strength, Endurance & Flexibility at Any Age | Pavel Tsatsouline",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2025-02-10T13:00:51Z",
+   "seconds": 15314,
+   "topics": []
+  },
+  {
+   "id": "qdk7XuBgSjw",
+   "title": "The Science of Emotions & Relationships | Huberman Lab Essentials",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2025-02-06T13:01:15Z",
+   "seconds": 2266,
+   "topics": []
+  },
+  {
+   "id": "QYAgf_lfio4",
+   "title": "Using Your Mind to Control Your Physical Health & Longevity | Dr. Ellen Langer",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2025-02-03T13:00:38Z",
+   "seconds": 12140,
+   "topics": []
+  },
+  {
+   "id": "OLQRAMZi--c",
+   "title": "How to Increase Motivation & Drive | Huberman Lab Essentials",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2025-01-30T13:00:34Z",
+   "seconds": 2048,
+   "topics": []
+  },
+  {
+   "id": "wAnDWfEIwoE",
+   "title": "The Art of Learning & Living Life | Josh Waitzkin",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2025-01-27T13:01:13Z",
+   "seconds": 11829,
+   "topics": []
+  },
+  {
+   "id": "Q4qWzbP0q7I",
+   "title": "How Foods & Nutrients Control Our Moods | Huberman Lab Essentials",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2025-01-23T13:00:28Z",
+   "seconds": 1954,
+   "topics": []
+  },
+  {
+   "id": "3-ukCGQJk2c",
+   "title": "Charting the Architecture of the Universe & Human Life | Dr. Brian Keating",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2025-01-20T13:00:08Z",
+   "seconds": 11258,
+   "topics": []
+  },
+  {
+   "id": "qUz93CyNIz0",
+   "title": "Tools for Managing Stress & Anxiety | Huberman Lab Essentials",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2025-01-16T13:01:20Z",
+   "seconds": 1949,
+   "topics": []
+  },
+  {
+   "id": "qi4VwpEs3LE",
+   "title": "Overcoming Guilt & Building Tenacity in Kids & Adults | Dr. Becky Kennedy",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2025-01-13T13:01:20Z",
+   "seconds": 13112,
+   "topics": []
+  },
+  {
+   "id": "SjPJn4QP0dk",
+   "title": "Control Pain & Heal Faster With Your Brain | Huberman Lab Essentials",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2025-01-09T13:00:39Z",
+   "seconds": 2197,
+   "topics": []
+  },
+  {
+   "id": "J2oqi41dCNc",
+   "title": "How to Use Exercise to Improve Your Brain’s Health, Longevity & Performance",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2025-01-06T13:00:32Z",
+   "seconds": 6572,
+   "topics": []
+  },
+  {
+   "id": "D97TQuy946k",
+   "title": "Optimize Your Learning & Creativity With Science-Based Tools | Huberman Lab Essentials",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2025-01-02T13:00:13Z",
+   "seconds": 1847,
+   "topics": []
+  },
+  {
+   "id": "K0hkhbGYaGQ",
+   "title": "How to Best Guide Your Life Decisions & Path | Dr. Jordan Peterson",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2024-12-30T13:00:21Z",
+   "seconds": 13871,
+   "topics": []
+  },
+  {
+   "id": "jwChiek_aRY",
+   "title": "How to Learn Faster by Using Failures, Movement & Balance | Huberman Lab Essentials",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2024-12-26T13:00:58Z",
+   "seconds": 2033,
+   "topics": []
+  },
+  {
+   "id": "Phm-Alz1Zjo",
+   "title": "How to Achieve True Happiness Using Science-Based Protocols | Dr. Laurie Santos",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2024-12-23T13:00:34Z",
+   "seconds": 11286,
+   "topics": []
+  },
+  {
+   "id": "4AwyVTHEU3s",
+   "title": "How to Focus to Change Your Brain | Huberman Lab Essentials",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2024-12-19T13:00:11Z",
+   "seconds": 2025,
+   "topics": []
+  },
+  {
+   "id": "tR73Ny4Dt9s",
+   "title": "How to Use Curiosity & Focus to Create a Joyful & Meaningful Life | Dr. Bernardo Huberman",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2024-12-16T13:01:07Z",
+   "seconds": 11760,
+   "topics": []
+  },
+  {
+   "id": "hF32FvBH4gI",
+   "title": "Understand and Use Dreams to Learn and Forget | Huberman Lab Essentials",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2024-12-12T13:00:52Z",
+   "seconds": 2098,
+   "topics": []
+  },
+  {
+   "id": "8N7mdkrXgbc",
+   "title": "How to Improve Your Mobility, Posture & Flexibility | Dr. Kelly Starrett",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2024-12-09T13:00:10Z",
+   "seconds": 12370,
+   "topics": []
+  },
+  {
+   "id": "In9Bq4EJMZw",
+   "title": "How to Defeat Jet Lag, Shift Work & Sleeplessness | Huberman Lab Essentials",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2024-12-05T13:00:19Z",
+   "seconds": 1604,
+   "topics": []
+  },
+  {
+   "id": "z5W74QC3v2I",
+   "title": "Understand & Apply the Psychology of Money to Gain Greater Happiness | Morgan Housel",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2024-12-02T13:01:19Z",
+   "seconds": 8136,
+   "topics": []
+  },
+  {
+   "id": "q-H_A_dQUxQ",
+   "title": "Using Science to Optimize Sleep, Learning & Metabolism | Huberman Lab Essentials",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2024-11-28T13:01:03Z",
+   "seconds": 1968,
+   "topics": []
+  },
+  {
+   "id": "Og56hmAspV8",
+   "title": "How to Control Your Inner Voice & Increase Your Resilience | Dr. Ethan Kross",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2024-11-25T13:00:33Z",
+   "seconds": 11342,
+   "topics": []
+  },
+  {
+   "id": "lIo9FcrljDk",
+   "title": "Master Your Sleep & Be More Alert When Awake | Huberman Lab Essentials",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2024-11-21T13:00:52Z",
+   "seconds": 2041,
+   "topics": []
+  },
+  {
+   "id": "etbfLTHD_VU",
+   "title": "How to Improve at Learning Using Neuroscience & AI | Dr. Terry Sejnowski",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2024-11-18T13:00:56Z",
+   "seconds": 9251,
+   "topics": []
+  },
+  {
+   "id": "HiyzzcuaAac",
+   "title": "How Your Brain Works & Changes | Huberman Lab Essentials",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2024-11-14T13:00:19Z",
+   "seconds": 2096,
+   "topics": []
+  },
+  {
+   "id": "rZkMpVLcVsg",
+   "title": "How Relationships Shape Your Brain | Dr. Allan Schore",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2024-11-11T13:01:08Z",
+   "seconds": 7666,
+   "topics": []
+  },
+  {
+   "id": "i5611OvTFGM",
+   "title": "How to Safeguard Your Hormone Health & Fertility | Dr. Shanna Swan",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2024-11-04T13:01:00Z",
+   "seconds": 8283,
+   "topics": []
+  },
+  {
+   "id": "SuR0DaYoe0Y",
+   "title": "How to Deal With High Conflict People | Bill Eddy",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2024-10-28T12:00:37Z",
+   "seconds": 9562,
+   "topics": []
+  },
+  {
+   "id": "vfRtLI6cJrk",
+   "title": "The Effects of Microplastics on Your Health",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2024-10-21T12:01:14Z",
+   "seconds": 5814,
+   "topics": []
+  },
+  {
+   "id": "kgr22uMsJ5o",
+   "title": "Create Your Ideal Future Using Science-Based Protocols | Ari Wallach",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2024-10-14T12:01:00Z",
+   "seconds": 8257,
+   "topics": []
+  },
+  {
+   "id": "wRsX_ZkzxvQ",
+   "title": "Peptide & Hormone Therapies for Health, Performance & Longevity | Dr. Craig Koniver",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2024-10-07T12:01:15Z",
+   "seconds": 8954,
+   "topics": []
+  },
+  {
+   "id": "jC8Pu9HBd48",
+   "title": "How to Improve Memory & Focus Using Science Protocols | Dr. Charan Ranganath",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2024-09-30T12:00:52Z",
+   "seconds": 9549,
+   "topics": []
+  },
+  {
+   "id": "4RFEkGKKhdE",
+   "title": "How to Heal From Post-Traumatic Stress Disorder (PTSD) | Dr. Victor Carrión",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2024-09-23T12:00:04Z",
+   "seconds": 8819,
+   "topics": []
+  },
+  {
+   "id": "ajneRM-ET1Q",
+   "title": "How to Find, Build & Maintain Healthy Romantic Relationships | Esther Perel",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2024-09-16T12:00:02Z",
+   "seconds": 7574,
+   "topics": []
+  },
+  {
+   "id": "kG5Qb9sr0YQ",
+   "title": "How to Increase Your Emotional Intelligence | Dr. Marc Brackett",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2024-09-09T12:00:49Z",
+   "seconds": 9274,
+   "topics": []
+  },
+  {
+   "id": "U2BPitASUh0",
+   "title": "How to Cultivate a Positive, Growth-Oriented Mindset | Dr. Jamil Zaki",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2024-09-02T12:00:35Z",
+   "seconds": 8202,
+   "topics": []
+  },
+  {
+   "id": "ddq8JIMhz7c",
+   "title": "Optimal Protocols for Studying & Learning",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2024-08-26T12:00:49Z",
+   "seconds": 6099,
+   "topics": []
+  },
+  {
+   "id": "wgUjIRtote8",
+   "title": "How to Improve & Protect Your Skin Health & Appearance | Dr. Teo Soleymani",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2024-08-19T12:01:06Z",
+   "seconds": 9964,
+   "topics": []
+  },
+  {
+   "id": "CD0bRU1e1ZM",
+   "title": "Tools for Nutrition & Fitness | Dr. Layne Norton",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2024-08-12T12:00:08Z",
+   "seconds": 14670,
+   "topics": []
+  },
+  {
+   "id": "nOgypsWKjm4",
+   "title": "Access Your Best Self With Mind-Body Practices, Belief Testing & Imagination | Dr. Martha Beck",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2024-08-05T12:00:53Z",
+   "seconds": 9894,
+   "topics": []
+  },
+  {
+   "id": "Gf-kC30SLtc",
+   "title": "AMA #18: Cold Therapy Advice, Skin Health Tips, Motivation, Learning Strategies & More",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2024-08-02T12:00:17Z",
+   "seconds": 3404,
+   "topics": []
+  },
+  {
+   "id": "79p1X_7rAMo",
+   "title": "Supplements for Longevity & Their Efficacy | Dr. Peter Attia",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2024-07-29T12:00:12Z",
+   "seconds": 9042,
+   "topics": []
+  },
+  {
+   "id": "pZX8ikmWvEU",
+   "title": "Female-Specific Exercise & Nutrition for Health, Performance & Longevity | Dr. Stacy Sims",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2024-07-22T12:00:53Z",
+   "seconds": 8918,
+   "topics": []
+  },
+  {
+   "id": "mAlt_HKX4as",
+   "title": "Build a Strong, Pain-Proof Back | Dr. Stuart McGill",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2024-07-15T12:00:50Z",
+   "seconds": 10335,
+   "topics": []
+  },
+  {
+   "id": "jouFvyRZntk",
+   "title": "How Cannabis Impacts Health & the Potential Risks | Dr. Matthew Hill",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2024-07-08T12:00:47Z",
+   "seconds": 13958,
+   "topics": []
+  },
+  {
+   "id": "1CxJVdeyltw",
+   "title": "How to Improve Skin Health & Appearance",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2024-07-01T12:00:01Z",
+   "seconds": 8875,
+   "topics": []
+  },
+  {
+   "id": "WFcYF_pxLgA",
+   "title": "How to Exercise & Eat for Optimal Health & Longevity | Dr. Gabrielle Lyon",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2024-06-24T12:00:35Z",
+   "seconds": 11017,
+   "topics": []
+  },
+  {
+   "id": "C5KpIXjpzdY",
+   "title": "The Science of Hunger & Medications to Combat Obesity | Dr. Zachary Knight",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2024-06-17T12:00:09Z",
+   "seconds": 8337,
+   "topics": []
+  },
+  {
+   "id": "csubiPlvFWk",
+   "title": "How Smartphones & Social Media Impact Mental Health & the Realistic Solutions | Dr. Jonathan Haidt",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2024-06-10T12:00:38Z",
+   "seconds": 8816,
+   "topics": []
+  },
+  {
+   "id": "-e9ErUozQo4",
+   "title": "LIVE EVENT Q&A: Dr. Andrew Huberman at the Brisbane Convention & Exhibition Centre",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2024-06-07T12:00:00Z",
+   "seconds": 3189,
+   "topics": []
+  },
+  {
+   "id": "6P8hrzjnetU",
+   "title": "How to Navigate Menopause & Perimenopause for Maximum Health & Vitality | Dr. Mary Claire Haver",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2024-06-03T12:00:04Z",
+   "seconds": 8299,
+   "topics": []
+  },
+  {
+   "id": "SZSRgyl7pyQ",
+   "title": "The Science of Your Gut Sense & the Gut-Brain Axis | Dr. Diego Bohórquez",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2024-05-27T12:00:32Z",
+   "seconds": 9733,
+   "topics": []
+  },
+  {
+   "id": "nqNEtdHVUjM",
+   "title": "How to Improve Brain Health & Offset Neurodegeneration | Dr. Gary Steinberg",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2024-05-20T12:00:54Z",
+   "seconds": 6904,
+   "topics": []
+  },
+  {
+   "id": "yOoVz9E9kfQ",
+   "title": "LIVE EVENT Q&A: Dr. Andrew Huberman at the ICC Sydney Theatre",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2024-05-17T12:01:08Z",
+   "seconds": 3079,
+   "topics": []
+  },
+  {
+   "id": "SyWC8ZFVxGo",
+   "title": "How to Find Your True Purpose & Create Your Best Life | Dr. James Hollis",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2024-05-13T12:00:26Z",
+   "seconds": 9588,
+   "topics": []
+  },
+  {
+   "id": "Jy4rJcYmtUM",
+   "title": "Dr. Matt Walker: The Science of Dreams, Nightmares & Lucid Dreaming | Huberman Lab Guest Series",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2024-05-08T12:00:19Z",
+   "seconds": 9186,
+   "topics": []
+  },
+  {
+   "id": "8qaBpM73NSk",
+   "title": "Transform Your Health by Improving Metabolism, Hormone & Blood Sugar Regulation | Dr. Casey Means",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2024-05-06T12:00:08Z",
+   "seconds": 10587,
+   "topics": []
+  },
+  {
+   "id": "S_SrHS8FvMM",
+   "title": "Dr. Matt Walker: Improve Sleep to Boost Mood & Emotional Regulation | Huberman Lab Guest Series",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2024-05-01T12:00:31Z",
+   "seconds": 8114,
+   "topics": []
+  },
+  {
+   "id": "jGZ1mR9uLU0",
+   "title": "AMA #17: Making Time for Fitness, Top Sleep Tools & Best Learning Strategies",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2024-04-30T20:00:26Z",
+   "seconds": 1530,
+   "topics": []
+  },
+  {
+   "id": "PVmQOLYckKQ",
+   "title": "Protocols to Strengthen & Pain Proof Your Back",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2024-04-29T12:00:19Z",
+   "seconds": 7684,
+   "topics": []
+  },
+  {
+   "id": "F9KrZd_-ge0",
+   "title": "Dr. Matt Walker: Using Sleep to Improve Learning, Creativity & Memory | Huberman Lab Guest Series",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2024-04-24T12:00:23Z",
+   "seconds": 8908,
+   "topics": []
+  },
+  {
+   "id": "zlc4VrDx_qk",
+   "title": "Vaping, Alcohol Use & Other Risky Youth Behaviors | Dr. Bonnie Halpern-Felsher",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2024-04-22T12:01:02Z",
+   "seconds": 9085,
+   "topics": []
+  },
+  {
+   "id": "GA89kjVY6Ik",
+   "title": "LIVE EVENT Q&A: Dr. Andrew Huberman at the Sydney Opera House",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2024-04-19T12:00:15Z",
+   "seconds": 3174,
+   "topics": []
+  },
+  {
+   "id": "4F_RBc1akC8",
+   "title": "Dr. Matt Walker: How to Structure Your Sleep, Use Naps & Time Caffeine | Huberman Lab Guest Series",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2024-04-17T12:00:07Z",
+   "seconds": 8339,
+   "topics": []
+  },
+  {
+   "id": "etEJrznE-c0",
+   "title": "How to Master Growth Mindset to Improve Performance | Dr. David Yeager",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2024-04-15T12:00:39Z",
+   "seconds": 8770,
+   "topics": []
+  },
+  {
+   "id": "hvPGfcAgk9Y",
+   "title": "Dr. Matt Walker: Protocols to Improve Your Sleep | Huberman Lab Guest Series",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2024-04-10T12:00:37Z",
+   "seconds": 9775,
+   "topics": []
+  },
+  {
+   "id": "acgz0C-z-gc",
+   "title": "Overcoming Physical & Emotional Challenges | Coleman Ruiz",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2024-04-08T12:00:02Z",
+   "seconds": 11883,
+   "topics": []
+  },
+  {
+   "id": "-OBCwiPPfEU",
+   "title": "Dr. Matt Walker: The Biology of Sleep & Your Unique Sleep Needs | Huberman Lab Guest Series",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2024-04-03T12:00:00Z",
+   "seconds": 10774,
+   "topics": []
+  },
+  {
+   "id": "zU5EYw06wtw",
+   "title": "Benefits & Risks of Peptide Therapeutics for Physical & Mental Health",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2024-04-01T12:00:52Z",
+   "seconds": 5202,
+   "topics": []
+  },
+  {
+   "id": "kpTJqwIfHcM",
+   "title": "What Magic & Mind Reading Reveal About the Brain | Asi Wind",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2024-03-25T12:00:41Z",
+   "seconds": 10298,
+   "topics": []
+  },
+  {
+   "id": "ttNxNbqNQK4",
+   "title": "LIVE EVENT Q&A: Dr. Andrew Huberman Question & Answer in Melbourne, AU",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2024-03-22T12:01:00Z",
+   "seconds": 3506,
+   "topics": []
+  },
+  {
+   "id": "oL3SkPV1_Ik",
+   "title": "How the Brain Works, Curing Blindness & How to Navigate a Career Path | Dr. E.J. Chichilnisky",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2024-03-18T12:00:44Z",
+   "seconds": 7206,
+   "topics": []
+  },
+  {
+   "id": "p4ZfkezDTXQ",
+   "title": "How to Enhance Focus and Improve Productivity | Dr. Cal Newport",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2024-03-11T12:00:50Z",
+   "seconds": 10619,
+   "topics": []
+  },
+  {
+   "id": "gdUNjPijwA8",
+   "title": "How Placebo Effects Work to Change Our Biology & Psychology",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2024-03-04T13:00:37Z",
+   "seconds": 4696,
+   "topics": []
+  },
+  {
+   "id": "gE0_8AjTFaM",
+   "title": "AMA #16: Sleep, Vertigo, TBI, OCD, Tips for Travelers, Gut-Brain Axis & More",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2024-02-29T23:00:31Z",
+   "seconds": 3409,
+   "topics": []
+  },
+  {
+   "id": "XT_6Lvkhxvo",
+   "title": "Protocols for Excellent Parenting & Improving Relationships of All Kinds | Dr. Becky Kennedy",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2024-02-26T13:00:24Z",
+   "seconds": 10442,
+   "topics": []
+  },
+  {
+   "id": "HYVeP4F0GNU",
+   "title": "How to Optimize Cognitive Function & Brain Health | Dr. Mark D'Esposito",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2024-02-19T13:00:21Z",
+   "seconds": 9158,
+   "topics": []
+  },
+  {
+   "id": "zVCaYyUWWSw",
+   "title": "How to Improve Oral Health & Its Critical Role in Brain & Body Health",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2024-02-12T13:00:54Z",
+   "seconds": 7227,
+   "topics": []
+  },
+  {
+   "id": "V0Sdgn0_kFM",
+   "title": "The Biology of Social Interactions & Emotions | Dr. Kay Tye",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2024-02-05T13:00:32Z",
+   "seconds": 9066,
+   "topics": []
+  },
+  {
+   "id": "j2sMqSDLd4k",
+   "title": "AMA #15: Fluoride Benefits/Risks & Vagus Nerve Stimulation",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2024-02-01T01:20:00Z",
+   "seconds": 1743,
+   "topics": []
+  },
+  {
+   "id": "CQlTmOFM4Qs",
+   "title": "Tools to Enhance Working Memory & Attention",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2024-01-29T13:00:08Z",
+   "seconds": 5472,
+   "topics": []
+  },
+  {
+   "id": "TG8VM5-CTfw",
+   "title": "Journal Club with Dr. Peter Attia | Effects of Light & Dark on Mental Health & Treatments for Cancer",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2024-01-22T13:00:32Z",
+   "seconds": 11312,
+   "topics": []
+  },
+  {
+   "id": "K9lORz2_XSU",
+   "title": "Tools to Reduce & Manage Pain | Dr. Sean Mackey",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2024-01-15T13:00:17Z",
+   "seconds": 10602,
+   "topics": []
+  },
+  {
+   "id": "AtChcxeaukQ",
+   "title": "How to Prevent & Treat Colds & Flu",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2024-01-08T13:00:07Z",
+   "seconds": 7549,
+   "topics": []
+  },
+  {
+   "id": "nDLb8_wgX50",
+   "title": "How to Build Immense Inner Strength | David Goggins",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2024-01-01T13:00:36Z",
+   "seconds": 9455,
+   "topics": []
+  },
+  {
+   "id": "zbpb1wd-wvs",
+   "title": "AMA #14: 2023 Philanthropy, Evening Routine, Light Therapy, Health Metrics & More",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2023-12-31T20:45:01Z",
+   "seconds": 3911,
+   "topics": []
+  },
+  {
+   "id": "GpgqXCkRO-w",
+   "title": "Protocols to Access Creative Energy and Process | Rick Rubin",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2023-12-25T13:00:12Z",
+   "seconds": 8889,
+   "topics": []
+  },
+  {
+   "id": "n28W4AmvMDE",
+   "title": "How Sugar & Processed Foods Impact Your Health | Dr. Robert Lustig",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2023-12-18T13:00:39Z",
+   "seconds": 12561,
+   "topics": []
+  },
+  {
+   "id": "LRM5LutB538",
+   "title": "LIVE EVENT Q&A: Dr. Andrew Huberman Question & Answer in Chicago, IL",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2023-12-13T13:00:25Z",
+   "seconds": 3284,
+   "topics": []
+  },
+  {
+   "id": "ccrbE0QHy94",
+   "title": "The Causes & Treatments for Autism | Dr. Karen Parker",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2023-12-11T13:00:24Z",
+   "seconds": 10588,
+   "topics": []
+  },
+  {
+   "id": "50BZQRT1dAg",
+   "title": "A Process for Finding & Achieving Your Unique Purpose | Robert Greene",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2023-12-04T13:00:07Z",
+   "seconds": 11478,
+   "topics": []
+  },
+  {
+   "id": "xTtM2AvCRyA",
+   "title": "AMA #13: Winter Months & Sickness, Wim Hof Breathing & Stressors",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2023-11-30T13:00:52Z",
+   "seconds": 1458,
+   "topics": []
+  },
+  {
+   "id": "3gtvNYa3Nd8",
+   "title": "How to Unlock Your Potential, Motivation & Unique Abilities | Dr. Adam Grant",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2023-11-27T13:00:03Z",
+   "seconds": 11542,
+   "topics": []
+  },
+  {
+   "id": "wAZn9dF3XTo",
+   "title": "A Science-Supported Journaling Protocol to Improve Mental & Physical Health",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2023-11-20T13:00:58Z",
+   "seconds": 5902,
+   "topics": []
+  },
+  {
+   "id": "eC9fiJBdMG0",
+   "title": "LIVE EVENT Q&A: Dr. Andrew Huberman Question & Answer in Toronto, ON",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2023-11-15T13:00:25Z",
+   "seconds": 2348,
+   "topics": []
+  },
+  {
+   "id": "EhlIkzJwPlk",
+   "title": "Female Hormone Health, Fertility & Vitality | Dr. Natalie Crawford",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2023-11-13T13:00:16Z",
+   "seconds": 12454,
+   "topics": []
+  },
+  {
+   "id": "pkJi9Raxikg",
+   "title": "Improving Male Sexual Health, Function & Fertility | Dr. Michael Eisenberg",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2023-11-06T13:00:41Z",
+   "seconds": 9434,
+   "topics": []
+  },
+  {
+   "id": "qJ3uV7coZbA",
+   "title": "AMA #12: Thoughts on Longevity Supplements (Resveratrol, NR, NMN, Etc.) & How to Improve Memory",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2023-10-31T18:00:33Z",
+   "seconds": 1748,
+   "topics": []
+  },
+  {
+   "id": "CJIXbibQ0jI",
+   "title": "Mental Health Toolkit: Tools to Bolster Your Mood & Mental Health",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2023-10-30T12:00:11Z",
+   "seconds": 7452,
+   "topics": []
+  },
+  {
+   "id": "1Wo6SqLNmLk",
+   "title": "Curing All Human Diseases & the Future of Health & Technology | Mark Zuckerberg & Dr. Priscilla Chan",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2023-10-23T12:00:02Z",
+   "seconds": 8132,
+   "topics": []
+  },
+  {
+   "id": "FeRgqJVALMQ",
+   "title": "How to Understand Emotions | Dr. Lisa Feldman Barrett",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2023-10-16T12:00:20Z",
+   "seconds": 9544,
+   "topics": []
+  },
+  {
+   "id": "cwakOgHIT0E",
+   "title": "How to Increase Your Willpower & Tenacity | Huberman Lab Podcast",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2023-10-09T12:00:26Z",
+   "seconds": 7679,
+   "topics": []
+  },
+  {
+   "id": "q8CHXefn7B4",
+   "title": "How to Succeed at Hard Conversations | Chris Voss",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2023-10-02T12:00:42Z",
+   "seconds": 10409,
+   "topics": []
+  },
+  {
+   "id": "7Ey_vTTgJGc",
+   "title": "AMA #11: Improve Task Switching & Productivity and Reduce Brain Fog",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2023-09-29T12:00:04Z",
+   "seconds": 2077,
+   "topics": []
+  },
+  {
+   "id": "yOJvm_ri_hk",
+   "title": "Dr. Paul Conti: Tools and Protocols for Mental Health | Huberman Lab Guest Series",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2023-09-27T12:00:51Z",
+   "seconds": 9673,
+   "topics": []
+  },
+  {
+   "id": "qNzl12g0Dd8",
+   "title": "Efforts & Challenges in Promoting Public Health | Dr. Vivek Murthy",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2023-09-25T12:00:43Z",
+   "seconds": 9229,
+   "topics": []
+  },
+  {
+   "id": "eMqWH3LYiII",
+   "title": "Dr. Paul Conti: How to Build and Maintain Healthy Relationships | Huberman Lab Guest Series",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2023-09-20T12:00:38Z",
+   "seconds": 11078,
+   "topics": []
+  },
+  {
+   "id": "gveDhZW-rUk",
+   "title": "How to Use Music to Boost Motivation, Mood & Improve Learning | Huberman Lab Podcast",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2023-09-18T12:00:35Z",
+   "seconds": 6266,
+   "topics": []
+  },
+  {
+   "id": "qPKd99Pa2iU",
+   "title": "Dr. Paul Conti: How to Improve Your Mental Health | Huberman Lab Guest Series",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2023-09-13T12:00:49Z",
+   "seconds": 11718,
+   "topics": []
+  },
+  {
+   "id": "z8c6EyMNd0A",
+   "title": "Journal Club with Dr. Peter Attia | Metformin for Longevity & The Power of Belief Effects",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2023-09-11T12:04:21Z",
+   "seconds": 8479,
+   "topics": []
+  },
+  {
+   "id": "tLRCS48Ens4",
+   "title": "Dr. Paul Conti: How to Understand & Assess Your Mental Health | Huberman Lab Guest Series",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2023-09-06T12:00:50Z",
+   "seconds": 13370,
+   "topics": []
+  },
+  {
+   "id": "yixIc1Ai6jM",
+   "title": "How Risk Taking, Innovation & Artificial Intelligence Transform Human Experience | Marc Andreessen",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2023-09-04T12:00:51Z",
+   "seconds": 10622,
+   "topics": []
+  },
+  {
+   "id": "eJU6Df_ffAE",
+   "title": "AMA #10: Benefits of Nature & “Grounding,\" Hearing Loss Research & Avoiding Altitude Sickness",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2023-08-30T12:00:36Z",
+   "seconds": 1294,
+   "topics": []
+  },
+  {
+   "id": "29n0WG317tM",
+   "title": "Life, Death & the Neuroscience of Your Unique Experience | Dr. David Linden",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2023-08-21T12:00:02Z",
+   "seconds": 9407,
+   "topics": []
+  },
+  {
+   "id": "F54qXuTpgfM",
+   "title": "Improving Sexual & Urological Health in Males and Females | Dr. Rena Malik",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2023-08-14T12:00:17Z",
+   "seconds": 10470,
+   "topics": []
+  },
+  {
+   "id": "Rxmv7rT9leo",
+   "title": "Ketamine: Benefits and Risks for Depression, PTSD & Neuroplasticity | Huberman Lab Podcast",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2023-08-07T12:00:31Z",
+   "seconds": 6161,
+   "topics": []
+  },
+  {
+   "id": "VOfwbcveP84",
+   "title": "Harnessing Passion, Drive & Persistence for Lifelong Success | Tony Hawk",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2023-07-31T12:00:18Z",
+   "seconds": 8119,
+   "topics": []
+  },
+  {
+   "id": "HoH93judXmE",
+   "title": "AMA #9: Kratom Risks, Does Infrared Sauna Work & Journaling Benefits",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2023-07-28T12:00:14Z",
+   "seconds": 1592,
+   "topics": []
+  },
+  {
+   "id": "X8Hw8zeCDTA",
+   "title": "How to Shape Your Identity & Goals | Dr. Maya Shankar",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2023-07-24T12:00:33Z",
+   "seconds": 9236,
+   "topics": []
+  },
+  {
+   "id": "aQDOU3hPci0",
+   "title": "How to Enhance Performance & Learning by Applying a Growth Mindset",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2023-07-17T12:00:02Z",
+   "seconds": 6084,
+   "topics": []
+  },
+  {
+   "id": "RI112zW8GDw",
+   "title": "How Your Brain’s Reward Circuits Drive Your Choices | Dr. Robert Malenka",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2023-07-10T12:00:17Z",
+   "seconds": 10203,
+   "topics": []
+  },
+  {
+   "id": "LYYyQcAJZfk",
+   "title": "Science-Supported Tools to Accelerate Your Fitness Goals",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2023-07-03T12:00:13Z",
+   "seconds": 5740,
+   "topics": []
+  },
+  {
+   "id": "_ltcLEM-5HU",
+   "title": "How to Improve Your Eye Health & Offset Vision Loss | Dr. Jeffrey Goldberg",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2023-06-26T12:00:34Z",
+   "seconds": 11325,
+   "topics": []
+  },
+  {
+   "id": "FE0lTEUa7EY",
+   "title": "AMA #8: Balancing Caffeine, Decision Fatigue & Social Isolation",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2023-06-23T17:00:16Z",
+   "seconds": 1521,
+   "topics": []
+  },
+  {
+   "id": "doupx8SAs5Y",
+   "title": "How to Learn Better & Create Your Best Future | Tim Ferriss",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2023-06-19T12:00:23Z",
+   "seconds": 13149,
+   "topics": []
+  },
+  {
+   "id": "slUCmZJDXrk",
+   "title": "The Science of MDMA & Its Therapeutic Uses: Benefits & Risks | Huberman Lab Podcast",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2023-06-12T12:00:47Z",
+   "seconds": 8255,
+   "topics": []
+  },
+  {
+   "id": "S8jWFcDGz4Y",
+   "title": "How Emotions & Social Factors Impact Learning | Dr. Mary Helen Immordino-Yang",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2023-06-05T12:00:16Z",
+   "seconds": 9682,
+   "topics": []
+  },
+  {
+   "id": "dicP_kA-RA0",
+   "title": "AMA #7: Cold Exposure, Maximizing REM Sleep & My Next Scientific Studies",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2023-05-31T12:00:26Z",
+   "seconds": 1341,
+   "topics": []
+  },
+  {
+   "id": "sxgCC4H1dl8",
+   "title": "Adderall, Stimulants & Modafinil for ADHD: Short- & Long-Term Effects",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2023-05-29T12:00:44Z",
+   "seconds": 7332,
+   "topics": []
+  },
+  {
+   "id": "fcxjwA4C4Cw",
+   "title": "The Science of Psychedelics for Mental Health | Dr. Robin Carhart-Harris",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2023-05-22T12:00:34Z",
+   "seconds": 9429,
+   "topics": []
+  },
+  {
+   "id": "x3MgDtZovks",
+   "title": "How to Use Cold & Heat Exposure to Improve Your Health | Dr. Susanna Søberg",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2023-05-15T12:00:46Z",
+   "seconds": 9035,
+   "topics": []
+  },
+  {
+   "id": "eIxVfln02Ss",
+   "title": "How Psilocybin Can Rewire Our Brain, Its Therapeutic Benefits & Its Risks",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2023-05-08T12:00:24Z",
+   "seconds": 7742,
+   "topics": []
+  },
+  {
+   "id": "cS7cNaBrkxo",
+   "title": "How Smells Influence Our Hormones, Health & Behavior | Dr. Noam Sobel",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2023-05-01T12:00:33Z",
+   "seconds": 11596,
+   "topics": []
+  },
+  {
+   "id": "uWV9a3zEaL4",
+   "title": "AMA #6: Eye Health, Why We Yawn & Increasing Motivation",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2023-04-27T12:00:40Z",
+   "seconds": 2174,
+   "topics": []
+  },
+  {
+   "id": "0RYyQRQFgFk",
+   "title": "Science-Based Mental Training & Visualization for Improved Learning",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2023-04-24T12:00:00Z",
+   "seconds": 7187,
+   "topics": []
+  },
+  {
+   "id": "3ZGItIAUQmI",
+   "title": "Neuralink & Technologies to Enhance Human Brains | Dr. Matthew MacDougall",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2023-04-17T12:00:04Z",
+   "seconds": 7301,
+   "topics": []
+  },
+  {
+   "id": "6ZrlsVx85ek",
+   "title": "The Science of Healthy Hair, Hair Loss and How to Regrow Hair",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2023-04-10T12:00:06Z",
+   "seconds": 7488,
+   "topics": []
+  },
+  {
+   "id": "ulHrUVV3Kq4",
+   "title": "Control Stress for Healthy Eating, Metabolism & Aging | Dr. Elissa Epel",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2023-04-03T12:00:41Z",
+   "seconds": 7551,
+   "topics": []
+  },
+  {
+   "id": "K-TW2Chpz4k",
+   "title": "Leverage Dopamine to Overcome Procrastination & Optimize Effort",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2023-03-27T12:00:13Z",
+   "seconds": 7129,
+   "topics": []
+  },
+  {
+   "id": "cp9GXl9Qk_s",
+   "title": "AMA #5: Intrusive Thoughts, CGMs, Behavioral Change, Naps & NSDR",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2023-03-24T12:00:22Z",
+   "seconds": 1407,
+   "topics": []
+  },
+  {
+   "id": "ufsIA5NARIo",
+   "title": "Improve Vitality, Emotional & Physical Health & Lifespan | Dr. Peter Attia",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2023-03-20T12:00:47Z",
+   "seconds": 12596,
+   "topics": []
+  },
+  {
+   "id": "7R3-3HR6-u4",
+   "title": "Intermittent Fasting to Improve Health, Cognition & Longevity | Dr. Satchin Panda",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2023-03-13T12:00:07Z",
+   "seconds": 10147,
+   "topics": []
+  },
+  {
+   "id": "at37Y8rKDlA",
+   "title": "How to Optimize Your Water Quality & Intake for Health",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2023-03-06T13:00:02Z",
+   "seconds": 8543,
+   "topics": []
+  },
+  {
+   "id": "CDUetQMKM6g",
+   "title": "Genes & the Inheritance of Memories Across Generations | Dr. Oded Rechavi",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2023-02-27T13:00:10Z",
+   "seconds": 9121,
+   "topics": []
+  },
+  {
+   "id": "S8nPJU9xkNw",
+   "title": "AMA #4: Maintain Motivation, Improve REM Sleep, Set Goals, Manage Anxiety & More",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2023-02-24T13:00:16Z",
+   "seconds": 1394,
+   "topics": []
+  },
+  {
+   "id": "q37ARYnRDGc",
+   "title": "Dr. Andy Galpin: Optimal Nutrition & Supplementation for Fitness | Huberman Lab Guest Series",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2023-02-22T13:00:37Z",
+   "seconds": 11134,
+   "topics": []
+  },
+  {
+   "id": "x4m_PdFbu-s",
+   "title": "How to Breathe Correctly for Optimal Health, Mood, Learning & Performance",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2023-02-20T13:00:46Z",
+   "seconds": 8330,
+   "topics": []
+  },
+  {
+   "id": "juD99_sPWGU",
+   "title": "Dr. Andy Galpin: Maximize Recovery to Achieve Fitness & Performance Goals | Huberman Lab",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2023-02-15T13:00:36Z",
+   "seconds": 11106,
+   "topics": []
+  },
+  {
+   "id": "BMTt8gSl13s",
+   "title": "Use Sleep to Enhance Learning, Memory & Emotional State | Dr. Gina Poe",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2023-02-13T13:00:07Z",
+   "seconds": 7541,
+   "topics": []
+  },
+  {
+   "id": "UIy-WQCZd4M",
+   "title": "Dr. Andy Galpin: Optimize Your Training Program for Fitness & Longevity | Huberman Lab Guest Series",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2023-02-08T13:00:30Z",
+   "seconds": 11168,
+   "topics": []
+  },
+  {
+   "id": "CGjdgy0cwGk",
+   "title": "How to Stop Headaches Using Science-Based Approaches",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2023-02-06T13:00:15Z",
+   "seconds": 8804,
+   "topics": []
+  },
+  {
+   "id": "oNkDA2F7CjM",
+   "title": "Dr. Andy Galpin: How to Build Physical Endurance & Lose Fat | Huberman Lab Guest Series",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2023-02-01T13:00:27Z",
+   "seconds": 13733,
+   "topics": []
+  },
+  {
+   "id": "GVRDGQhoEYQ",
+   "title": "How to Optimize Female Hormone Health for Vitality & Longevity | Dr. Sara Gottfried",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2023-01-30T13:00:10Z",
+   "seconds": 9305,
+   "topics": []
+  },
+  {
+   "id": "CyDLbrZK75U",
+   "title": "Dr. Andy Galpin: Optimal Protocols to Build Strength & Grow Muscles | Huberman Lab Guest Series",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2023-01-25T12:00:12Z",
+   "seconds": 16764,
+   "topics": []
+  },
+  {
+   "id": "O1YRwWmue4Y",
+   "title": "How to Optimize Fertility in Males & Females",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2023-01-23T12:00:10Z",
+   "seconds": 15735,
+   "topics": []
+  },
+  {
+   "id": "zEYE-vcVKy8",
+   "title": "Dr. Andy Galpin: How to Assess & Improve All Aspects of Your Fitness | Huberman Lab Guest Series",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2023-01-18T13:00:40Z",
+   "seconds": 7278,
+   "topics": []
+  },
+  {
+   "id": "ycOBZZeVeAc",
+   "title": "How to Access Your Creativity | Rick Rubin",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2023-01-16T13:00:43Z",
+   "seconds": 10839,
+   "topics": []
+  },
+  {
+   "id": "uak_dXHh6s4",
+   "title": "AMA #3: Adaptogens, Fasting & Fertility, Bluetooth/EMF Risks, Cognitive Load Limits & More",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2023-01-13T13:00:38Z",
+   "seconds": 1922,
+   "topics": []
+  },
+  {
+   "id": "tLS6t3FVOTI",
+   "title": "Developing a Rational Approach to Supplementation for Health & Performance | Huberman Lab Podcast",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2023-01-09T13:00:35Z",
+   "seconds": 7247,
+   "topics": []
+  },
+  {
+   "id": "-wIt_WsJGfw",
+   "title": "Using Meditation to Focus, View Consciousness & Expand Your Mind | Dr. Sam Harris",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2023-01-02T13:00:00Z",
+   "seconds": 15716,
+   "topics": []
+  },
+  {
+   "id": "__RAXBLt1iM",
+   "title": "How to Become Resilient, Forge Your Identity & Lead Others | Jocko Willink",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2022-12-26T13:00:27Z",
+   "seconds": 14667,
+   "topics": []
+  },
+  {
+   "id": "KPlJcD-o-4Q",
+   "title": "The Science of Creativity & How to Enhance Creative Innovation",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2022-12-19T13:00:17Z",
+   "seconds": 8218,
+   "topics": []
+  },
+  {
+   "id": "uwWOc_RqTBA",
+   "title": "LIVE EVENT Q&A: Dr. Andrew Huberman Question & Answer in New York, NY",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2022-12-14T14:51:49Z",
+   "seconds": 2837,
+   "topics": []
+  },
+  {
+   "id": "O640yAgq5f8",
+   "title": "Tools for Hormone Optimization in Males | Dr. Kyle Gillett",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2022-12-12T13:00:10Z",
+   "seconds": 8658,
+   "topics": []
+  },
+  {
+   "id": "vZ4kOr38JhY",
+   "title": "AMA #2: Improve Sleep, Reduce Sugar Cravings, Optimal Protein Intake, Stretching Frequency & More",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2022-12-08T13:00:27Z",
+   "seconds": 1831,
+   "topics": []
+  },
+  {
+   "id": "iw97uvIge7c",
+   "title": "Using Caffeine to Optimize Mental & Physical Performance",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2022-12-05T13:00:31Z",
+   "seconds": 8556,
+   "topics": []
+  },
+  {
+   "id": "6I5I56uVvLw",
+   "title": "Navigating Conflict, Finding Purpose & Maintaining Drive | Dr Lex Fridman",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2022-11-28T13:00:05Z",
+   "seconds": 9706,
+   "topics": []
+  },
+  {
+   "id": "xjEFo3a1AnI",
+   "title": "Diet & Nutrition for Mental Health | Dr. Chris Palmer",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2022-11-21T13:00:42Z",
+   "seconds": 11022,
+   "topics": []
+  },
+  {
+   "id": "LTGGyQS1fZE",
+   "title": "Science-Based Tools for Increasing Happiness",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2022-11-14T13:00:14Z",
+   "seconds": 8624,
+   "topics": []
+  },
+  {
+   "id": "TO0WUTq5zYI",
+   "title": "LIVE EVENT Q&A: Dr. Andrew Huberman Question & Answer in Los Angeles, CA",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2022-11-09T13:00:30Z",
+   "seconds": 3818,
+   "topics": []
+  },
+  {
+   "id": "K4Ze-Sp6aUE",
+   "title": "The Science of Eating for Health, Fat Loss & Lean Muscle | Dr. Layne Norton",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2022-11-07T13:00:21Z",
+   "seconds": 13775,
+   "topics": []
+  },
+  {
+   "id": "lsODSDmY4CY",
+   "title": "AMA #1: Leveraging Ultradian Cycles, How to Protect Your Brain, Seed Oils Examined and More",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2022-11-02T15:15:02Z",
+   "seconds": 1497,
+   "topics": []
+  },
+  {
+   "id": "wTBSGgbIvsY",
+   "title": "How Meditation Works & Science-Based Effective Meditations",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2022-10-31T12:00:48Z",
+   "seconds": 8762,
+   "topics": []
+  },
+  {
+   "id": "Z7MU6zrAXsM",
+   "title": "The Science of Learning & Speaking Languages | Dr. Eddie Chang",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2022-10-24T12:00:21Z",
+   "seconds": 9264,
+   "topics": []
+  },
+  {
+   "id": "q1Ss8sTbFBY",
+   "title": "Fitness Toolkit: Protocol & Tools to Optimize Physical Health",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2022-10-17T12:00:37Z",
+   "seconds": 7070,
+   "topics": []
+  },
+  {
+   "id": "X4QE6t-MkYE",
+   "title": "Psychedelics & Neurostimulation for Brain Rewiring | Dr. Nolan Williams",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2022-10-10T12:00:18Z",
+   "seconds": 10135,
+   "topics": []
+  },
+  {
+   "id": "gXvuJu1kt48",
+   "title": "The Effects of Cannabis (Marijuana) on the Brain & Body",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2022-10-03T12:00:25Z",
+   "seconds": 10058,
+   "topics": []
+  },
+  {
+   "id": "Nr5xb-QCBGA",
+   "title": "Biology & Treatments for Compulsive Eating & Behaviors | Dr. Casey Halpern",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2022-09-26T12:00:25Z",
+   "seconds": 8075,
+   "topics": []
+  },
+  {
+   "id": "uXs-zPc63kM",
+   "title": "Nicotine’s Effects on the Brain & Body & How to Quit Smoking or Vaping",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2022-09-19T12:00:39Z",
+   "seconds": 6817,
+   "topics": []
+  },
+  {
+   "id": "uxZFl4BDOGk",
+   "title": "The Biology of Aggression, Mating, & Arousal | Dr. David Anderson",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2022-09-12T12:00:38Z",
+   "seconds": 6935,
+   "topics": []
+  },
+  {
+   "id": "yb5zpo5WDG4",
+   "title": "Focus Toolkit: Tools to Improve Your Focus & Concentration",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2022-09-05T12:00:39Z",
+   "seconds": 6691,
+   "topics": []
+  },
+  {
+   "id": "3_auLYOilb8",
+   "title": "LIVE EVENT Q&A: Dr. Andrew Huberman Question & Answer in Portland, OR",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2022-08-31T12:00:03Z",
+   "seconds": 3091,
+   "topics": []
+  },
+  {
+   "id": "LVxL_p_kToc",
+   "title": "The Neuroscience of Speech, Language & Music | Dr. Erich Jarvis",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2022-08-29T12:00:27Z",
+   "seconds": 6860,
+   "topics": []
+  },
+  {
+   "id": "DkS1pkKpILY",
+   "title": "What Alcohol Does to Your Body, Brain & Health",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2022-08-22T12:00:08Z",
+   "seconds": 7262,
+   "topics": []
+  },
+  {
+   "id": "2Ds1m5gflCI",
+   "title": "LIVE EVENT Q&A: Dr. Andrew Huberman Question & Answer in Seattle, WA",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2022-08-17T12:00:02Z",
+   "seconds": 3365,
+   "topics": []
+  },
+  {
+   "id": "DTCmprPCDqc",
+   "title": "Exercise, Nutrition, Hormones for Vitality & Longevity | Dr. Peter Attia",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2022-08-15T12:00:09Z",
+   "seconds": 10203,
+   "topics": []
+  },
+  {
+   "id": "h2aWYjSA1Jc",
+   "title": "Sleep Toolkit: Tools for Optimizing Sleep & Sleep-Wake Timing",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2022-08-08T12:00:25Z",
+   "seconds": 6115,
+   "topics": []
+  },
+  {
+   "id": "7YGZZcXqKxE",
+   "title": "Tools for Setting & Achieving Goals | Dr. Emily Balcetis",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2022-08-01T12:00:10Z",
+   "seconds": 5898,
+   "topics": []
+  },
+  {
+   "id": "m_OazsImOiI",
+   "title": "The Science & Treatment of Bipolar Disorder",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2022-07-25T12:00:37Z",
+   "seconds": 8381,
+   "topics": []
+  },
+  {
+   "id": "UChhXiFPRgg",
+   "title": "The Biology of Taste Perception & Sugar Craving | Dr. Charles Zuker",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2022-07-18T12:00:19Z",
+   "seconds": 8258,
+   "topics": []
+  },
+  {
+   "id": "T65RDBiB5Hs",
+   "title": "Optimize & Control Your Brain Chemistry to Improve Health & Performance",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2022-07-11T12:00:16Z",
+   "seconds": 7741,
+   "topics": []
+  },
+  {
+   "id": "UNCwdFxPtE8",
+   "title": "Optimize Your Exercise Program with Science-Based Tools | Jeff Cavaliere",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2022-07-04T12:00:16Z",
+   "seconds": 9647,
+   "topics": []
+  },
+  {
+   "id": "OadokY8fcAA",
+   "title": "The Science & Treatment of Obsessive Compulsive Disorder (OCD)",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2022-06-27T12:00:17Z",
+   "seconds": 9216,
+   "topics": []
+  },
+  {
+   "id": "a9yFKPmPZ90",
+   "title": "The Science & Practice of Movement | Ido Portal",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2022-06-20T12:00:00Z",
+   "seconds": 9277,
+   "topics": []
+  },
+  {
+   "id": "tkH2-_jMCSk",
+   "title": "Improve Flexibility with Research-Supported Stretching Protocols",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2022-06-13T12:00:28Z",
+   "seconds": 7569,
+   "topics": []
+  },
+  {
+   "id": "IOl28gj_RXw",
+   "title": "Therapy, Treating Trauma & Other Life Challenges | Dr. Paul Conti",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2022-06-06T12:00:08Z",
+   "seconds": 8669,
+   "topics": []
+  },
+  {
+   "id": "dzOvi0Aa2EA",
+   "title": "The Science & Process of Healing From Grief",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2022-05-30T12:00:17Z",
+   "seconds": 7608,
+   "topics": []
+  },
+  {
+   "id": "099hgtRoUZw",
+   "title": "Boost Attention & Memory with Science-Based Tools | Dr. Wendy Suzuki",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2022-05-23T12:00:01Z",
+   "seconds": 6399,
+   "topics": []
+  },
+  {
+   "id": "szqPAPKE5tQ",
+   "title": "Understand & Improve Memory Using Science-Based Tools",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2022-05-16T12:00:35Z",
+   "seconds": 7757,
+   "topics": []
+  },
+  {
+   "id": "RBK5KLA5Jjg",
+   "title": "Understanding & Controlling Anger & Aggression",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2022-05-09T12:00:23Z",
+   "seconds": 5453,
+   "topics": []
+  },
+  {
+   "id": "XcvhERcZpWw",
+   "title": "Micronutrients for Health & Longevity | Dr. Rhonda Patrick",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2022-05-02T12:00:15Z",
+   "seconds": 10173,
+   "topics": []
+  },
+  {
+   "id": "EQ3GjpGq5Y8",
+   "title": "The Science & Health Benefits of Deliberate Heat Exposure",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2022-04-25T12:00:11Z",
+   "seconds": 6791,
+   "topics": []
+  },
+  {
+   "id": "UF0nqolsNZc",
+   "title": "Using Light (Sunlight, Blue Light & Red Light) to Optimize Health",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2022-04-18T12:00:24Z",
+   "seconds": 8623,
+   "topics": []
+  },
+  {
+   "id": "ncSoor2Iw8k",
+   "title": "How to Optimize Your Hormones for Health & Vitality | Dr. Kyle Gillett",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2022-04-11T12:00:23Z",
+   "seconds": 10762,
+   "topics": []
+  },
+  {
+   "id": "pq6WHJzOkno",
+   "title": "Using Deliberate Cold Exposure for Health and Performance | Huberman Lab",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2022-04-04T12:00:32Z",
+   "seconds": 8109,
+   "topics": []
+  },
+  {
+   "id": "IAnhFUUCq6c",
+   "title": "Dr. Andy Galpin: How to Build Strength, Muscle Size & Endurance",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2022-03-28T12:00:18Z",
+   "seconds": 12688,
+   "topics": []
+  },
+  {
+   "id": "VAEzZeaV5zM",
+   "title": "Controlling Sugar Cravings & Metabolism with Science-Based Tools | Huberman Lab Podcast #64",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2022-03-21T12:00:12Z",
+   "seconds": 7136,
+   "topics": []
+  },
+  {
+   "id": "azb3Ih68awQ",
+   "title": "Using Salt to Optimize Mental & Physical Performance | Huberman Lab",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2022-03-14T12:00:01Z",
+   "seconds": 7434,
+   "topics": []
+  },
+  {
+   "id": "ouCWNRvPk20",
+   "title": "How to Build, Maintain & Repair Gut Health | Dr. Justin Sonnenburg",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2022-03-07T13:00:23Z",
+   "seconds": 8079,
+   "topics": []
+  },
+  {
+   "id": "15R2pMqU2ok",
+   "title": "How to Enhance Your Gut Microbiome for Brain & Overall Health",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2022-02-28T13:00:00Z",
+   "seconds": 6735,
+   "topics": []
+  },
+  {
+   "id": "PctD-ki8dCc",
+   "title": "Using Hypnosis to Enhance Health & Performance | Dr. David Spiegel",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2022-02-21T13:00:11Z",
+   "seconds": 6761,
+   "topics": []
+  },
+  {
+   "id": "gMRph_BvHB4",
+   "title": "The Science of Love, Desire and Attachment",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2022-02-14T13:00:31Z",
+   "seconds": 9312,
+   "topics": []
+  },
+  {
+   "id": "BwyZIWeBpRw",
+   "title": "Using Play to Rewire & Improve Your Brain",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2022-02-07T13:00:13Z",
+   "seconds": 6396,
+   "topics": []
+  },
+  {
+   "id": "Ze2pc6NwsHQ",
+   "title": "Optimizing Workspace for Productivity, Focus, & Creativity",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2022-01-31T13:00:12Z",
+   "seconds": 6116,
+   "topics": []
+  },
+  {
+   "id": "dFR_wFN23ZY",
+   "title": "Science of Mindsets for Health & Performance | Dr. Alia Crum",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2022-01-24T13:00:19Z",
+   "seconds": 6063,
+   "topics": []
+  },
+  {
+   "id": "t1F7EEGPQwo",
+   "title": "The Science of Setting & Achieving Goals",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2022-01-17T13:00:34Z",
+   "seconds": 6863,
+   "topics": []
+  },
+  {
+   "id": "GLgKkG44MGo",
+   "title": "Breathing for Mental & Physical Health & Performance | Dr. Jack Feldman",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2022-01-10T13:00:14Z",
+   "seconds": 8617,
+   "topics": []
+  },
+  {
+   "id": "Wcs2PFz5q6g",
+   "title": "The Science of Making & Breaking Habits",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2022-01-03T13:00:12Z",
+   "seconds": 6639,
+   "topics": []
+  },
+  {
+   "id": "n9IxomBusuw",
+   "title": "The Biology of Slowing & Reversing Aging | Dr. David Sinclair",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2021-12-27T13:00:32Z",
+   "seconds": 7843,
+   "topics": []
+  },
+  {
+   "id": "RgAcOqVRfYA",
+   "title": "Science of Social Bonding in Family, Friendship & Romantic Love",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2021-12-20T13:00:25Z",
+   "seconds": 5602,
+   "topics": []
+  },
+  {
+   "id": "oC3fhUjg30E",
+   "title": "Your Brain's Logic & Function | Dr. David Berson",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2021-12-13T13:00:18Z",
+   "seconds": 6768,
+   "topics": []
+  },
+  {
+   "id": "31wjVhCcI5Y",
+   "title": "Erasing Fears & Traumas Based on the Modern Neuroscience of Fear",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2021-12-06T13:00:03Z",
+   "seconds": 8030,
+   "topics": []
+  },
+  {
+   "id": "HXzTbCEqCJc",
+   "title": "How Humans Select & Keep Romantic Partners in Short & Long Term | Dr. David Buss",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2021-11-29T13:00:20Z",
+   "seconds": 7982,
+   "topics": []
+  },
+  {
+   "id": "KVjfFN89qvQ",
+   "title": "The Science of Gratitude & How to Build a Gratitude Practice",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2021-11-22T13:00:07Z",
+   "seconds": 5157,
+   "topics": []
+  },
+  {
+   "id": "8IWDAqodDas",
+   "title": "Time Perception & Entrainment by Dopamine, Serotonin & Hormones",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2021-11-15T13:00:14Z",
+   "seconds": 4457,
+   "topics": []
+  },
+  {
+   "id": "iMvtHqLmEkI",
+   "title": "How to Exercise for Strength Gains & Hormone Optimization | Dr. Duncan French",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2021-11-08T13:00:21Z",
+   "seconds": 5406,
+   "topics": []
+  },
+  {
+   "id": "poOf8b2WE2g",
+   "title": "Using Your Nervous System to Enhance Your Immune System",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2021-11-01T12:00:26Z",
+   "seconds": 7232,
+   "topics": []
+  },
+  {
+   "id": "oUu3f0ETMJQ",
+   "title": "Timing Light, Food, & Exercise for Better Sleep, Energy & Mood | Dr. Samer Hattar",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2021-10-25T12:00:21Z",
+   "seconds": 8068,
+   "topics": []
+  },
+  {
+   "id": "E7W4OQfJWdw",
+   "title": "Nutrients For Brain Health & Performance | Huberman Lab Podcast #42",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2021-10-18T12:00:13Z",
+   "seconds": 6079,
+   "topics": []
+  },
+  {
+   "id": "9tRohh0gErM",
+   "title": "Effects of Fasting & Time Restricted Eating on Fat Loss & Health | Huberman Lab Podcast #41",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2021-10-11T12:00:10Z",
+   "seconds": 8767,
+   "topics": []
+  },
+  {
+   "id": "77CdVSpnUX4",
+   "title": "Using Temperature for Performance, Brain & Body Health | Dr. Craig Heller",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2021-10-04T12:00:03Z",
+   "seconds": 6696,
+   "topics": []
+  },
+  {
+   "id": "QmOF0crdyRU",
+   "title": "Controlling Your Dopamine For Motivation, Focus & Satisfaction",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2021-09-27T12:00:22Z",
+   "seconds": 8192,
+   "topics": []
+  },
+  {
+   "id": "GzvzWO0NU50",
+   "title": "Psychedelics for Treating Mental Disorders | Dr. Matthew Johnson",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2021-09-20T12:00:09Z",
+   "seconds": 10325,
+   "topics": []
+  },
+  {
+   "id": "hFL6qRIJZ_Y",
+   "title": "ADHD & How Anyone Can Improve Their Focus",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2021-09-13T12:00:32Z",
+   "seconds": 8281,
+   "topics": []
+  },
+  {
+   "id": "2XGREPnlI8U",
+   "title": "Healthy Eating & Eating Disorders - Anorexia, Bulimia, Binging",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2021-09-06T12:00:02Z",
+   "seconds": 8179,
+   "topics": []
+  },
+  {
+   "id": "DtmwtjOoSYU",
+   "title": "Science of Stress, Testosterone & Free Will | Dr. Robert Sapolsky",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2021-08-30T12:00:05Z",
+   "seconds": 5390,
+   "topics": []
+  },
+  {
+   "id": "Xu1FMCxoEFc",
+   "title": "Understanding & Conquering Depression",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2021-08-23T12:00:11Z",
+   "seconds": 7323,
+   "topics": []
+  },
+  {
+   "id": "p3JLaF_4Tz8",
+   "title": "Understanding & Treating Addiction | Dr. Anna Lembke",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2021-08-16T12:00:26Z",
+   "seconds": 7352,
+   "topics": []
+  },
+  {
+   "id": "xmhsWAqP_0Y",
+   "title": "How to Control Your Sense of Pain & Pleasure",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2021-08-09T12:00:23Z",
+   "seconds": 8172,
+   "topics": []
+  },
+  {
+   "id": "gbQFSMayJxk",
+   "title": "The Science & Practice of Perfecting Your Sleep | Dr. Matt Walker",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2021-08-02T12:00:19Z",
+   "seconds": 11166,
+   "topics": []
+  },
+  {
+   "id": "rW9QKc-iFoY",
+   "title": "How to Optimize Your Brain-Body Function & Health",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2021-07-26T12:00:22Z",
+   "seconds": 6764,
+   "topics": []
+  },
+  {
+   "id": "VRvn3Oj5r3E",
+   "title": "Machines, Creativity & Love | Dr. Lex Fridman",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2021-07-19T12:00:11Z",
+   "seconds": 10999,
+   "topics": []
+  },
+  {
+   "id": "aXvDEmo6uS4",
+   "title": "Maximizing Productivity, Physical & Mental Health with Daily Tools",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2021-07-12T12:00:01Z",
+   "seconds": 7621,
+   "topics": []
+  },
+  {
+   "id": "JVRyzYB9JSY",
+   "title": "The Science of Hearing, Balance & Accelerated Learning",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2021-07-05T12:00:21Z",
+   "seconds": 7417,
+   "topics": []
+  },
+  {
+   "id": "w9MXqXBZy9U",
+   "title": "Understanding & Healing the Mind | Dr. Karl Deisseroth",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2021-06-28T12:00:21Z",
+   "seconds": 7326,
+   "topics": []
+  },
+  {
+   "id": "Mwz8JprPeMc",
+   "title": "How Smell, Taste & Pheromone-Like Chemicals Control You",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2021-06-21T12:00:19Z",
+   "seconds": 7181,
+   "topics": []
+  },
+  {
+   "id": "ObtW353d5i0",
+   "title": "The Science of Vision, Eye Health & Seeing Better",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2021-06-14T12:00:08Z",
+   "seconds": 6578,
+   "topics": []
+  },
+  {
+   "id": "VQLU7gpk_X8",
+   "title": "How to Build Endurance in Your Brain & Body",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2021-06-07T12:00:11Z",
+   "seconds": 7530,
+   "topics": []
+  },
+  {
+   "id": "XLr2RKoD-oY",
+   "title": "Science of Muscle Growth, Increasing Strength & Muscular Recovery",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2021-05-31T12:00:24Z",
+   "seconds": 7460,
+   "topics": []
+  },
+  {
+   "id": "GqPGXG5TlZw",
+   "title": "How to Lose Fat with Science-Based Tools",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2021-05-24T12:00:06Z",
+   "seconds": 6834,
+   "topics": []
+  },
+  {
+   "id": "xJ0IBzCjEPk",
+   "title": "How to Learn Skills Faster",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2021-05-17T12:00:20Z",
+   "seconds": 6735,
+   "topics": []
+  },
+  {
+   "id": "xaE9XyMMAHY",
+   "title": "Supercharge Exercise Performance & Recovery with Cooling",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2021-05-10T12:00:17Z",
+   "seconds": 5031,
+   "topics": []
+  },
+  {
+   "id": "JPX8g8ibKFc",
+   "title": "Using Cortisol & Adrenaline to Boost Our Energy & Immune System Function",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2021-05-03T12:00:07Z",
+   "seconds": 6398,
+   "topics": []
+  },
+  {
+   "id": "x7qbJeRxWGw",
+   "title": "How to Control Your Metabolism by Thyroid & Growth Hormone",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2021-04-26T12:00:33Z",
+   "seconds": 6361,
+   "topics": []
+  },
+  {
+   "id": "17O5mgXZ9ZU",
+   "title": "How Our Hormones Control Our Hunger, Eating & Satiety",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2021-04-19T12:00:01Z",
+   "seconds": 5983,
+   "topics": []
+  },
+  {
+   "id": "qJXKhu5UZwk",
+   "title": "The Science of How to Optimize Testosterone & Estrogen",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2021-04-12T12:00:13Z",
+   "seconds": 7367,
+   "topics": []
+  },
+  {
+   "id": "J7SrAEacyf8",
+   "title": "How Hormones Shape Sexual Development",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2021-04-05T12:00:16Z",
+   "seconds": 5903,
+   "topics": []
+  },
+  {
+   "id": "hcuMLQVAgEg",
+   "title": "The Science of Emotions & Relationships",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2021-03-29T12:00:13Z",
+   "seconds": 6062,
+   "topics": []
+  },
+  {
+   "id": "vA50EK70whE",
+   "title": "How to Increase Motivation & Drive",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2021-03-22T12:00:15Z",
+   "seconds": 5343,
+   "topics": []
+  },
+  {
+   "id": "XfURDjegrAw",
+   "title": "How Foods and Nutrients Control Our Moods",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2021-03-15T12:00:08Z",
+   "seconds": 6248,
+   "topics": []
+  },
+  {
+   "id": "ntfcfJ28eiU",
+   "title": "Tools for Managing Stress & Anxiety",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2021-03-08T13:00:12Z",
+   "seconds": 5904,
+   "topics": []
+  },
+  {
+   "id": "mcPSRWUYCv0",
+   "title": "Control Pain & Heal Faster with Your Brain",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2021-03-01T13:30:10Z",
+   "seconds": 5878,
+   "topics": []
+  },
+  {
+   "id": "uuP-1ioh4LY",
+   "title": "Optimize Your Learning & Creativity With Science-Based Tools",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2021-02-22T13:00:15Z",
+   "seconds": 5435,
+   "topics": []
+  },
+  {
+   "id": "hx3U64IXFOY",
+   "title": "Learn Faster Using Failures, Movement & Balance",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2021-02-15T13:30:06Z",
+   "seconds": 5286,
+   "topics": []
+  },
+  {
+   "id": "LG53Vxum0as",
+   "title": "How to Focus to Change Your Brain",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2021-02-08T12:30:01Z",
+   "seconds": 5383,
+   "topics": []
+  },
+  {
+   "id": "FFwA0QFmpQ4",
+   "title": "Understand and Use Dreams to Learn and Forget",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2021-02-01T13:00:05Z",
+   "seconds": 4670,
+   "topics": []
+  },
+  {
+   "id": "NAATB55oxeQ",
+   "title": "How to Defeat Jet Lag, Shift Work & Sleeplessness",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2021-01-25T13:00:18Z",
+   "seconds": 6656,
+   "topics": []
+  },
+  {
+   "id": "nwSkFq4tyC0",
+   "title": "Using Science to Optimize Sleep, Learning & Metabolism",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2021-01-18T13:00:25Z",
+   "seconds": 6086,
+   "topics": []
+  },
+  {
+   "id": "nm1TxQj9IsQ",
+   "title": "Master Your Sleep & Be More Alert When Awake",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2021-01-11T13:59:33Z",
+   "seconds": 4925,
+   "topics": []
+  },
+  {
+   "id": "H-XfCl-HpRM",
+   "title": "How Your Brain Works & Changes",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2021-01-04T16:00:44Z",
+   "seconds": 3751,
+   "topics": []
+  },
+  {
+   "id": "4b6bwcWK6GE",
+   "title": "Welcome to the Huberman Lab Podcast",
+   "channel": "Huberman Lab",
+   "channelId": "UC2D2CMWXMOVWx7giW1n3LIg",
+   "published": "2020-12-23T15:00:05Z",
+   "seconds": 263,
+   "topics": []
+  }
+ ]
+}
