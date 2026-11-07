@@ -40,10 +40,14 @@
     <div id="sort" class="seg" aria-label="Sort"></div>
     <div id="lengths" class="seg" aria-label="Length"></div>
   </div>
-  <select id="channel" class="channel" aria-label="Channel" hidden></select>
+  <div class="row3">
+    <select id="status" class="channel" aria-label="Watch status"></select>
+    <select id="channel" class="channel" aria-label="Channel" hidden></select>
+  </div>
 </div>
 
 <main>
+  <section id="shelf" class="shelf" hidden></section>
   <ol id="list" class="list"></ol>
   <p id="empty" class="empty" hidden>No videos match those filters.</p>
   <div id="more" class="more" aria-hidden="true"></div>

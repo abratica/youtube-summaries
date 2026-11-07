@@ -22,13 +22,39 @@
     length: store.get("length", "any"),
     sort: store.get("sort", "new"),
     channel: store.get("channel", "All"),
+    status: store.get("status", "all"),
     q: "",
     shown: PAGE,
   };
   let videos = [];
+  let byId = {};
   let areas = [];
   let channelArea = {};
   let filtered = [];
+
+  /* ── Watch tracking (this device) ──
+     watch[id] = { t: seconds watched, d: duration, w: 1 if watched, s: 1 if saved, at: last touched } */
+  let watch = {};
+  try { watch = JSON.parse(localStorage.getItem("ys:watch") || "{}") || {}; } catch { watch = {}; }
+  let saveTimer;
+  const persistWatch = () => {
+    clearTimeout(saveTimer);
+    saveTimer = setTimeout(() => { try { localStorage.setItem("ys:watch", JSON.stringify(watch)); } catch {} }, 300);
+  };
+  const W = (id) => watch[id] || {};
+  const setW = (id, patch) => {
+    const next = { ...W(id), ...patch, at: Date.now() };
+    if (!next.t && !next.w && !next.s) delete watch[id]; else watch[id] = next;
+    persistWatch();
+  };
+  const inProgress = (id) => { const w = W(id); return !w.w && w.t > 20; };
+  const STATUSES = [
+    { id: "all", label: "All videos", test: () => true },
+    { id: "progress", label: "Continue watching", test: (v) => inProgress(v.id) },
+    { id: "saved", label: "Saved", test: (v) => !!W(v.id).s },
+    { id: "unwatched", label: "Unwatched", test: (v) => !W(v.id).w },
+    { id: "watched", label: "Watched", test: (v) => !!W(v.id).w },
+  ];
 
   // Theme: follows the system until toggled, then remembers the choice.
   const theme = store.get("theme", "");
@@ -80,6 +106,7 @@
     }
     if (skip !== "length" && !LENGTHS.find((l) => l.id === state.length).test(v.seconds)) return false;
     if (state.channel !== "All" && v.channel !== state.channel) return false;
+    if (state.status !== "all" && !STATUSES.find((x) => x.id === state.status).test(v)) return false;
     if (state.q) {
       const words = state.q.toLowerCase().split(/\s+/).filter(Boolean);
       if (!words.every((w) => v._hay.includes(w))) return false;
@@ -147,14 +174,50 @@
       .join("");
   }
 
+  const fmtLeft = (sec) => {
+    const m = Math.max(1, Math.round(sec / 60));
+    return m >= 60 ? `${Math.floor(m / 60)}h ${String(m % 60).padStart(2, "0")}m left` : `${m}m left`;
+  };
+
+  function thumbHTML(v) {
+    const w = W(v.id);
+    const pct = !w.w && w.t > 20 ? Math.min(100, (w.t / (w.d || v.seconds || 1)) * 100) : 0;
+    return `<div class="thumb"><img loading="lazy" decoding="async" alt="" src="https://i.ytimg.com/vi/${v.id}/mqdefault.jpg">
+      ${w.w ? '<span class="seen-badge">✓ Watched</span>' : ""}
+      <span class="dur">${fmtDur(v.seconds)}</span>
+      ${pct ? `<span class="prog"><i style="width:${pct.toFixed(1)}%"></i></span>` : ""}</div>`;
+  }
+
   function itemHTML(v) {
-    const tags = v.topics.filter((t) => t !== "Other").map((t) => `<span class="tag">${esc(tagLabel(t))}</span>`).join("");
+    const w = W(v.id);
+    const tags = (w.s ? '<span class="tag saved">★ Saved</span>' : "") +
+      v.topics.filter((t) => t !== "Other").map((t) => `<span class="tag">${esc(tagLabel(t))}</span>`).join("");
     const chan = ` · ${esc(v.channel)}`;
-    return `<li class="item"><a href="https://www.youtube.com/watch?v=${v.id}" target="_blank" rel="noopener">
-      <div class="thumb"><img loading="lazy" decoding="async" alt="" src="https://i.ytimg.com/vi/${v.id}/mqdefault.jpg"><span class="dur">${fmtDur(v.seconds)}</span></div>
+    const left = inProgress(v.id) ? ` · <b class="left">${fmtLeft((w.d || v.seconds) - w.t)}</b>` : "";
+    return `<li class="item${w.w ? " seen" : ""}"><a href="https://www.youtube.com/watch?v=${v.id}" data-id="${v.id}">
+      ${thumbHTML(v)}
       <div class="meta"><p class="title">${titleHTML(v.title)}</p>
-      <p class="info">${fmtDate(v.published)}${chan}${v.views ? " · " + fmtViews(v.views) : ""}</p>
+      <p class="info">${fmtDate(v.published)}${chan}${v.views ? " · " + fmtViews(v.views) : ""}${left}</p>
       <div class="tags">${tags}</div></div></a></li>`;
+  }
+
+  function renderShelf() {
+    const items = state.q || state.status !== "all" ? [] : videos
+      .filter((v) => inProgress(v.id) && (state.area === "all" || areaOf(v) === state.area))
+      .sort((a, b) => W(b.id).at - W(a.id).at)
+      .slice(0, 12);
+    const el = $("#shelf");
+    el.hidden = !items.length;
+    if (!items.length) return;
+    el.innerHTML = `<h2>Continue watching</h2><div class="shelf-row">${items.map((v) =>
+      `<a class="shelf-card" href="https://www.youtube.com/watch?v=${v.id}" data-id="${v.id}">${thumbHTML(v)}
+        <p class="title">${titleHTML(v.title)}</p><p class="info">${fmtLeft((W(v.id).d || v.seconds) - W(v.id).t)}</p></a>`).join("")}</div>`;
+  }
+
+  function renderStatus() {
+    $("#status").innerHTML = STATUSES
+      .map((x) => `<option value="${x.id}"${x.id === state.status ? " selected" : ""}>${x.label}</option>`)
+      .join("");
   }
 
   const SORTS = [{ id: "new", label: "Newest" }, { id: "pop", label: "Popular" }];
@@ -190,10 +253,12 @@
     renderTopics();
     renderLengths();
     renderSort();
+    renderStatus();
+    renderShelf();
     renderList();
   }
 
-  const save = () => { for (const k of ["area", "topic", "sub", "length", "channel"]) store.set(k, state[k]); };
+  const save = () => { for (const k of ["area", "topic", "sub", "length", "channel", "status"]) store.set(k, state[k]); };
 
   $("#areas").addEventListener("click", (e) => {
     const b = e.target.closest(".tab");
@@ -227,6 +292,10 @@
     state.length = b.dataset.l;
     save(); render();
   });
+  $("#status").addEventListener("change", (e) => {
+    state.status = e.target.value;
+    save(); render(); window.scrollTo({ top: 0 });
+  });
   $("#channel").addEventListener("change", (e) => {
     state.channel = e.target.value;
     save(); render();
@@ -259,12 +328,147 @@
       ...v,
       _hay: (v.title + " " + v.channel + " " + v.topics.map(leaf).join(" ")).toLowerCase(),
     }));
+    byId = Object.fromEntries(videos.map((v) => [v.id, v]));
+    if (!STATUSES.some((x) => x.id === state.status)) state.status = "all";
     if (state.area !== "all" && !areas.some((a) => a.id === state.area)) state.area = "all";
     if (!LENGTHS.some((l) => l.id === state.length)) state.length = "any";
     render();
     $("#foot").textContent = "Updated " + new Date(data.updated).toLocaleString("en-US", { month: "short", day: "numeric", hour: "numeric", minute: "2-digit" });
   }).catch(() => {
     $("#count").textContent = "Couldn't load the library. Check your connection.";
+  });
+
+  /* ── In-app player ──
+     Tapping a video opens YouTube's official embedded player in a full-screen sheet,
+     resuming where you left off. Android's back gesture closes the sheet. */
+  let ytReady;
+  const loadYT = () => ytReady || (ytReady = new Promise((resolve) => {
+    if (window.YT && window.YT.Player) return resolve();
+    window.onYouTubeIframeAPIReady = resolve;
+    const sc = document.createElement("script");
+    sc.src = "https://www.youtube.com/iframe_api";
+    document.head.appendChild(sc);
+  }));
+  let player = null, current = null, tick = null;
+
+  const ytUrl = (id, t) => `https://www.youtube.com/watch?v=${id}${t > 5 ? `&t=${Math.floor(t)}s` : ""}`;
+
+  function record() {
+    if (!player || !current || typeof player.getCurrentTime !== "function") return;
+    const t = player.getCurrentTime() || 0, d = player.getDuration() || current.seconds;
+    if (!t) return;
+    if (d && t / d >= 0.92) setW(current.id, { w: 1, t: 0, d });
+    else setW(current.id, { t, d });
+    renderActions();
+  }
+
+  function renderActions() {
+    const el = document.querySelector(".sheet-actions");
+    if (!el || !current) return;
+    const w = W(current.id);
+    el.innerHTML = `
+      <button type="button" class="act" data-act="save" aria-pressed="${!!w.s}">${w.s ? "★ Saved" : "☆ Save"}</button>
+      <button type="button" class="act" data-act="watched" aria-pressed="${!!w.w}">${w.w ? "✓ Watched" : "Mark watched"}</button>
+      <a class="act primary" data-act="yt" href="${ytUrl(current.id, w.t)}" target="_blank" rel="noopener">Open in YouTube ↗</a>`;
+  }
+
+  function openPlayer(id) {
+    const v = byId[id];
+    if (!v) return;
+    current = v;
+    const w = W(id);
+    const start = !w.w && w.t > 20 && w.t < (w.d || v.seconds) - 30 ? Math.floor(w.t) : 0;
+    const tags = v.topics.filter((t) => t !== "Other").map((t) => `<span class="tag">${esc(tagLabel(t))}</span>`).join("");
+    const sheet = document.createElement("div");
+    sheet.className = "sheet";
+    sheet.setAttribute("role", "dialog");
+    sheet.setAttribute("aria-label", v.title);
+    sheet.innerHTML = `
+      <div class="sheet-inner">
+        <div class="sheet-top"><button type="button" class="sheet-close" aria-label="Close">
+          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          ${start ? `<span class="resume">Resuming at ${fmtClock(start)}</span>` : ""}</div>
+        <div class="player-wrap"><div id="yt-player"></div></div>
+        <div class="sheet-body">
+          <h2 class="sheet-title">${titleHTML(v.title)}</h2>
+          <p class="info">${fmtDate(v.published)} · ${esc(v.channel)} · ${fmtDur(v.seconds)}${v.views ? " · " + fmtViews(v.views) : ""}</p>
+          <div class="tags">${tags}</div>
+          <div class="sheet-actions"></div>
+        </div>
+      </div>`;
+    document.body.appendChild(sheet);
+    document.body.classList.add("sheet-open");
+    renderActions();
+    history.pushState({ sheet: id }, "");
+
+    sheet.querySelector(".sheet-close").addEventListener("click", () => history.back());
+    sheet.querySelector(".sheet-actions").addEventListener("click", (e) => {
+      const b = e.target.closest("[data-act]");
+      if (!b) return;
+      const ww = W(current.id);
+      if (b.dataset.act === "save") { setW(current.id, { s: ww.s ? 0 : 1 }); renderActions(); }
+      if (b.dataset.act === "watched") { setW(current.id, ww.w ? { w: 0, t: 0 } : { w: 1, t: 0 }); renderActions(); }
+      if (b.dataset.act === "yt") {
+        // Hand off at the current spot; pause here so both don't play.
+        if (player && player.getCurrentTime) {
+          record();
+          b.href = ytUrl(current.id, player.getCurrentTime());
+          try { player.pauseVideo(); } catch {}
+        }
+      }
+    });
+
+    loadYT().then(() => {
+      if (current !== v) return;
+      player = new YT.Player("yt-player", {
+        videoId: id,
+        playerVars: { start, autoplay: 1, playsinline: 1, rel: 0 },
+        events: {
+          onReady: (e) => { try { e.target.playVideo(); } catch {} },
+          onStateChange: (e) => {
+            clearInterval(tick);
+            if (e.data === YT.PlayerState.PLAYING) tick = setInterval(record, 5000);
+            if (e.data === YT.PlayerState.PAUSED) record();
+            if (e.data === YT.PlayerState.ENDED) { setW(current.id, { w: 1, t: 0 }); renderActions(); }
+          },
+          onError: () => {
+            const wrap = document.querySelector(".player-wrap");
+            if (wrap) wrap.innerHTML = `<div class="player-msg"><p>This video can't play inside PS Tube.</p>
+              <a class="act primary" href="${ytUrl(id, W(id).t)}" target="_blank" rel="noopener">Open in YouTube ↗</a></div>`;
+          },
+        },
+      });
+    });
+  }
+
+  function closePlayer() {
+    record();
+    clearInterval(tick);
+    try { player && player.destroy(); } catch {}
+    player = null; current = null;
+    document.querySelector(".sheet")?.remove();
+    document.body.classList.remove("sheet-open");
+    // refresh progress bars without losing the scroll position
+    renderShelf();
+    const y = window.scrollY;
+    filtered = videos.filter((v) => matches(v));
+    if (state.sort === "pop") filtered.sort((a, b) => (b.views || 0) - (a.views || 0));
+    $("#list").innerHTML = filtered.slice(0, state.shown).map(itemHTML).join("");
+    window.scrollTo({ top: y });
+  }
+
+  const fmtClock = (sec) => {
+    const h = Math.floor(sec / 3600), m = Math.floor((sec % 3600) / 60), s2 = Math.floor(sec % 60);
+    return (h ? `${h}:${String(m).padStart(2, "0")}` : `${m}`) + `:${String(s2).padStart(2, "0")}`;
+  };
+
+  window.addEventListener("popstate", () => { if (document.querySelector(".sheet")) closePlayer(); });
+  document.addEventListener("visibilitychange", () => { if (document.hidden) record(); });
+  document.addEventListener("click", (e) => {
+    const a = e.target.closest("a[data-id]");
+    if (!a || e.metaKey || e.ctrlKey) return;
+    e.preventDefault();
+    openPlayer(a.dataset.id);
   });
 
   if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(() => {});
