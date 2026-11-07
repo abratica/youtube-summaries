@@ -1,7 +1,7 @@
 // App shell is cached; the library data is fetched fresh when online and
 // falls back to the last copy when offline.
-const CACHE = "pt-v11";
-const SHELL = ["./", "index.html", "styles.css?v=12", "app.js?v=12", "topics.json", "channels.json", "manifest.webmanifest", "icons/icon-192.png", "icons/icon-512.png", "icons/logo-light.png", "icons/logo-dark.png"];
+const CACHE = "pt-v12";
+const SHELL = ["./", "index.html", "styles.css?v=13", "app.js?v=13", "topics.json", "channels.json", "manifest.webmanifest", "icons/icon-192.png", "icons/icon-512.png", "icons/logo-light.png", "icons/logo-dark.png"];
 
 self.addEventListener("install", (e) => {
   e.waitUntil(caches.open(CACHE).then((c) => c.addAll(SHELL)).then(() => self.skipWaiting()));

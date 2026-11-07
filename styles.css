@@ -321,3 +321,15 @@ body.sheet-open { overflow: hidden; }
 .act.primary { background: #e5302a; border-color: #e5302a; color: #fff; margin-left: auto; }
 .player-msg .act.primary { margin: 0 auto; }
 @media (max-width: 420px) { .act.primary { margin-left: 0; flex: 1 0 100%; justify-content: center; } }
+
+/* ── Turn the phone sideways while a video is open: the video fills the screen ── */
+@media (orientation: landscape) and (max-height: 560px) {
+  .sheet { background: #000; overflow: hidden; }
+  .sheet .sheet-inner { max-width: none; padding: 0; }
+  .sheet .sheet-top, .sheet .sheet-body { display: none; }
+  .sheet .player-wrap {
+    position: fixed; inset: 0; z-index: 80; aspect-ratio: auto; width: 100vw; height: 100vh; height: 100dvh;
+  }
+  .sheet .pc-bot { padding-left: max(14px, env(safe-area-inset-left)); padding-right: max(14px, env(safe-area-inset-right)); padding-bottom: max(10px, env(safe-area-inset-bottom)); }
+  .sheet .pc-mid { gap: 56px; }
+}

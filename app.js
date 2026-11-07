@@ -562,6 +562,15 @@
   }
 
   window.addEventListener("popstate", () => { if (document.querySelector(".sheet")) closePlayer(); });
+  // Sideways = the video fills the screen (CSS handles the layout). Also try real fullscreen,
+  // which hides the status bar where the phone allows it, and leave it when turned upright.
+  const landscapeMQ = matchMedia("(orientation: landscape) and (max-height: 560px)");
+  landscapeMQ.addEventListener?.("change", (e) => {
+    const wrap = document.querySelector(".sheet .player-wrap");
+    if (!wrap) return;
+    if (e.matches) { wrap.requestFullscreen?.().catch(() => {}); showControls(); }
+    else if (document.fullscreenElement) document.exitFullscreen().catch(() => {});
+  });
   document.addEventListener("visibilitychange", () => { if (document.hidden) record(); });
   document.addEventListener("click", (e) => {
     const x = e.target.closest("[data-unshelf]");
