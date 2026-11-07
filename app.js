@@ -3,6 +3,7 @@
   const PAGE = 40;
   const LENGTHS = [
     { id: "any", label: "Any", test: () => true },
+    { id: "tiny", label: "<15m", test: (s) => s < 900 },
     { id: "short", label: "<30m", test: (s) => s < 1800 },
     { id: "mid", label: "30–90m", test: (s) => s >= 1800 && s < 5400 },
     { id: "long", label: "90m+", test: (s) => s >= 5400 },
