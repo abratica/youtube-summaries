@@ -339,8 +339,9 @@
   });
 
   /* ── In-app player ──
-     Tapping a video opens YouTube's official embedded player in a full-screen sheet,
-     resuming where you left off. Android's back gesture closes the sheet. */
+     YouTube's official embedded player, with YouTube's own controls switched off and a
+     minimal set of PS Tube controls on top. Taps go to our controls, never to YouTube's
+     links, so nothing kicks you out to the YouTube app. Android's back gesture closes it. */
   let ytReady;
   const loadYT = () => ytReady || (ytReady = new Promise((resolve) => {
     if (window.YT && window.YT.Player) return resolve();
@@ -349,9 +350,23 @@
     sc.src = "https://www.youtube.com/iframe_api";
     document.head.appendChild(sc);
   }));
-  let player = null, current = null, tick = null;
+  let player = null, current = null, tick = null, ui = null, hideT = null, seeking = false, everPlayed = false;
+  const SPEEDS = [1, 1.25, 1.5, 1.75, 2];
+  let speed = parseFloat(store.get("speed", "1")) || 1;
 
   const ytUrl = (id, t) => `https://www.youtube.com/watch?v=${id}${t > 5 ? `&t=${Math.floor(t)}s` : ""}`;
+  const fmtClock = (sec) => {
+    sec = Math.max(0, Math.floor(sec || 0));
+    const h = Math.floor(sec / 3600), m = Math.floor((sec % 3600) / 60), s2 = sec % 60;
+    return (h ? `${h}:${String(m).padStart(2, "0")}` : `${m}`) + `:${String(s2).padStart(2, "0")}`;
+  };
+  const ICON = {
+    play: '<svg viewBox="0 0 24 24" width="34" height="34" aria-hidden="true"><path d="M8 5.5v13l10.5-6.5z" fill="currentColor"/></svg>',
+    pause: '<svg viewBox="0 0 24 24" width="34" height="34" aria-hidden="true"><path d="M7 5h3.5v14H7zM13.5 5H17v14h-3.5z" fill="currentColor"/></svg>',
+    back: '<svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path d="M12 5V2L7 6l5 4V7a6 6 0 1 1-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><text x="12" y="16.5" font-size="7" font-weight="700" text-anchor="middle" fill="currentColor" font-family="Inter,sans-serif">15</text></svg>',
+    fwd: '<svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path d="M12 5V2l5 4-5 4V7a6 6 0 1 0 6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><text x="12" y="16.5" font-size="7" font-weight="700" text-anchor="middle" fill="currentColor" font-family="Inter,sans-serif">15</text></svg>',
+    fs: '<svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>',
+  };
 
   function record() {
     if (!player || !current || typeof player.getCurrentTime !== "function") return;
@@ -372,10 +387,29 @@
       <a class="act primary" data-act="yt" href="${ytUrl(current.id, w.t)}" target="_blank" rel="noopener">Open in YouTube ↗</a>`;
   }
 
+  const playing = () => player && player.getPlayerState && player.getPlayerState() === YT.PlayerState.PLAYING;
+
+  function showControls(autoHide = true) {
+    if (!ui) return;
+    ui.wrap.classList.add("show-ui");
+    clearTimeout(hideT);
+    if (autoHide && playing()) hideT = setTimeout(() => ui && ui.wrap.classList.remove("show-ui"), 2800);
+  }
+
+  function syncUI() {
+    if (!ui || !player || !player.getCurrentTime) return;
+    const t = player.getCurrentTime() || 0, d = player.getDuration() || current.seconds || 0;
+    if (!seeking) { ui.seek.max = Math.floor(d); ui.seek.value = Math.floor(t); ui.time.textContent = fmtClock(t); }
+    ui.dur.textContent = fmtClock(d);
+    ui.seek.style.setProperty("--pct", d ? `${(Math.min(t, d) / d) * 100}%` : "0%");
+    ui.play.innerHTML = playing() ? ICON.pause : ICON.play;
+    ui.play.setAttribute("aria-label", playing() ? "Pause" : "Play");
+  }
+
   function openPlayer(id) {
     const v = byId[id];
     if (!v) return;
-    current = v;
+    current = v; everPlayed = false;
     const w = W(id);
     const start = !w.w && w.t > 20 && w.t < (w.d || v.seconds) - 30 ? Math.floor(w.t) : 0;
     const tags = v.topics.filter((t) => t !== "Other").map((t) => `<span class="tag">${esc(tagLabel(t))}</span>`).join("");
@@ -388,7 +422,26 @@
         <div class="sheet-top"><button type="button" class="sheet-close" aria-label="Close">
           <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
           ${start ? `<span class="resume">Resuming at ${fmtClock(start)}</span>` : ""}</div>
-        <div class="player-wrap"><div id="yt-player"></div></div>
+        <div class="player-wrap show-ui loading">
+          <div class="yt-host"><div id="yt-player"></div></div>
+          <img class="poster" alt="" src="https://i.ytimg.com/vi/${id}/hqdefault.jpg">
+          <div class="tap-layer"></div>
+          <div class="pc">
+            <div class="pc-mid">
+              <button type="button" class="pc-btn" data-pc="back" aria-label="Back 15 seconds">${ICON.back}</button>
+              <button type="button" class="pc-btn pc-play" data-pc="play" aria-label="Play">${ICON.play}</button>
+              <button type="button" class="pc-btn" data-pc="fwd" aria-label="Forward 15 seconds">${ICON.fwd}</button>
+            </div>
+            <div class="pc-bot">
+              <span class="pc-time">${fmtClock(start)}</span>
+              <input class="pc-seek" type="range" min="0" max="${v.seconds}" value="${start}" step="1" aria-label="Seek">
+              <span class="pc-dur">${fmtClock(v.seconds)}</span>
+              <button type="button" class="pc-chip" data-pc="speed" aria-label="Playback speed">${speed}×</button>
+              <button type="button" class="pc-chip" data-pc="fs" aria-label="Full screen">${ICON.fs}</button>
+            </div>
+          </div>
+          <div class="pc-spin" aria-hidden="true"></div>
+        </div>
         <div class="sheet-body">
           <h2 class="sheet-title">${titleHTML(v.title)}</h2>
           <p class="info">${fmtDate(v.published)} · ${esc(v.channel)} · ${fmtDur(v.seconds)}${v.views ? " · " + fmtViews(v.views) : ""}</p>
@@ -401,20 +454,49 @@
     renderActions();
     history.pushState({ sheet: id }, "");
 
+    const wrap = sheet.querySelector(".player-wrap");
+    ui = { wrap, seek: wrap.querySelector(".pc-seek"), time: wrap.querySelector(".pc-time"),
+           dur: wrap.querySelector(".pc-dur"), play: wrap.querySelector(".pc-play"), speedBtn: wrap.querySelector('[data-pc="speed"]') };
+
     sheet.querySelector(".sheet-close").addEventListener("click", () => history.back());
+    wrap.querySelector(".tap-layer").addEventListener("click", () => {
+      if (wrap.classList.contains("show-ui") && playing()) { wrap.classList.remove("show-ui"); clearTimeout(hideT); }
+      else showControls();
+    });
+    wrap.addEventListener("click", (e) => {
+      const b = e.target.closest("[data-pc]");
+      if (!b || !player || !player.getCurrentTime) return;
+      const t = player.getCurrentTime() || 0;
+      if (b.dataset.pc === "play") playing() ? player.pauseVideo() : player.playVideo();
+      if (b.dataset.pc === "back") player.seekTo(Math.max(0, t - 15), true);
+      if (b.dataset.pc === "fwd") player.seekTo(t + 15, true);
+      if (b.dataset.pc === "speed") {
+        speed = SPEEDS[(SPEEDS.indexOf(speed) + 1) % SPEEDS.length];
+        store.set("speed", String(speed));
+        player.setPlaybackRate(speed);
+        ui.speedBtn.textContent = `${speed}×`;
+      }
+      if (b.dataset.pc === "fs") {
+        if (document.fullscreenElement) document.exitFullscreen().catch(() => {});
+        else wrap.requestFullscreen?.().then(() => screen.orientation?.lock?.("landscape").catch(() => {})).catch(() => {});
+      }
+      setTimeout(syncUI, 60);
+      showControls();
+    });
+    ui.seek.addEventListener("input", () => { seeking = true; ui.time.textContent = fmtClock(+ui.seek.value); showControls(false); });
+    ui.seek.addEventListener("change", () => { seeking = false; player && player.seekTo(+ui.seek.value, true); showControls(); });
+
     sheet.querySelector(".sheet-actions").addEventListener("click", (e) => {
       const b = e.target.closest("[data-act]");
       if (!b) return;
       const ww = W(current.id);
       if (b.dataset.act === "save") { setW(current.id, { s: ww.s ? 0 : 1 }); renderActions(); }
       if (b.dataset.act === "watched") { setW(current.id, ww.w ? { w: 0, t: 0 } : { w: 1, t: 0 }); renderActions(); }
-      if (b.dataset.act === "yt") {
+      if (b.dataset.act === "yt" && player && player.getCurrentTime) {
         // Hand off at the current spot; pause here so both don't play.
-        if (player && player.getCurrentTime) {
-          record();
-          b.href = ytUrl(current.id, player.getCurrentTime());
-          try { player.pauseVideo(); } catch {}
-        }
+        record();
+        b.href = ytUrl(current.id, player.getCurrentTime());
+        try { player.pauseVideo(); } catch {}
       }
     });
 
@@ -422,30 +504,49 @@
       if (current !== v) return;
       player = new YT.Player("yt-player", {
         videoId: id,
-        playerVars: { start, autoplay: 1, playsinline: 1, rel: 0 },
+        width: "100%", height: "100%",
+        playerVars: { start, autoplay: 1, controls: 0, disablekb: 1, fs: 0, playsinline: 1, rel: 0,
+                      iv_load_policy: 3, cc_load_policy: 0, origin: location.origin },
         events: {
-          onReady: (e) => { try { e.target.playVideo(); } catch {} },
-          onStateChange: (e) => {
+          onReady: (e) => {
+            wrap.classList.remove("loading");
+            try { e.target.setPlaybackRate(speed); e.target.playVideo(); } catch {}
             clearInterval(tick);
-            if (e.data === YT.PlayerState.PLAYING) tick = setInterval(record, 5000);
-            if (e.data === YT.PlayerState.PAUSED) record();
-            if (e.data === YT.PlayerState.ENDED) { setW(current.id, { w: 1, t: 0 }); renderActions(); }
+            tick = setInterval(() => { syncUI(); }, 500);
+            syncUI();
+          },
+          onStateChange: (e) => {
+            if (e.data === YT.PlayerState.PLAYING) {
+              if (!everPlayed) { everPlayed = true; wrap.classList.add("started"); }
+              wrap.classList.remove("loading");
+              showControls();
+            }
+            if (e.data === YT.PlayerState.BUFFERING) wrap.classList.add("loading");
+            if (e.data === YT.PlayerState.PAUSED) { wrap.classList.remove("loading"); record(); showControls(false); }
+            if (e.data === YT.PlayerState.ENDED) { setW(current.id, { w: 1, t: 0 }); renderActions(); showControls(false); }
+            syncUI();
           },
           onError: () => {
-            const wrap = document.querySelector(".player-wrap");
-            if (wrap) wrap.innerHTML = `<div class="player-msg"><p>This video can't play inside PS Tube.</p>
+            wrap.classList.remove("loading");
+            wrap.innerHTML = `<div class="player-msg"><p>This video can't play inside PS Tube.</p>
               <a class="act primary" href="${ytUrl(id, W(id).t)}" target="_blank" rel="noopener">Open in YouTube ↗</a></div>`;
+            ui = null;
           },
         },
       });
     });
+    // save position every 5s while playing
+    const rec = setInterval(() => { if (playing()) record(); }, 5000);
+    sheet.addEventListener("ps-close", () => clearInterval(rec), { once: true });
   }
 
   function closePlayer() {
     record();
-    clearInterval(tick);
+    clearInterval(tick); clearTimeout(hideT);
+    document.querySelector(".sheet")?.dispatchEvent(new Event("ps-close"));
+    if (document.fullscreenElement) document.exitFullscreen().catch(() => {});
     try { player && player.destroy(); } catch {}
-    player = null; current = null;
+    player = null; current = null; ui = null;
     document.querySelector(".sheet")?.remove();
     document.body.classList.remove("sheet-open");
     // refresh progress bars without losing the scroll position
@@ -456,11 +557,6 @@
     $("#list").innerHTML = filtered.slice(0, state.shown).map(itemHTML).join("");
     window.scrollTo({ top: y });
   }
-
-  const fmtClock = (sec) => {
-    const h = Math.floor(sec / 3600), m = Math.floor((sec % 3600) / 60), s2 = Math.floor(sec % 60);
-    return (h ? `${h}:${String(m).padStart(2, "0")}` : `${m}`) + `:${String(s2).padStart(2, "0")}`;
-  };
 
   window.addEventListener("popstate", () => { if (document.querySelector(".sheet")) closePlayer(); });
   document.addEventListener("visibilitychange", () => { if (document.hidden) record(); });
