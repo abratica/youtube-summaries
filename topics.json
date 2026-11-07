@@ -21,18 +21,56 @@
       "name": "Music Production",
       "short": "Music",
       "topics": [
-        { "name": "Mixing", "sub": ["EQ", "Compression", "Saturation & Distortion", "Reverb & Delay", "Stereo & Width", "Levels & Gain Staging"] },
-        { "name": "Mastering" },
-        { "name": "Producing", "sub": ["Arrangement", "Drums & Groove", "Melody & Chords", "Sampling", "Genre Guides", "Workflow & Ableton", "Finishing Tracks"] },
-        { "name": "Sound Design", "sub": ["Synths", "Bass", "FX & Transitions"] },
-        { "name": "Mindset & Career" }
+        {
+          "name": "Mixing",
+          "sub": [
+            "EQ",
+            "Compression",
+            "Saturation & Distortion",
+            "Reverb & Delay",
+            "Stereo & Width",
+            "Levels & Gain Staging"
+          ]
+        },
+        {
+          "name": "Mastering"
+        },
+        {
+          "name": "Producing",
+          "sub": [
+            "Arrangement",
+            "Drums & Groove",
+            "Melody & Chords",
+            "Sampling",
+            "Genre Guides",
+            "Workflow & Ableton",
+            "Finishing Tracks"
+          ]
+        },
+        {
+          "name": "Sound Design",
+          "sub": [
+            "Synths",
+            "Bass",
+            "FX & Transitions"
+          ]
+        },
+        {
+          "name": "Mindset & Career"
+        }
       ]
     },
     {
       "id": "poker",
       "name": "Poker",
       "short": "Poker",
-      "topics": ["Preflop", "Postflop", "Tournaments", "Mindset", "Hand Reviews"]
+      "topics": [
+        "Preflop",
+        "Postflop",
+        "Tournaments",
+        "Mindset",
+        "Hand Reviews"
+      ]
     },
     {
       "id": "sales",
@@ -44,7 +82,47 @@
       "id": "reality-tv",
       "name": "Reality TV",
       "short": "Reality TV",
-      "topics": []
+      "topics": [
+        {
+          "name": "The Traitors",
+          "sub": [
+            "US",
+            "Canada",
+            "UK",
+            "Other"
+          ]
+        },
+        {
+          "name": "Survivor",
+          "sub": [
+            "US",
+            "Australian",
+            "International"
+          ]
+        },
+        {
+          "name": "Big Brother",
+          "sub": [
+            "US",
+            "Live Feeds",
+            "Canada",
+            "Celebrity",
+            "Other"
+          ]
+        },
+        {
+          "name": "Netflix",
+          "sub": [
+            "Love Is Blind",
+            "Perfect Match",
+            "The Circle",
+            "Squid Game: The Challenge",
+            "The Mole",
+            "Nothing But Netflix",
+            "Other Netflix"
+          ]
+        }
+      ]
     }
   ]
 }

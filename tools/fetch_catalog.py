@@ -19,6 +19,12 @@ import urllib.parse
 import urllib.request
 from datetime import datetime, timezone
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import rules_reality  # noqa: E402
+
+# Channels with "rules": "<name>" in channels.json are filtered + tagged by these.
+RULES = {"reality": rules_reality.classify}
+
 API = "https://www.googleapis.com/youtube/v3/"
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SHORTS_MAX_SECONDS = 180
@@ -91,7 +97,7 @@ def main():
     old = {v["id"]: v for v in load(vpath, {"videos": []})["videos"]}
     descs = load(dpath, {})
 
-    videos, added, skipped = [], 0, 0
+    videos, added, skipped, filtered = [], 0, 0, 0
     resolved = {}
     for ch in channels:
         try:
@@ -111,7 +117,18 @@ def main():
             if secs <= SHORTS_MAX_SECONDS or live != "none" or item["status"].get("privacyStatus") != "public":
                 skipped += 1
                 continue
+            desc = item["snippet"].get("description", "")
             prev = old.get(vid, {})
+            rule = RULES.get(ch.get("rules"))
+            if rule:
+                # Rule channels: keep only matching videos, and tag them by rule every run
+                # (so improving the rules re-tags the whole back catalog).
+                topics = rule(item["snippet"]["title"], desc)
+                if not topics:
+                    filtered += 1
+                    continue
+            else:
+                topics = prev.get("topics", [])
             if not prev:
                 added += 1
             videos.append({
@@ -122,9 +139,10 @@ def main():
                 "area": ch.get("area", "other"),
                 "published": item["snippet"]["publishedAt"],
                 "seconds": secs,
-                "topics": prev.get("topics", []),
+                "topics": topics,
             })
-            descs[vid] = item["snippet"].get("description", "")
+            if not rule:  # the tagger only needs descriptions for videos it tags by hand
+                descs[vid] = desc
         print(f"{name}: {sum(v['channelId'] == cid for v in videos)} videos")
 
     seen = set()
@@ -139,7 +157,8 @@ def main():
     save(dpath, descs)
     save(os.path.join(ROOT, "data", "channels-resolved.json"), resolved)
     untagged = sum(not v["topics"] for v in videos)
-    print(f"total {len(videos)}, new {added}, skipped shorts/live/private {skipped}, untagged {untagged}")
+    print(f"total {len(videos)}, new {added}, skipped shorts/live/private {skipped}, "
+          f"filtered out by rules {filtered}, untagged {untagged}")
 
 
 if __name__ == "__main__":

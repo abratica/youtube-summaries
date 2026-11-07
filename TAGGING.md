@@ -20,6 +20,10 @@ A topic is either a plain name (`"Sleep"`) or a parent with sub-topics
 - Topics without sub-topics are written plainly: `"Mastering"`, `"Sleep"`.
 - If nothing in the area's list fits, use `"Other"`.
 
+Reality TV (RHAP channels) is filtered and tagged automatically by
+`tools/rules_reality.py` on every catalog run, so those videos never arrive
+untagged. To change what's kept or how it's tagged, edit that file.
+
 ## Steps
 
 1. Open `data/videos.json`. Find every video whose `topics` list is empty.
