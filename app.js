@@ -20,6 +20,7 @@
     topic: store.get("topic", "All"),
     sub: store.get("sub", "All"),
     length: store.get("length", "any"),
+    sort: store.get("sort", "new"),
     channel: store.get("channel", "All"),
     q: "",
     shown: PAGE,
@@ -49,6 +50,12 @@
     new Date(iso).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
   const esc = (t) => String(t).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
   const leaf = (t) => t.slice(t.lastIndexOf("/") + 1);
+  // Sub-topics like "US" or "Other" need their show name to make sense on a card.
+  const GENERIC = new Set(["US", "UK", "Canada", "Other", "Australian", "International", "Celebrity", "Live Feeds"]);
+  const tagLabel = (t) => {
+    const i = t.lastIndexOf("/"), l = leaf(t);
+    return i > 0 && GENERIC.has(l) ? `${t.slice(0, i)} ${l}` : l;
+  };
   const inTopic = (tags, p) => tags.some((t) => t === p || t.startsWith(p + "/"));
 
   // "Title | Guest" -> title with the guest name set apart.
@@ -141,17 +148,29 @@
   }
 
   function itemHTML(v) {
-    const tags = v.topics.filter((t) => t !== "Other").map((t) => `<span class="tag">${esc(leaf(t))}</span>`).join("");
+    const tags = v.topics.filter((t) => t !== "Other").map((t) => `<span class="tag">${esc(tagLabel(t))}</span>`).join("");
     const chan = ` · ${esc(v.channel)}`;
     return `<li class="item"><a href="https://www.youtube.com/watch?v=${v.id}" target="_blank" rel="noopener">
       <div class="thumb"><img loading="lazy" decoding="async" alt="" src="https://i.ytimg.com/vi/${v.id}/mqdefault.jpg"><span class="dur">${fmtDur(v.seconds)}</span></div>
       <div class="meta"><p class="title">${titleHTML(v.title)}</p>
-      <p class="info">${fmtDate(v.published)}${chan}</p>
+      <p class="info">${fmtDate(v.published)}${chan}${v.views ? " · " + fmtViews(v.views) : ""}</p>
       <div class="tags">${tags}</div></div></a></li>`;
   }
 
+  const SORTS = [{ id: "new", label: "Newest" }, { id: "pop", label: "Popular" }];
+  function renderSort() {
+    $("#sort").innerHTML = SORTS
+      .map((o) => `<button data-o="${o.id}" aria-pressed="${o.id === state.sort}">${o.label}</button>`)
+      .join("");
+  }
+  const fmtViews = (n) =>
+    n >= 1e6 ? `${(n / 1e6).toFixed(n >= 1e7 ? 0 : 1)}M views`
+    : n >= 1e3 ? `${Math.round(n / 1e3)}K views`
+    : `${n} views`;
+
   function renderList() {
     filtered = videos.filter((v) => matches(v));
+    if (state.sort === "pop") filtered.sort((a, b) => (b.views || 0) - (a.views || 0));
     $("#list").innerHTML = filtered.slice(0, state.shown).map(itemHTML).join("");
     const area = currentArea();
     const areaTotal = state.area === "all" ? videos.length : videos.filter((v) => areaOf(v) === state.area).length;
@@ -170,6 +189,7 @@
     renderChannels();
     renderTopics();
     renderLengths();
+    renderSort();
     renderList();
   }
 
@@ -193,6 +213,13 @@
     if (!b) return;
     state.sub = b.dataset.s;
     save(); render(); window.scrollTo({ top: 0 });
+  });
+  $("#sort").addEventListener("click", (e) => {
+    const b = e.target.closest("button");
+    if (!b || b.dataset.o === state.sort) return;
+    state.sort = b.dataset.o;
+    store.set("sort", state.sort);
+    render(); window.scrollTo({ top: 0 });
   });
   $("#lengths").addEventListener("click", (e) => {
     const b = e.target.closest("button");

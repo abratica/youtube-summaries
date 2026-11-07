@@ -85,7 +85,7 @@ def uploads(playlist):
 def details(ids):
     out = []
     for i in range(0, len(ids), 50):
-        res = get("videos", part="snippet,contentDetails,status", id=",".join(ids[i:i + 50]))
+        res = get("videos", part="snippet,contentDetails,status,statistics", id=",".join(ids[i:i + 50]))
         out += res["items"]
     return out
 
@@ -139,6 +139,7 @@ def main():
                 "area": ch.get("area", "other"),
                 "published": item["snippet"]["publishedAt"],
                 "seconds": secs,
+                "views": int(item.get("statistics", {}).get("viewCount", 0) or 0),
                 "topics": topics,
             })
             if not rule:  # the tagger only needs descriptions for videos it tags by hand
