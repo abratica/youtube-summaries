@@ -48,7 +48,8 @@
     if (!next.t && !next.w && !next.s) delete watch[id]; else watch[id] = next;
     persistWatch();
   };
-  const inProgress = (id) => { const w = W(id); return !w.w && w.t > 20; };
+  // x = removed from Continue watching (position kept; playing again brings it back)
+  const inProgress = (id) => { const w = W(id); return !w.w && !w.x && w.t > 20; };
   const STATUSES = [
     { id: "all", label: "All videos", test: () => true },
     { id: "progress", label: "Continue watching", test: (v) => inProgress(v.id) },
@@ -212,6 +213,7 @@
     if (!items.length) return;
     el.innerHTML = `<h2>Continue watching</h2><div class="shelf-row">${items.map((v) =>
       `<a class="shelf-card" href="https://www.youtube.com/watch?v=${v.id}" data-id="${v.id}">${thumbHTML(v)}
+        <button type="button" class="unshelf" data-unshelf="${v.id}" aria-label="Remove from Continue watching">×</button>
         <p class="title">${titleHTML(v.title)}</p><p class="info">${fmtLeft((W(v.id).d || v.seconds) - W(v.id).t)}</p></a>`).join("")}</div>`;
   }
 
@@ -374,7 +376,7 @@
     const t = player.getCurrentTime() || 0, d = player.getDuration() || current.seconds;
     if (!t) return;
     if (d && t / d >= 0.92) setW(current.id, { w: 1, t: 0, d });
-    else setW(current.id, { t, d });
+    else setW(current.id, { t, d, x: 0 });
     renderActions();
   }
 
@@ -562,6 +564,15 @@
   window.addEventListener("popstate", () => { if (document.querySelector(".sheet")) closePlayer(); });
   document.addEventListener("visibilitychange", () => { if (document.hidden) record(); });
   document.addEventListener("click", (e) => {
+    const x = e.target.closest("[data-unshelf]");
+    if (x) {
+      e.preventDefault(); e.stopPropagation();
+      setW(x.dataset.unshelf, { x: 1 });
+      const card = x.closest(".shelf-card");
+      card.classList.add("leaving");
+      setTimeout(() => { renderShelf(); if (state.status === "progress") renderList(); }, 180);
+      return;
+    }
     const a = e.target.closest("a[data-id]");
     if (!a || e.metaKey || e.ctrlKey) return;
     e.preventDefault();
