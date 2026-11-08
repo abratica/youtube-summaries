@@ -9,6 +9,7 @@ on:
     paths:
       - channels.json
       - tools/fetch_catalog.py
+      - tools/rules_reality.py
       - .github/workflows/update.yml
 
 permissions:

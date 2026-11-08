@@ -42,7 +42,7 @@ SHOWS = [
                 r"sneaky links|age of attraction|golden ticket", I),
      None,
      [("Love Is Blind", r"love is blind"), ("Perfect Match", r"perfect match"), ("The Circle", r"circle"),
-      ("Squid Game: The Challenge", r"squid game"), ("The Mole", r"the mole"), ("Nothing But Netflix", r"nothing but netflix|\bNBN\b")],
+      ("Squid Game: The Challenge", r"squid game"), ("Too Hot to Handle", r"too hot to handle"), ("The Mole", r"the mole"), ("Nothing But Netflix", r"nothing but netflix|\bNBN\b")],
      "Other Netflix"),
 ]
 
@@ -66,3 +66,12 @@ def classify(title, desc=""):
         if desc_rx and desc_rx.search(head):
             return [tag(name, subs, default)]  # one show from description evidence
     return []
+
+
+def tag_for(show, title, default_sub=None):
+    """Tag a video/episode as `show` (used when a whole feed is about one show)."""
+    for name, _t, _d, subs, default in SHOWS:
+        if name == show:
+            sub = next((s for s, rx in subs if re.search(rx, title, I)), default_sub or default)
+            return f"{name}/{sub}"
+    return None

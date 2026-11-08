@@ -1,0 +1,51 @@
+{
+  "areas": [
+    {
+      "id": "reality-tv",
+      "name": "Reality TV",
+      "short": "Reality TV",
+      "topics": [
+        {
+          "name": "The Traitors",
+          "sub": [
+            "US",
+            "Canada",
+            "UK",
+            "Other"
+          ]
+        },
+        {
+          "name": "Survivor",
+          "sub": [
+            "US",
+            "Australian",
+            "International"
+          ]
+        },
+        {
+          "name": "Big Brother",
+          "sub": [
+            "US",
+            "Live Feeds",
+            "Canada",
+            "Celebrity",
+            "Other"
+          ]
+        },
+        {
+          "name": "Netflix",
+          "sub": [
+            "Love Is Blind",
+            "Perfect Match",
+            "The Circle",
+            "Squid Game: The Challenge",
+            "The Mole",
+            "Too Hot to Handle",
+            "Nothing But Netflix",
+            "Other Netflix"
+          ]
+        }
+      ]
+    }
+  ]
+}
