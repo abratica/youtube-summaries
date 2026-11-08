@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Rob Has a Podcast episodes about The Traitors, Survivor, Big Brother and Netflix shows, sorted by show.">
+<title>PS Pods</title>
+<meta name="theme-color" content="#08080f">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="PS Pods">
+<script>
+  // Dark by default (matches the icon); a light choice is remembered.
+  try { if (localStorage.getItem("pp:theme") === "light") document.documentElement.dataset.theme = "light"; } catch (e) {}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Saira:ital,wght@1,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=1">
+</head>
+<body>
+<header class="top">
+  <div class="brand">
+    <img class="brand-icon" src="icons/logo-96.png" alt="" width="46" height="46">
+    <div>
+      <h1 class="wordmark">PS <span>Pods</span></h1>
+      <p id="count" class="sub">Loading episodes…</p>
+    </div>
+  </div>
+  <button id="theme" class="icon-btn" aria-label="Toggle light or dark mode">
+    <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 3a9 9 0 1 0 9 9 7 7 0 0 1-9-9z"/></svg>
+  </button>
+</header>
+
+<div class="controls">
+  <label class="search">
+    <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M11 18a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm5-2 4 4"/></svg>
+    <input id="q" type="search" placeholder="Search episodes" autocomplete="off">
+  </label>
+  <div id="topics" class="chips" role="tablist" aria-label="Shows"></div>
+  <div id="subs" class="chips subs" role="tablist" aria-label="Versions" hidden></div>
+  <div class="row2">
+    <div id="lengths" class="seg" aria-label="Length"></div>
+  </div>
+  <div class="row3">
+    <div id="sort" class="seg" aria-label="Sort"></div>
+    <select id="status" class="pick" aria-label="Listen status"></select>
+    <select id="feed" class="pick" aria-label="Podcast"></select>
+  </div>
+</div>
+
+<main>
+  <section id="shelf" class="shelf" hidden></section>
+  <ol id="list" class="list"></ol>
+  <p id="empty" class="empty" hidden>No episodes match those filters.</p>
+  <div id="more" class="more" aria-hidden="true"></div>
+</main>
+
+<footer id="foot" class="foot"></footer>
+
+<div id="mini" class="mini" hidden></div>
+<script src="app.js?v=1"></script>
+</body>
+</html>
