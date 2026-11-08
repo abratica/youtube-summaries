@@ -61,6 +61,17 @@ body.sheet-open { overflow: hidden; }
   position: sticky; top: 0; z-index: 5; background: var(--bg);
   padding: 8px 16px 10px; max-width: 760px; margin: 0 auto; border-bottom: 1px solid var(--line);
 }
+.tabs {
+  display: flex; gap: 22px; overflow-x: auto; margin: 0 -16px 10px; padding: 0 16px;
+  border-bottom: 1px solid var(--line); scrollbar-width: none;
+}
+.tabs::-webkit-scrollbar { display: none; }
+.tab {
+  flex: none; border: 0; background: transparent; color: var(--muted); font: 600 14px/1 Inter, sans-serif;
+  padding: 10px 0 11px; cursor: pointer; position: relative; white-space: nowrap;
+}
+.tab[aria-selected="true"] { color: var(--ink); }
+.tab[aria-selected="true"]::after { content: ""; position: absolute; left: 0; right: 0; bottom: -1px; height: 2px; background: var(--grad); border-radius: 2px; }
 .search {
   display: flex; align-items: center; gap: 8px; background: var(--card); border: 1px solid var(--line);
   border-radius: 12px; padding: 0 12px; color: var(--muted);

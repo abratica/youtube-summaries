@@ -74,3 +74,29 @@ Music Production:
 - Sound Design/FX & Transitions: risers, impacts, sweeps, transitions.
 - Mindset & Career: motivation, creativity, releasing music, labels, marketing,
   income, Q&As and podcasts about the music career.
+
+## PS Pods (pods/)
+
+Rob Has a Podcast feeds are tagged automatically by `tools/rules_reality.py`.
+Feeds marked `"tagging": "claude"` in `pods/feeds.json` (currently Solved with
+Mark Manson) arrive with `"topics": []` in `pods/data/episodes.json` and are
+tagged by the daily Claude task:
+
+1. Open `pods/data/episodes.json` (compact JSON) and find episodes with empty
+   `topics`.
+2. Read the `title` and `desc`. Give 1–2 topics from that episode's `area`
+   in `pods/topics.json` (for `growth`: Purpose & Meaning, Happiness &
+   Fulfillment, Confidence & Self-Worth, Emotions & Mental Health,
+   Relationships, Habits, Discipline & Focus, Success & Money, Mindset &
+   Philosophy, Society & Tech, Q&A).
+3. Change nothing else. Write the file back compact
+   (`json.dump(..., separators=(",", ":"), ensure_ascii=False)`), validate it
+   loads, and commit with the PS Tube tags (same commit is fine).
+
+Personal Growth rules of thumb: anxiety, fear, shame, ego, therapy, addiction,
+resilience → Emotions & Mental Health; dating, love, friends, family,
+boundaries, loneliness → Relationships; goals, habits, procrastination, focus,
+productivity, self-discipline, health changes → Habits, Discipline & Focus;
+luck, risk, careers, wealth → Success & Money; stoicism, values, paradoxes,
+"harsh truths", critiques of self-help → Mindset & Philosophy; social media,
+AI, politics, culture → Society & Tech; listener questions and live shows → Q&A.

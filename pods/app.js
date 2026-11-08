@@ -16,6 +16,7 @@
   };
 
   const state = {
+    area: store.get("area", "all"),
     topic: store.get("topic", "All"),
     sub: store.get("sub", "All"),
     length: store.get("length", "any"),
@@ -25,7 +26,9 @@
     q: "",
     shown: PAGE,
   };
-  let episodes = [], byId = {}, shows = {}, topics = [], filtered = [];
+  let episodes = [], byId = {}, shows = {}, areas = [], filtered = [];
+  const areaDef = () => areas.find((a) => a.id === state.area);
+  const areaTopics = () => (areaDef() || { topics: [] }).topics;
 
   /* ── Listening progress (this device) ──
      prog[id] = { t: seconds in, d: length, w: 1 played, s: 1 saved, x: 1 hidden from Continue, at } */
@@ -81,16 +84,19 @@
   };
   const inTopic = (tags, p) => tags.some((t) => t === p || t.startsWith(p + "/"));
   const showName = (e) => (shows[e.show] || {}).name || "";
+  const podcastOf = (e) => (shows[e.show] || {}).podcast || showName(e);
   const art = (e) => (shows[e.show] || {}).art || "icons/icon-192.png";
   const lengthOf = (e) => P(e.id).d || e.seconds || 0;
 
   function matches(e, skip) {
-    if (skip !== "topic" && state.topic !== "All") {
-      if (!inTopic(e.topics, state.topic)) return false;
+    if (skip !== "area" && state.area !== "all" && e.area !== state.area) return false;
+    if (skip !== "topic" && state.area !== "all" && state.topic !== "All") {
+      if (state.topic === "Untagged") { if (e.topics.length) return false; }
+      else if (!inTopic(e.topics, state.topic)) return false;
       if (skip !== "sub" && state.sub !== "All" && !e.topics.includes(state.topic + "/" + state.sub)) return false;
     }
     if (skip !== "length" && !LENGTHS.find((l) => l.id === state.length).test(e.seconds)) return false;
-    if (state.feed !== "All" && e.show !== state.feed) return false;
+    if (state.feed !== "All" && podcastOf(e) !== state.feed) return false;
     if (state.status !== "all" && !STATUSES.find((x) => x.id === state.status).test(e)) return false;
     if (state.q) {
       const words = state.q.toLowerCase().split(/\s+/).filter(Boolean);
@@ -102,15 +108,28 @@
   const chip = (label, value, selected, n, attr = "t") =>
     `<button class="chip" role="tab" aria-selected="${selected}" data-${attr}="${esc(value)}">${esc(label)}<span class="n">${n}</span></button>`;
 
+  function renderAreas() {
+    const counts = {};
+    for (const e of episodes) counts[e.area] = (counts[e.area] || 0) + 1;
+    const tabs = [{ id: "all", short: "All" }, ...areas.filter((a) => counts[a.id])];
+    $("#areas").hidden = tabs.length < 3;
+    $("#areas").innerHTML = tabs.map((a) =>
+      `<button class="tab" role="tab" aria-selected="${a.id === state.area}" data-a="${a.id}">${esc(a.short || a.name)}</button>`).join("");
+  }
+
   function renderTopics() {
+    if (state.area === "all") { $("#topics").hidden = true; $("#subs").hidden = true; return; }
+    $("#topics").hidden = false;
     const base = episodes.filter((e) => matches(e, "topic"));
     let html = chip("All", "All", state.topic === "All", base.length);
-    for (const t of topics) {
+    for (const t of areaTopics()) {
       const c = base.filter((e) => inTopic(e.topics, t.name)).length;
       if (c || t.name === state.topic) html += chip(t.name, t.name, t.name === state.topic, c);
     }
+    const untagged = base.filter((e) => !e.topics.length).length;
+    if (untagged || state.topic === "Untagged") html += chip("Untagged", "Untagged", state.topic === "Untagged", untagged);
     $("#topics").innerHTML = html;
-    const def = topics.find((t) => t.name === state.topic);
+    const def = areaTopics().find((t) => t.name === state.topic);
     if (!def || !def.sub.length) { $("#subs").hidden = true; return; }
     const sbase = episodes.filter((e) => matches(e, "sub"));
     let shtml = chip(`All ${def.name}`, "All", state.sub === "All", sbase.length, "s");
@@ -181,20 +200,27 @@
 
   function render() {
     state.shown = PAGE;
+    renderAreas();
     renderTopics();
     seg($("#lengths"), LENGTHS, state.length, "l");
     seg($("#sort"), SORTS, state.sort, "o");
     pick($("#status"), STATUSES, state.status);
-    pick($("#feed"), [{ id: "All", label: "All podcasts" }, ...Object.entries(shows)
-      .filter(([id]) => episodes.some((e) => e.show === id))
-      .map(([id, s]) => ({ id, label: s.name }))], state.feed);
+    const pods = [...new Set(episodes.filter((e) => state.area === "all" || e.area === state.area).map(podcastOf))].sort();
+    if (state.feed !== "All" && !pods.includes(state.feed)) state.feed = "All";
+    pick($("#feed"), [{ id: "All", label: "All podcasts" }, ...pods.map((n) => ({ id: n, label: n }))], state.feed);
+    $("#feed").hidden = pods.length < 2;
     renderShelf();
     renderList();
   }
   const refresh = () => { renderShelf(); renderList(true); };
 
-  const save = () => { for (const k of ["topic", "sub", "length", "sort", "status", "feed"]) store.set(k, state[k]); };
+  const save = () => { for (const k of ["area", "topic", "sub", "length", "sort", "status", "feed"]) store.set(k, state[k]); };
   const on = (sel, ev, fn) => $(sel).addEventListener(ev, fn);
+  on("#areas", "click", (e) => {
+    const b = e.target.closest(".tab"); if (!b || b.dataset.a === state.area) return;
+    Object.assign(state, { area: b.dataset.a, topic: "All", sub: "All", feed: "All" }); save(); render(); window.scrollTo({ top: 0 });
+    b.scrollIntoView({ inline: "nearest", block: "nearest" });
+  });
   on("#topics", "click", (e) => { const b = e.target.closest(".chip"); if (!b) return; Object.assign(state, { topic: b.dataset.t, sub: "All" }); save(); render(); window.scrollTo({ top: 0 }); });
   on("#subs", "click", (e) => { const b = e.target.closest(".chip"); if (!b) return; state.sub = b.dataset.s; save(); render(); window.scrollTo({ top: 0 }); });
   on("#lengths", "click", (e) => { const b = e.target.closest("button"); if (!b) return; state.length = b.dataset.l; save(); render(); });
@@ -459,11 +485,12 @@
     fetch("topics.json", { cache: "no-cache" }).then((r) => r.json()),
   ]).then(([data, tconf]) => {
     shows = data.shows || {};
-    topics = tconf.areas[0].topics.map((x) => (typeof x === "string" ? { name: x, sub: [] } : { name: x.name, sub: x.sub || [] }));
-    episodes = data.episodes.map((e) => ({ ...e, _hay: (e.title + " " + showName({ show: e.show }) + " " + e.topics.map(leaf).join(" ")).toLowerCase() }));
+    areas = tconf.areas.map((a) => ({ ...a, topics: a.topics.map((x) => (typeof x === "string" ? { name: x, sub: [] } : { name: x.name, sub: x.sub || [] })) }));
+    episodes = data.episodes.map((e) => ({ ...e, area: e.area || "reality-tv",
+      _hay: (e.title + " " + showName({ show: e.show }) + " " + podcastOf({ show: e.show }) + " " + e.topics.map(leaf).join(" ")).toLowerCase() }));
     byId = Object.fromEntries(episodes.map((e) => [e.id, e]));
-    if (state.topic !== "All" && !topics.some((t) => t.name === state.topic)) Object.assign(state, { topic: "All", sub: "All" });
-    if (state.feed !== "All" && !shows[state.feed]) state.feed = "All";
+    if (state.area !== "all" && !areas.some((a) => a.id === state.area)) state.area = "all";
+    if (state.topic !== "All" && state.topic !== "Untagged" && !areaTopics().some((t) => t.name === state.topic)) Object.assign(state, { topic: "All", sub: "All" });
     if (!STATUSES.some((x) => x.id === state.status)) state.status = "all";
     // bring back the last episode, paused, ready to continue
     const last = byId[store.get("current", "")];

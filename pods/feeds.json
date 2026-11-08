@@ -1,13 +1,14 @@
 [
-  {"id": "598146807", "name": "We Know Survivor", "feed": "https://rss.pdrl.fm/37683e/feeds.podcastmirror.com/survivor-rhap", "show": "Survivor"},
-  {"id": "607070725", "name": "We Know Big Brother", "feed": "https://rss.pdrl.fm/118060/robhasawebsite.com/feed/big-brother/", "show": "Big Brother"},
-  {"id": "1701722663", "name": "We Know The Traitors", "feed": "https://robhasawebsite.com/feed/traitors-podcast/?test-1", "show": "The Traitors"},
-  {"id": "1589151058", "name": "Nothing But Netflix", "feed": "https://feeds.megaphone.fm/nothing", "show": "Netflix", "sub": "Nothing But Netflix"},
-  {"id": "6819129562", "name": "Talking With T-Bird", "feed": "https://feeds.megaphone.fm/RHAPN3985159156", "show": "Survivor"},
-  {"id": "328076847", "name": "Rob Has a Podcast", "feed": "https://feeds.podcastmirror.com/rhap"},
-  {"id": "880800097", "name": "We Know Reality TV", "feed": "https://feeds.podcastmirror.com/reality-tv-rhap"},
-  {"id": "1493214279", "name": "The Circle on RHAP", "feed": "https://robhasawebsite.com/feed/circle/"},
-  {"id": "1588924574", "name": "Love at First Sight", "feed": "https://feeds.megaphone.fm/married"},
-  {"id": "1528874993", "name": "Hot Dummies on Islands", "feed": "https://feeds.megaphone.fm/loveisland"},
-  {"id": "1787928357", "name": "The Reality Flash", "feed": "https://feeds.megaphone.fm/flash"}
+  {"id": "598146807", "name": "We Know Survivor", "feed": "https://rss.pdrl.fm/37683e/feeds.podcastmirror.com/survivor-rhap", "show": "Survivor", "podcast": "Rob Has a Podcast", "area": "reality-tv"},
+  {"id": "607070725", "name": "We Know Big Brother", "feed": "https://rss.pdrl.fm/118060/robhasawebsite.com/feed/big-brother/", "show": "Big Brother", "podcast": "Rob Has a Podcast", "area": "reality-tv"},
+  {"id": "1701722663", "name": "We Know The Traitors", "feed": "https://robhasawebsite.com/feed/traitors-podcast/?test-1", "show": "The Traitors", "podcast": "Rob Has a Podcast", "area": "reality-tv"},
+  {"id": "1589151058", "name": "Nothing But Netflix", "feed": "https://feeds.megaphone.fm/nothing", "show": "Netflix", "sub": "Nothing But Netflix", "podcast": "Rob Has a Podcast", "area": "reality-tv"},
+  {"id": "6819129562", "name": "Talking With T-Bird", "feed": "https://feeds.megaphone.fm/RHAPN3985159156", "show": "Survivor", "podcast": "Rob Has a Podcast", "area": "reality-tv"},
+  {"id": "328076847", "name": "Rob Has a Podcast", "feed": "https://feeds.podcastmirror.com/rhap", "podcast": "Rob Has a Podcast", "area": "reality-tv"},
+  {"id": "880800097", "name": "We Know Reality TV", "feed": "https://feeds.podcastmirror.com/reality-tv-rhap", "podcast": "Rob Has a Podcast", "area": "reality-tv"},
+  {"id": "1493214279", "name": "The Circle on RHAP", "feed": "https://robhasawebsite.com/feed/circle/", "podcast": "Rob Has a Podcast", "area": "reality-tv"},
+  {"id": "1588924574", "name": "Love at First Sight", "feed": "https://feeds.megaphone.fm/married", "podcast": "Rob Has a Podcast", "area": "reality-tv"},
+  {"id": "1528874993", "name": "Hot Dummies on Islands", "feed": "https://feeds.megaphone.fm/loveisland", "podcast": "Rob Has a Podcast", "area": "reality-tv"},
+  {"id": "1787928357", "name": "The Reality Flash", "feed": "https://feeds.megaphone.fm/flash", "podcast": "Rob Has a Podcast", "area": "reality-tv"},
+  {"id": "1247526593", "name": "Solved with Mark Manson", "feed": "https://rss.pdrl.fm/6e7d4d/feeds.megaphone.fm/ISML9402684841", "podcast": "Solved with Mark Manson", "area": "growth", "tagging": "claude"}
 ]

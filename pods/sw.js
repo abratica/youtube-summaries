@@ -1,7 +1,7 @@
 // PS Pods app shell. Always checks GitHub for a newer copy; offline falls back to
 // the last one. Audio comes straight from the podcast hosts and isn't cached here.
-const CACHE = "pp-v1";
-const SHELL = ["./", "index.html", "styles.css?v=1", "app.js?v=1", "topics.json", "feeds.json", "manifest.webmanifest",
+const CACHE = "pp-v2";
+const SHELL = ["./", "index.html", "styles.css?v=2", "app.js?v=2", "topics.json", "feeds.json", "manifest.webmanifest",
   "icons/icon-192.png", "icons/icon-512.png", "icons/logo-96.png"];
 
 self.addEventListener("install", (e) => {

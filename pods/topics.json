@@ -46,6 +46,23 @@
           ]
         }
       ]
+    },
+    {
+      "id": "growth",
+      "name": "Personal Growth",
+      "short": "Personal Growth",
+      "topics": [
+        "Purpose & Meaning",
+        "Happiness & Fulfillment",
+        "Confidence & Self-Worth",
+        "Emotions & Mental Health",
+        "Relationships",
+        "Habits, Discipline & Focus",
+        "Success & Money",
+        "Mindset & Philosophy",
+        "Society & Tech",
+        "Q&A"
+      ]
     }
   ]
 }

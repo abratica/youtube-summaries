@@ -81,7 +81,8 @@ def main():
     for f in feeds:
         meta = info.get(f["id"], {})
         url = meta.get("feedUrl") or f["feed"]
-        shows[f["id"]] = {"name": f["name"], "art": meta.get("artworkUrl600") or f.get("art", "")}
+        shows[f["id"]] = {"name": f["name"], "podcast": f.get("podcast", f["name"]),
+                          "art": meta.get("artworkUrl600") or f.get("art", "")}
         try:
             root = ET.fromstring(get(url))
         except Exception as e:
@@ -94,13 +95,21 @@ def main():
             if not title or enc is None or not enc.get("url"):
                 continue
             desc = it.findtext("description") or it.findtext("itunes:summary", namespaces=NS) or ""
-            topics = rules_reality.classify(title, plain(desc, 220))
-            if f.get("show"):
+            guid = (it.findtext("guid") or enc.get("url")).strip()
+            eid = hashlib.sha1(guid.encode()).hexdigest()[:12]
+            if f.get("tagging") == "claude":
+                # tagged by hand / by the daily Claude task (TAGGING.md); keep existing tags
+                topics = old.get(eid, {}).get("topics", [])
+            else:
+                topics = rules_reality.classify(title, plain(desc, 220))
+            if f.get("tagging") == "claude":
+                pass
+            elif f.get("show"):
                 if not any(t.startswith(f["show"] + "/") for t in topics):
                     topics = [rules_reality.tag_for(f["show"], title, f.get("sub"))] + topics
                 elif f.get("sub"):
                     topics = [t.replace(f"{f['show']}/Other Netflix", f"{f['show']}/{f['sub']}") for t in topics]
-            if not topics:
+            if not topics and f.get("tagging") != "claude":
                 continue
             try:
                 pub = parsedate_to_datetime(it.findtext("pubDate")).astimezone(timezone.utc)
@@ -111,8 +120,6 @@ def main():
             if dup and abs((dup - pub).total_seconds()) < 3 * 86400:
                 continue  # same episode already taken from another feed
             seen_titles[key] = pub
-            guid = (it.findtext("guid") or enc.get("url")).strip()
-            eid = hashlib.sha1(guid.encode()).hexdigest()[:12]
             episodes[eid] = {
                 "id": eid,
                 "title": title,
@@ -120,6 +127,7 @@ def main():
                 "published": pub.strftime("%Y-%m-%dT%H:%M:%SZ"),
                 "seconds": seconds(it.findtext("itunes:duration", namespaces=NS)),
                 "audio": enc.get("url"),
+                "area": f.get("area", "reality-tv"),
                 "topics": topics,
                 "desc": plain(desc),
             }
