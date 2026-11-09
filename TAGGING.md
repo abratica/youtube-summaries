@@ -6,7 +6,7 @@ those in by following this file.
 
 ## How topics are structured
 
-`topics.json` has **areas** (Health & Performance, Music Production, Poker,
+`topics.json` has **areas** (Health & Performance, Music Production, AI & Business, Poker,
 Sales, Reality TV). Each video has an `area` (from its channel in
 `channels.json`) and must only get topics from **its own area's list**.
 
@@ -53,6 +53,16 @@ Health & Performance:
 - Fertility, testosterone, estrogen, menopause → Hormones.
 - AMAs, live Q&As, relationships, general medicine (immune, skin, eyes, teeth,
   hearing, pain), brain science and culture → Other.
+
+AI & Business (Nick Saraev):
+- Building with AI/Claude Code: Claude Code, Claude skills/features, Codex-style coding agents.
+- Building with AI/Vibe Coding & Apps: building apps/sites/SaaS by prompting (Lovable, Gemini, Antigravity).
+- Building with AI/Agents & Workflows: AI agents, agentic workflows, MCP, RAG, voice agents.
+- Building with AI/Using AI Well: prompting, learning with AI, second brain, "how to use AI".
+- No-Code Automation/n8n, /Make.com, /Scraping & Data (scrapers, APIs, Apify); plain "No-Code Automation" for general automation.
+- AI Business/Starting Out, /Getting Clients, /Pricing & Offers, /Delivery & Scaling (hiring, systems, productizing, onboarding), /Case Studies (income stories, interviews).
+- Sales & Lead Gen: cold email, outreach, lead lists, sales scripts. Content & Growth: YouTube/social growth, content systems, ads.
+- Models & News: new model drops, benchmarks, AI news. Future of Work: jobs, economy, staying valuable. Productivity & Mindset. Web Design.
 
 Music Production:
 - Mixing/EQ: EQ, filtering, frequency clashes, cleaning mud.

@@ -61,6 +61,58 @@
       ]
     },
     {
+      "id": "ai",
+      "name": "AI & Business",
+      "short": "AI & Business",
+      "topics": [
+        {
+          "name": "Building with AI",
+          "sub": [
+            "Claude Code",
+            "Vibe Coding & Apps",
+            "Agents & Workflows",
+            "Using AI Well"
+          ]
+        },
+        {
+          "name": "No-Code Automation",
+          "sub": [
+            "n8n",
+            "Make.com",
+            "Scraping & Data"
+          ]
+        },
+        {
+          "name": "AI Business",
+          "sub": [
+            "Starting Out",
+            "Getting Clients",
+            "Pricing & Offers",
+            "Delivery & Scaling",
+            "Case Studies"
+          ]
+        },
+        {
+          "name": "Sales & Lead Gen"
+        },
+        {
+          "name": "Content & Growth"
+        },
+        {
+          "name": "Models & News"
+        },
+        {
+          "name": "Future of Work"
+        },
+        {
+          "name": "Productivity & Mindset"
+        },
+        {
+          "name": "Web Design"
+        }
+      ]
+    },
+    {
       "id": "poker",
       "name": "Poker",
       "short": "Poker",
