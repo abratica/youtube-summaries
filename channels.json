@@ -4,5 +4,6 @@
   {"id": "UC2vitamJHo7kSiiuA598u-g", "name": "EDM Tips", "area": "music"},
   {"id": "UCo-cYYMN4rUc5zk2Kr5GTTg", "name": "RHAP", "area": "reality-tv", "rules": "reality"},
   {"id": "UCZfyDCVWuENLM6U78qraE4A", "name": "RHAP (2016 archive)", "area": "reality-tv", "rules": "reality"},
-  {"id": "UC5Xie0uXhhSryn1kLoe_9sw", "name": "RHAP Dating Shows", "area": "reality-tv", "rules": "reality"}
+  {"id": "UC5Xie0uXhhSryn1kLoe_9sw", "name": "RHAP Dating Shows", "area": "reality-tv", "rules": "reality"},
+  {"handle": "nicksaraev", "name": "Nick Saraev", "area": "ai"}
 ]
