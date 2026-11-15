@@ -83,7 +83,7 @@
           ]
         },
         {
-          "name": "AI Business",
+          "name": "Business",
           "sub": [
             "Starting Out",
             "Getting Clients",
@@ -91,6 +91,9 @@
             "Delivery & Scaling",
             "Case Studies"
           ]
+        },
+        {
+          "name": "Startup Ideas"
         },
         {
           "name": "Sales & Lead Gen"
@@ -105,10 +108,16 @@
           "name": "Future of Work"
         },
         {
+          "name": "Founder Interviews"
+        },
+        {
+          "name": "Money & Investing"
+        },
+        {
           "name": "Productivity & Mindset"
         },
         {
-          "name": "Web Design"
+          "name": "Design"
         }
       ]
     },

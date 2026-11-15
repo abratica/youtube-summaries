@@ -54,15 +54,19 @@ Health & Performance:
 - AMAs, live Q&As, relationships, general medicine (immune, skin, eyes, teeth,
   hearing, pain), brain science and culture → Other.
 
-AI & Business (Nick Saraev):
+AI & Business (Nick Saraev, Greg Isenberg):
 - Building with AI/Claude Code: Claude Code, Claude skills/features, Codex-style coding agents.
-- Building with AI/Vibe Coding & Apps: building apps/sites/SaaS by prompting (Lovable, Gemini, Antigravity).
-- Building with AI/Agents & Workflows: AI agents, agentic workflows, MCP, RAG, voice agents.
-- Building with AI/Using AI Well: prompting, learning with AI, second brain, "how to use AI".
-- No-Code Automation/n8n, /Make.com, /Scraping & Data (scrapers, APIs, Apify); plain "No-Code Automation" for general automation.
-- AI Business/Starting Out, /Getting Clients, /Pricing & Offers, /Delivery & Scaling (hiring, systems, productizing, onboarding), /Case Studies (income stories, interviews).
-- Sales & Lead Gen: cold email, outreach, lead lists, sales scripts. Content & Growth: YouTube/social growth, content systems, ads.
-- Models & News: new model drops, benchmarks, AI news. Future of Work: jobs, economy, staying valuable. Productivity & Mindset. Web Design.
+- Building with AI/Vibe Coding & Apps: building apps/sites/SaaS by prompting (Cursor, Lovable, Bolt, v0, Replit).
+- Building with AI/Agents & Workflows: AI agents, agentic workflows, MCP, OpenClaw-style bots, voice agents.
+- Building with AI/Using AI Well: prompting, learning with AI, AI writing systems, "how I use AI".
+- No-Code Automation/n8n, /Make.com, /Scraping & Data (scrapers, APIs, Apify, Firecrawl); plain "No-Code Automation" for general automation (Zapier etc).
+- Business/Starting Out (starting a business, solo/AI business playbooks, $0-to-$X guides), /Getting Clients, /Pricing & Offers, /Delivery & Scaling (hiring, systems, agencies), /Case Studies (income stories, "how he makes $X").
+- Startup Ideas: idea lists, brainstorms, "ideas you can launch tomorrow", trends to build on.
+- Sales & Lead Gen: cold email, outreach, lead lists, sales scripts, funnels that close. Content & Growth: YouTube/social growth, creators, newsletters, marketing, ads, SEO, viral videos.
+- Models & News: new model/tool drops, reviews, benchmarks, AI news. Future of Work: jobs, economy, AI's impact, new AI careers.
+- Founder Interviews: interview/guest episodes (Greg's "Where It Happens" back catalog, founder conversations); pair with the subject topic.
+- Money & Investing: investing, holding companies, crypto/web3, personal finance for founders.
+- Productivity & Mindset: habits, life systems, year reviews, life lessons. Design: UI/app design, Figma, AI design tools, web design.
 
 Music Production:
 - Mixing/EQ: EQ, filtering, frequency clashes, cleaning mud.
