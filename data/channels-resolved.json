@@ -16,22 +16,27 @@
  },
  "UCo-cYYMN4rUc5zk2Kr5GTTg": {
   "youtubeTitle": "RHAP: We Know Reality TV",
-  "name": "RHAP",
+  "name": "Rob Has a Podcast",
   "area": "reality-tv"
  },
  "UCZfyDCVWuENLM6U78qraE4A": {
   "youtubeTitle": "Rob Has a Podcast",
-  "name": "RHAP (2016 archive)",
+  "name": "Rob Has a Podcast",
   "area": "reality-tv"
  },
  "UC5Xie0uXhhSryn1kLoe_9sw": {
   "youtubeTitle": "RHAP: We Know Dating Shows",
-  "name": "RHAP Dating Shows",
+  "name": "Rob Has a Podcast",
   "area": "reality-tv"
  },
  "UCbo-KbSjJDG6JWQ_MTZ_rNA": {
   "youtubeTitle": "Nick Saraev",
   "name": "Nick Saraev",
+  "area": "ai"
+ },
+ "UCPjNBjflYl0-HQtUvOx0Ibw": {
+  "youtubeTitle": "Greg Isenberg",
+  "name": "Greg Isenberg",
   "area": "ai"
  }
 }
