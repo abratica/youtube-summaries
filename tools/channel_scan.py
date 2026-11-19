@@ -82,9 +82,15 @@ def main(handle):
 
     os.makedirs("scan-out", exist_ok=True)
     slug = handle.lstrip("@").lower()
+    meta = {"slug": slug, "channel": c["snippet"]["title"], "handle": handle,
+            "subscribers": int(c["statistics"].get("subscriberCount", 0)), "total": len(videos),
+            "thumb": c["snippet"].get("thumbnails", {}).get("default", {}).get("url"), "counts": counts}
+    # Compact file the BraticaFit coach Library reads: [id, title, seconds, published, views]
     with open(f"scan-out/{slug}.json", "w") as f:
-        json.dump({"channel": c["snippet"]["title"], "handle": handle, "subscribers": c["statistics"].get("subscriberCount"),
-                   "total": len(videos), "counts": counts, "videos": videos}, f, indent=1)
+        json.dump({**meta, "videos": [[v["id"], v["title"], v["seconds"], v["published"], v["views"]]
+                                      for v in videos if v["embeddable"]]}, f, separators=(",", ":"), ensure_ascii=False)
+    with open(f"scan-out/{slug}.meta.json", "w") as f:
+        json.dump(meta, f, ensure_ascii=False)
 
     lines = [f"## {c['snippet']['title']} ({handle})", "",
              f"{len(videos)} uploads · {int(c['statistics'].get('subscriberCount', 0)):,} subscribers · {blocked} block embedding", "",

@@ -1,6 +1,7 @@
 name: Channel scan (BraticaFit demo finder)
 
-# Manual, read-only: counts a channel's short single-exercise clips. Doesn't touch PS Tube data.
+# Manual: scans channels' uploads (read-only on YouTube) and publishes the video lists to the
+# coach-data branch, which the BraticaFit coach Library reads. Doesn't touch PS Tube's data.
 on:
   workflow_dispatch:
     inputs:
@@ -9,7 +10,9 @@ on:
         required: true
 
 permissions:
-  contents: read
+  contents: write
+
+concurrency: coach-data
 
 jobs:
   scan:
@@ -24,7 +27,31 @@ jobs:
           YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
           HANDLES: ${{ inputs.handles }}
         run: python tools/channel_scan.py $HANDLES
-      - uses: actions/upload-artifact@v4
+      - uses: actions/checkout@v4
         with:
-          name: channel-scan
-          path: scan-out/
+          ref: coach-data
+          path: coach-data
+      - name: Publish to coach-data branch
+        run: |
+          mkdir -p coach-data/channels
+          for f in scan-out/*.json; do
+            case "$f" in *.meta.json) ;; *) cp "$f" coach-data/channels/ ;; esac
+          done
+          python - <<'PY'
+          import json, glob, os
+          idx = "coach-data/index.json"
+          data = json.load(open(idx)) if os.path.exists(idx) else {"channels": []}
+          by = {c["slug"]: c for c in data["channels"]}
+          for m in glob.glob("scan-out/*.meta.json"):
+              meta = json.load(open(m)); by[meta["slug"]] = meta
+          data["channels"] = sorted(by.values(), key=lambda c: c["channel"].lower())
+          json.dump(data, open(idx, "w"), ensure_ascii=False, indent=1)
+          PY
+          cd coach-data
+          git config user.name "channel-scan"
+          git config user.email "actions@github.com"
+          git add -A
+          git commit -m "Scan: $HANDLES" || echo "no changes"
+          git push
+        env:
+          HANDLES: ${{ inputs.handles }}
