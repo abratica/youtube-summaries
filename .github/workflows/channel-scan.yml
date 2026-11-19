@@ -1,0 +1,30 @@
+name: Channel scan (BraticaFit demo finder)
+
+# Manual, read-only: counts a channel's short single-exercise clips. Doesn't touch PS Tube data.
+on:
+  workflow_dispatch:
+    inputs:
+      handles:
+        description: "Channel handles, space separated (e.g. @SquatUniversity @E3Rehab)"
+        required: true
+
+permissions:
+  contents: read
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Scan
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+          HANDLES: ${{ inputs.handles }}
+        run: python tools/channel_scan.py $HANDLES
+      - uses: actions/upload-artifact@v4
+        with:
+          name: channel-scan
+          path: scan-out/
