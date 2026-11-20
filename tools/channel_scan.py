@@ -51,7 +51,8 @@ def looks_like_demo(title):
 def main(handle):
     ch = get("channels", part="snippet,contentDetails,statistics", forHandle=handle.lstrip("@"))
     if not ch.get("items"):
-        sys.exit(f"No channel found for {handle}")
+        print(f"No channel found for {handle}; skipping")
+        return
     c = ch["items"][0]
     uploads = c["contentDetails"]["relatedPlaylists"]["uploads"]
     ids, token = [], None
