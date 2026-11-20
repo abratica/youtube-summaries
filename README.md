@@ -13,6 +13,11 @@ Live at https://abratica.github.io/youtube-summaries/ — open it in Chrome on A
   re-reads its feeds), waits for it, and reloads the list. The first tap asks for
   a GitHub fine-grained token with Actions: Read and write on this repo only,
   saved in that browser.
+- Copy transcript (PS Tube player): copies the video's captions as plain text.
+  Saved ones live in `transcripts/<id>.txt`; for a new video the button starts
+  `.github/workflows/transcript.yml` (`tools/fetch_transcript.py`), which fetches the
+  captions and commits them, using the same token as the Update button. If YouTube
+  blocks it, a "Copy link for AI" button copies a prompt for Gemini instead.
 - `data/live.json`: streams that are live now or scheduled in the next week,
   shown in PS Tube's "Live now & upcoming" row on every tab; tapping one plays
   it in the in-app player (live mode: no seek bar, "Go live" button).

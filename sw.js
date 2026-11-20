@@ -1,7 +1,7 @@
 // App shell is cached; the library data is fetched fresh when online and
 // falls back to the last copy when offline.
-const CACHE = "pt-v14";
-const SHELL = ["./", "index.html", "styles.css?v=15", "app.js?v=15", "updater.js?v=1", "topics.json", "channels.json", "manifest.webmanifest", "icons/icon-192.png", "icons/icon-512.png", "icons/logo-light.png", "icons/logo-dark.png"];
+const CACHE = "pt-v15";
+const SHELL = ["./", "index.html", "styles.css?v=16", "app.js?v=16", "updater.js?v=2", "topics.json", "channels.json", "manifest.webmanifest", "icons/icon-192.png", "icons/icon-512.png", "icons/logo-light.png", "icons/logo-dark.png"];
 
 self.addEventListener("install", (e) => {
   e.waitUntil(caches.open(CACHE).then((c) => c.addAll(SHELL)).then(() => self.skipWaiting()));
@@ -22,8 +22,10 @@ self.addEventListener("fetch", (e) => {
   e.respondWith(
     fetch(e.request, { cache: "no-cache" })
       .then((res) => {
-        const copy = res.clone();
-        caches.open(CACHE).then((c) => c.put(e.request, copy));
+        if (res.ok) {
+          const copy = res.clone();
+          caches.open(CACHE).then((c) => c.put(e.request, copy));
+        }
         return res;
       })
       .catch(() => caches.match(e.request, { ignoreSearch: true }))

@@ -1,0 +1,46 @@
+name: transcript
+run-name: transcript ${{ inputs.id }}
+
+# Started by PS Tube's "Copy transcript" button for one video. Fetches its captions
+# and commits them to transcripts/<id>.txt, where the app picks them up.
+on:
+  workflow_dispatch:
+    inputs:
+      id:
+        description: "YouTube video id"
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: transcript-${{ inputs.id }}
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install fetchers
+        run: pip install --quiet youtube-transcript-api yt-dlp
+      - name: Fetch transcript
+        env:
+          VIDEO_ID: ${{ inputs.id }}
+        run: python3 tools/fetch_transcript.py "$VIDEO_ID"
+      - name: Commit
+        env:
+          VIDEO_ID: ${{ inputs.id }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add transcripts
+          if git diff --cached --quiet; then echo "Already saved"; exit 0; fi
+          git commit -m "Transcript $VIDEO_ID"
+          for i in 1 2 3 4 5; do
+            git pull --rebase origin main && git push origin HEAD:main && exit 0
+            sleep $((i * 3))
+          done
+          exit 1

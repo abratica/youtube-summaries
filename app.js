@@ -458,10 +458,72 @@
       return;
     }
     const w = W(current.id);
+    const tr = TR[current.id] || {};
+    const trLabel = tr.state === "busy" ? "Getting transcript…" : tr.copied ? "✓ Copied" : "Copy transcript";
     el.innerHTML = `
       <button type="button" class="act" data-act="save" aria-pressed="${!!w.s}">${w.s ? "★ Saved" : "☆ Save"}</button>
       <button type="button" class="act" data-act="watched" aria-pressed="${!!w.w}">${w.w ? "✓ Watched" : "Mark watched"}</button>
-      <a class="act primary" data-act="yt" href="${ytUrl(current.id, w.t)}" target="_blank" rel="noopener">Open in YouTube ↗</a>`;
+      <button type="button" class="act" data-act="tr"${tr.state === "busy" ? " disabled aria-busy=\"true\"" : ""}>${trLabel}</button>
+      ${tr.state === "fail" ? '<button type="button" class="act" data-act="ai">Copy link for AI</button>' : ""}
+      <a class="act primary" data-act="yt" href="${ytUrl(current.id, w.t)}" target="_blank" rel="noopener">Open in YouTube ↗</a>
+      ${tr.msg ? `<p class="tr-msg">${esc(tr.msg)}</p>` : ""}`;
+  }
+
+  /* ── Copy transcript ──
+     Transcripts are saved in transcripts/<id>.txt. If a video doesn't have one yet, the
+     first tap starts the transcript job on GitHub (same token as the Update button),
+     which fetches the captions and commits the file; then it's copied. */
+  const REPO_RAW = "https://raw.githubusercontent.com/abratica/youtube-summaries/main/";
+  const TR = {}; // id -> { state: "busy" | "ready" | "fail", text, msg, copied }
+  async function findTranscript(id, rawOnly) {
+    const urls = [`transcripts/${id}.txt`, `${REPO_RAW}transcripts/${id}.txt?t=${Date.now()}`];
+    for (const u of rawOnly ? urls.slice(1) : urls) {
+      try { const r = await fetch(u, { cache: "no-store" }); if (r.ok) { const t = await r.text(); if (t.trim()) return t; } } catch {}
+    }
+    return null;
+  }
+  async function copyText(text) {
+    try { await navigator.clipboard.writeText(text); return true; } catch {}
+    try { // older fallback; only works right after a tap
+      const ta = document.createElement("textarea");
+      ta.value = text; ta.setAttribute("readonly", ""); ta.style.cssText = "position:fixed;opacity:0";
+      document.body.appendChild(ta); ta.select();
+      const ok = document.execCommand("copy"); ta.remove(); return ok;
+    } catch { return false; }
+  }
+  const trHeader = (v) => `${v.title}\n${v.channel} · https://www.youtube.com/watch?v=${v.id}\n\n`;
+  function trSet(id, patch) {
+    TR[id] = { ...(TR[id] || {}), ...patch };
+    if (current && current.id === id) renderActions();
+  }
+  async function trCopy(v, text) {
+    const ok = await copyText(trHeader(v) + text);
+    if (ok) {
+      trSet(v.id, { state: "ready", text, copied: true, msg: "" });
+      setTimeout(() => trSet(v.id, { copied: false }), 2500);
+    } else trSet(v.id, { state: "ready", text, copied: false, msg: "Transcript ready. Tap Copy transcript." });
+  }
+  async function getTranscript(v) {
+    const id = v.id, tr = TR[id] || {};
+    if (tr.state === "busy") return;
+    if (tr.text) return trCopy(v, tr.text);
+    trSet(id, { state: "busy", msg: "" });
+    let text = await findTranscript(id);
+    if (!text) {
+      trSet(id, { msg: "Fetching it on GitHub. This takes about a minute; you can keep watching." });
+      try {
+        const run = await PSUpdate.run({ workflow: "transcript.yml", inputs: { id }, match: (r) => r.display_title === "transcript " + id });
+        if (!run) return trSet(id, { state: null, msg: "" }); // token dialog cancelled
+        if (run.conclusion === "success") {
+          for (let i = 0; i < 12 && !text; i++) { text = await findTranscript(id, true); if (!text) await new Promise((r) => setTimeout(r, 4000)); }
+          if (!text) return trSet(id, { state: "fail", msg: "Saved on GitHub but not showing yet. Tap Copy transcript again in a minute." });
+        }
+      } catch (e) {
+        return trSet(id, { state: "fail", msg: e.message && e.message !== "auth" ? e.message : "Couldn't reach GitHub. Check your connection." });
+      }
+      if (!text) return trSet(id, { state: "fail", msg: "Couldn't get a transcript. YouTube may have blocked the request, or this video has no captions." });
+    }
+    await trCopy(v, text);
   }
 
   const playing = () => player && player.getPlayerState && player.getPlayerState() === YT.PlayerState.PLAYING;
@@ -594,6 +656,11 @@
       const ww = W(current.id);
       if (b.dataset.act === "save") { setW(current.id, { s: ww.s ? 0 : 1 }); renderActions(); }
       if (b.dataset.act === "watched") { setW(current.id, ww.w ? { w: 0, t: 0 } : { w: 1, t: 0 }); renderActions(); }
+      if (b.dataset.act === "tr") getTranscript(current);
+      if (b.dataset.act === "ai") {
+        copyText(`Give me the full transcript of this YouTube video: https://www.youtube.com/watch?v=${current.id}`)
+          .then((ok) => trSet(current.id, { msg: ok ? "Copied. Paste it into Gemini, which can read YouTube videos." : "Couldn't copy." }));
+      }
       if (b.dataset.act === "yt" && player && player.getCurrentTime) {
         // Hand off at the current spot; pause here so both don't play.
         record();

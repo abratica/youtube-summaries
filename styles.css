@@ -320,6 +320,8 @@ body.sheet-open { overflow: hidden; }
 .act[aria-pressed="true"] { background: var(--chip); border-color: var(--ink); }
 .act.primary { background: #e5302a; border-color: #e5302a; color: #fff; margin-left: auto; }
 .player-msg .act.primary { margin: 0 auto; }
+.act[disabled] { opacity: .65; cursor: default; }
+.tr-msg { flex-basis: 100%; margin: 2px 0 0; font-size: 13px; color: var(--muted); }
 @media (max-width: 420px) { .act.primary { margin-left: 0; flex: 1 0 100%; justify-content: center; } }
 
 /* ── Turn the phone sideways while a video is open: the video fills the screen ── */
