@@ -14,7 +14,8 @@ Live at https://abratica.github.io/youtube-summaries/ — open it in Chrome on A
   a GitHub fine-grained token with Actions: Read and write on this repo only,
   saved in that browser.
 - `data/live.json`: streams that are live now or scheduled in the next week,
-  shown in PS Tube's "Live now & upcoming" row on every tab.
+  shown in PS Tube's "Live now & upcoming" row on every tab; tapping one plays
+  it in the in-app player (live mode: no seek bar, "Go live" button).
 - `TAGGING.md`: rules the daily Claude scheduled task follows to give new
   videos one or two topics from `topics.json`.
 - `index.html`, `app.js`, `styles.css`, `sw.js`: the app, served by GitHub Pages.

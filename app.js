@@ -319,10 +319,11 @@
 
   /* ── Live & upcoming row ──
      Streams from data/live.json, shown on every tab whatever the filters. Tapping one
-     opens it on YouTube. A LIVE badge is dropped 6 hours after the stream started, and
+     plays it in the in-app player (live mode). A LIVE badge is dropped 6 hours after the stream started, and
      an upcoming one 2 hours after its start time, in case nobody has tapped Update since. */
   let live = [];
   const fmtTime = (d) => d.toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit" });
+  const startsText = (when) => (when === "Starting soon" ? when : "Starts " + when);
   function whenLabel(x) {
     const d = new Date(x.start), now = new Date();
     if (x.state === "live") return null;
@@ -344,7 +345,7 @@
     const n = items.filter((x) => x.state === "live").length;
     el.innerHTML = `<h2>${n ? "Live now" + (items.length > n ? " &amp; upcoming" : "") : "Upcoming live"}</h2><div class="shelf-row">${items.map((x) => {
       const when = whenLabel(x);
-      return `<a class="shelf-card live-card" href="https://www.youtube.com/watch?v=${esc(x.id)}" target="_blank" rel="noopener">
+      return `<a class="shelf-card live-card" href="https://www.youtube.com/watch?v=${esc(x.id)}" data-live="${esc(x.id)}">
         <div class="thumb"><img loading="lazy" decoding="async" alt="" src="https://i.ytimg.com/vi/${esc(x.id)}/mqdefault.jpg">
         ${when ? `<span class="when-badge">${esc(when)}</span>` : '<span class="live-badge">● LIVE</span>'}</div>
         <p class="title">${esc(x.title)}</p><p class="info">${esc(x.channel)}</p></a>`;
@@ -441,7 +442,7 @@
   };
 
   function record() {
-    if (!player || !current || typeof player.getCurrentTime !== "function") return;
+    if (!player || !current || current.live || typeof player.getCurrentTime !== "function") return;
     const t = player.getCurrentTime() || 0, d = player.getDuration() || current.seconds;
     if (!t) return;
     if (d && t / d >= 0.92) setW(current.id, { w: 1, t: 0, d });
@@ -452,6 +453,10 @@
   function renderActions() {
     const el = document.querySelector(".sheet-actions");
     if (!el || !current) return;
+    if (current.live) {
+      el.innerHTML = `<a class="act primary" data-act="yt" href="${ytUrl(current.id, 0)}" target="_blank" rel="noopener">Open in YouTube (with chat) ↗</a>`;
+      return;
+    }
     const w = W(current.id);
     el.innerHTML = `
       <button type="button" class="act" data-act="save" aria-pressed="${!!w.s}">${w.s ? "★ Saved" : "☆ Save"}</button>
@@ -470,6 +475,15 @@
 
   function syncUI() {
     if (!ui || !player || !player.getCurrentTime) return;
+    if (current.live) {
+      // live: no seek bar; the pill is red at the live edge, and "Go live" when behind
+      const behind = everPlayed && (player.getDuration() || 0) - (player.getCurrentTime() || 0) > 25;
+      ui.liveBtn.classList.toggle("behind", behind);
+      ui.liveBtn.textContent = behind ? "Go live" : "● LIVE";
+      ui.play.innerHTML = playing() ? ICON.pause : ICON.play;
+      ui.play.setAttribute("aria-label", playing() ? "Pause" : "Play");
+      return;
+    }
     const t = player.getCurrentTime() || 0, d = player.getDuration() || current.seconds || 0;
     if (!seeking) { ui.seek.max = Math.floor(d); ui.seek.value = Math.floor(t); ui.time.textContent = fmtClock(t); }
     ui.dur.textContent = fmtClock(d);
@@ -478,11 +492,13 @@
     ui.play.setAttribute("aria-label", playing() ? "Pause" : "Play");
   }
 
-  function openPlayer(id) {
-    const v = byId[id];
+  function openPlayer(id, liveItem) {
+    // liveItem: an entry from data/live.json (live now or upcoming) -> live mode
+    const v = liveItem ? { ...liveItem, live: liveItem.state, topics: liveItem.topics || [], seconds: 0 } : byId[id];
     if (!v) return;
     current = v; everPlayed = false;
-    const w = W(id);
+    const isLive = !!v.live, when = isLive ? whenLabel(v) : null;
+    const w = isLive ? {} : W(id);
     const start = !w.w && w.t > 20 && w.t < (w.d || v.seconds) - 30 ? Math.floor(w.t) : 0;
     const tags = v.topics.filter((t) => t !== "Other").map((t) => `<span class="tag">${esc(tagLabel(t))}</span>`).join("");
     const sheet = document.createElement("div");
@@ -494,12 +510,22 @@
         <div class="sheet-top"><button type="button" class="sheet-close" aria-label="Close">
           <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
           ${start ? `<span class="resume">Resuming at ${fmtClock(start)}</span>` : ""}</div>
-        <div class="player-wrap show-ui loading">
+        <div class="player-wrap show-ui loading${when ? " waiting" : ""}">
           <div class="yt-host"><div id="yt-player"></div></div>
           <img class="poster" alt="" src="https://i.ytimg.com/vi/${id}/hqdefault.jpg">
           <div class="tap-layer"></div>
+          ${when ? `<div class="pc-wait"><b>${esc(startsText(when))}</b><span>Leave this open and it starts playing when they go live.</span></div>` : ""}
           <div class="pc">
-            <div class="pc-mid">
+            ${isLive ? `<div class="pc-mid">
+              <button type="button" class="pc-btn" data-pc="back" aria-label="Back 15 seconds">${ICON.back}</button>
+              <button type="button" class="pc-btn pc-play" data-pc="play" aria-label="Play">${ICON.play}</button>
+              <span class="pc-btn pc-gap" aria-hidden="true"></span>
+            </div>
+            <div class="pc-bot">
+              <button type="button" class="pc-live" data-pc="golive" aria-label="Jump to live">● LIVE</button>
+              <span class="pc-fill"></span>
+              <button type="button" class="pc-chip" data-pc="fs" aria-label="Full screen">${ICON.fs}</button>
+            </div>` : `<div class="pc-mid">
               <button type="button" class="pc-btn" data-pc="back" aria-label="Back 15 seconds">${ICON.back}</button>
               <button type="button" class="pc-btn pc-play" data-pc="play" aria-label="Play">${ICON.play}</button>
               <button type="button" class="pc-btn" data-pc="fwd" aria-label="Forward 15 seconds">${ICON.fwd}</button>
@@ -510,13 +536,15 @@
               <span class="pc-dur">${fmtClock(v.seconds)}</span>
               <button type="button" class="pc-chip" data-pc="speed" aria-label="Playback speed">${speed}×</button>
               <button type="button" class="pc-chip" data-pc="fs" aria-label="Full screen">${ICON.fs}</button>
-            </div>
+            </div>`}
           </div>
           <div class="pc-spin" aria-hidden="true"></div>
         </div>
         <div class="sheet-body">
           <h2 class="sheet-title">${titleHTML(v.title)}</h2>
-          <p class="info">${fmtDate(v.published)} · ${esc(v.channel)} · ${fmtDur(v.seconds)}${v.views ? " · " + fmtViews(v.views) : ""}</p>
+          <p class="info">${isLive
+            ? (when ? `Upcoming · ${esc(startsText(when))}` : '<b class="live-now">● Live now</b>') + ` · ${esc(v.channel)}`
+            : `${fmtDate(v.published)} · ${esc(v.channel)} · ${fmtDur(v.seconds)}${v.views ? " · " + fmtViews(v.views) : ""}`}</p>
           <div class="tags">${tags}</div>
           <div class="sheet-actions"></div>
         </div>
@@ -528,7 +556,8 @@
 
     const wrap = sheet.querySelector(".player-wrap");
     ui = { wrap, seek: wrap.querySelector(".pc-seek"), time: wrap.querySelector(".pc-time"),
-           dur: wrap.querySelector(".pc-dur"), play: wrap.querySelector(".pc-play"), speedBtn: wrap.querySelector('[data-pc="speed"]') };
+           dur: wrap.querySelector(".pc-dur"), play: wrap.querySelector(".pc-play"), speedBtn: wrap.querySelector('[data-pc="speed"]'),
+           liveBtn: wrap.querySelector(".pc-live") };
 
     sheet.querySelector(".sheet-close").addEventListener("click", () => history.back());
     wrap.querySelector(".tap-layer").addEventListener("click", () => {
@@ -542,6 +571,7 @@
       if (b.dataset.pc === "play") playing() ? player.pauseVideo() : player.playVideo();
       if (b.dataset.pc === "back") player.seekTo(Math.max(0, t - 15), true);
       if (b.dataset.pc === "fwd") player.seekTo(t + 15, true);
+      if (b.dataset.pc === "golive") { player.seekTo((player.getDuration() || t) + 60, true); player.playVideo(); }
       if (b.dataset.pc === "speed") {
         speed = SPEEDS[(SPEEDS.indexOf(speed) + 1) % SPEEDS.length];
         store.set("speed", String(speed));
@@ -555,8 +585,8 @@
       setTimeout(syncUI, 60);
       showControls();
     });
-    ui.seek.addEventListener("input", () => { seeking = true; ui.time.textContent = fmtClock(+ui.seek.value); showControls(false); });
-    ui.seek.addEventListener("change", () => { seeking = false; player && player.seekTo(+ui.seek.value, true); showControls(); });
+    if (ui.seek) ui.seek.addEventListener("input", () => { seeking = true; ui.time.textContent = fmtClock(+ui.seek.value); showControls(false); });
+    if (ui.seek) ui.seek.addEventListener("change", () => { seeking = false; player && player.seekTo(+ui.seek.value, true); showControls(); });
 
     sheet.querySelector(".sheet-actions").addEventListener("click", (e) => {
       const b = e.target.closest("[data-act]");
@@ -567,7 +597,7 @@
       if (b.dataset.act === "yt" && player && player.getCurrentTime) {
         // Hand off at the current spot; pause here so both don't play.
         record();
-        b.href = ytUrl(current.id, player.getCurrentTime());
+        b.href = ytUrl(current.id, current.live ? 0 : player.getCurrentTime());
         try { player.pauseVideo(); } catch {}
       }
     });
@@ -582,33 +612,36 @@
         events: {
           onReady: (e) => {
             wrap.classList.remove("loading");
-            try { e.target.setPlaybackRate(speed); e.target.playVideo(); } catch {}
+            try { if (!isLive) e.target.setPlaybackRate(speed); e.target.playVideo(); } catch {}
             clearInterval(tick);
             tick = setInterval(() => { syncUI(); }, 500);
             syncUI();
           },
           onStateChange: (e) => {
             if (e.data === YT.PlayerState.PLAYING) {
-              if (!everPlayed) { everPlayed = true; wrap.classList.add("started"); }
+              if (!everPlayed) { everPlayed = true; wrap.classList.add("started"); sheet.querySelector(".pc-wait")?.remove(); wrap.classList.remove("waiting"); }
               wrap.classList.remove("loading");
               showControls();
             }
             if (e.data === YT.PlayerState.BUFFERING) wrap.classList.add("loading");
             if (e.data === YT.PlayerState.PAUSED) { wrap.classList.remove("loading"); record(); showControls(false); }
-            if (e.data === YT.PlayerState.ENDED) { setW(current.id, { w: 1, t: 0 }); renderActions(); showControls(false); }
+            if (e.data === YT.PlayerState.ENDED && !isLive) { setW(current.id, { w: 1, t: 0 }); renderActions(); showControls(false); }
             syncUI();
           },
           onError: () => {
             wrap.classList.remove("loading");
-            wrap.innerHTML = `<div class="player-msg"><p>This video can't play inside PS Tube.</p>
+            wrap.innerHTML = `<div class="player-msg"><p>${isLive ? "This stream can't play inside PS Tube." : "This video can't play inside PS Tube."}</p>
               <a class="act primary" href="${ytUrl(id, W(id).t)}" target="_blank" rel="noopener">Open in YouTube ↗</a></div>`;
             ui = null;
           },
         },
       });
     });
-    // save position every 5s while playing
+    // save position every 5s while playing; an upcoming stream gets a nudge each minute
+    // so it starts once the channel goes live
     const rec = setInterval(() => { if (playing()) record(); }, 5000);
+    const nudge = when ? setInterval(() => { if (!everPlayed && player && player.playVideo) try { player.playVideo(); } catch {} }, 60e3) : 0;
+    sheet.addEventListener("ps-close", () => clearInterval(nudge), { once: true });
     sheet.addEventListener("ps-close", () => clearInterval(rec), { once: true });
   }
 
@@ -649,6 +682,12 @@
       const card = x.closest(".shelf-card");
       card.classList.add("leaving");
       setTimeout(() => { renderShelf(); if (state.status === "progress") renderList(); }, 180);
+      return;
+    }
+    const lv = e.target.closest("a[data-live]");
+    if (lv && !e.metaKey && !e.ctrlKey) {
+      const x = live.find((y) => y.id === lv.dataset.live);
+      if (x) { e.preventDefault(); openPlayer(x.id, x); }
       return;
     }
     const a = e.target.closest("a[data-id]");

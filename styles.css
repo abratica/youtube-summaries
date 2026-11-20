@@ -343,3 +343,20 @@ body.sheet-open { overflow: hidden; }
 }
 .live-badge { background: #e5302a; }
 .when-badge { background: rgba(0,0,0,.78); }
+
+/* ── Live mode in the player ── */
+.pc-live {
+  background: #e5302a; color: #fff; border: 0; border-radius: 6px; height: 26px; padding: 0 9px;
+  font: 700 12px/1 Inter, sans-serif; letter-spacing: .03em; cursor: pointer;
+}
+.pc-live.behind { background: rgba(255,255,255,.22); }
+.pc-fill { flex: 1; }
+.pc-gap { width: 38px; height: 38px; visibility: hidden; }
+.pc-wait {
+  position: absolute; inset: 0; display: grid; place-content: center; gap: 6px; text-align: center;
+  color: #fff; padding: 16px; background: rgba(0,0,0,.55); pointer-events: none;
+  font: 500 13px/1.35 Inter, sans-serif;
+}
+.pc-wait b { font: 700 18px/1.2 Inter, sans-serif; }
+.live-now { color: #e5302a; font-weight: 700; }
+.player-wrap.waiting .pc, .player-wrap.waiting .pc-spin { display: none; }
