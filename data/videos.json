@@ -1,6 +1,19 @@
 {
- "updated": "2026-11-20T18:35:36Z",
+ "updated": "2026-11-20T19:26:42Z",
  "videos": [
+  {
+   "id": "YTwDoQ7-2w8",
+   "title": "The Circle Season 8 Episodes 2-3 Recap",
+   "channel": "Rob Has a Podcast",
+   "channelId": "UCo-cYYMN4rUc5zk2Kr5GTTg",
+   "area": "reality-tv",
+   "published": "2026-11-20T19:00:37Z",
+   "seconds": 3056,
+   "views": 46,
+   "topics": [
+    "Netflix/The Circle"
+   ]
+  },
   {
    "id": "M8epm51PbBM",
    "title": "I Made a Modern Hangover Techno Track (Start to Finish)",
@@ -9,7 +22,7 @@
    "area": "music",
    "published": "2026-11-20T17:04:58Z",
    "seconds": 3079,
-   "views": 302,
+   "views": 686,
    "topics": []
   },
   {
@@ -20,7 +33,7 @@
    "area": "reality-tv",
    "published": "2026-11-20T15:00:08Z",
    "seconds": 6411,
-   "views": 2402,
+   "views": 3098,
    "topics": [
     "Survivor/US"
    ]
@@ -33,7 +46,7 @@
    "area": "reality-tv",
    "published": "2026-11-20T03:05:08Z",
    "seconds": 4578,
-   "views": 18613,
+   "views": 19870,
    "topics": [
     "The Traitors/US"
    ]
@@ -46,7 +59,7 @@
    "area": "ai",
    "published": "2026-11-20T00:41:40Z",
    "seconds": 595,
-   "views": 90452,
+   "views": 92948,
    "topics": [
     "Models & News",
     "Future of Work"
@@ -60,7 +73,7 @@
    "area": "reality-tv",
    "published": "2026-11-19T17:12:19Z",
    "seconds": 621,
-   "views": 27604,
+   "views": 28446,
    "topics": [
     "Survivor/US"
    ]
@@ -86,7 +99,7 @@
    "area": "health",
    "published": "2026-11-19T13:00:35Z",
    "seconds": 2147,
-   "views": 99537,
+   "views": 100839,
    "topics": [
     "Mental Health & Mood"
    ]
@@ -99,7 +112,7 @@
    "area": "reality-tv",
    "published": "2026-11-19T02:35:07Z",
    "seconds": 3855,
-   "views": 43056,
+   "views": 43410,
    "topics": [
     "Survivor/US"
    ]
@@ -112,7 +125,7 @@
    "area": "music",
    "published": "2026-11-18T23:44:53Z",
    "seconds": 1316,
-   "views": 934,
+   "views": 925,
    "topics": [
     "Producing/Workflow & Ableton",
     "Sound Design/Synths"
@@ -126,7 +139,7 @@
    "area": "ai",
    "published": "2026-11-18T22:10:02Z",
    "seconds": 3054,
-   "views": 64571,
+   "views": 64923,
    "topics": [
     "Building with AI/Agents & Workflows",
     "Content & Growth"
@@ -153,7 +166,7 @@
    "area": "reality-tv",
    "published": "2026-11-18T15:08:34Z",
    "seconds": 3055,
-   "views": 5188,
+   "views": 5220,
    "topics": [
     "Netflix/The Circle"
    ]
@@ -166,7 +179,7 @@
    "area": "reality-tv",
    "published": "2026-11-17T23:00:00Z",
    "seconds": 3357,
-   "views": 5100,
+   "views": 5125,
    "topics": [
     "The Traitors/Canada"
    ]
@@ -179,7 +192,7 @@
    "area": "reality-tv",
    "published": "2026-11-17T22:24:50Z",
    "seconds": 2092,
-   "views": 15640,
+   "views": 15686,
    "topics": [
     "Survivor/US"
    ]
@@ -192,7 +205,7 @@
    "area": "ai",
    "published": "2026-11-17T20:11:18Z",
    "seconds": 757,
-   "views": 139149,
+   "views": 139229,
    "topics": [
     "Models & News"
    ]
@@ -218,7 +231,7 @@
    "area": "ai",
    "published": "2026-11-16T22:21:02Z",
    "seconds": 363,
-   "views": 282921,
+   "views": 283205,
    "topics": [
     "Models & News",
     "Future of Work"
@@ -245,7 +258,7 @@
    "area": "ai",
    "published": "2026-11-16T16:42:43Z",
    "seconds": 514,
-   "views": 31158,
+   "views": 31178,
    "topics": [
     "Future of Work"
    ]
@@ -258,7 +271,7 @@
    "area": "reality-tv",
    "published": "2026-11-16T13:11:12Z",
    "seconds": 4650,
-   "views": 9426,
+   "views": 9442,
    "topics": [
     "Survivor/US"
    ]
@@ -271,7 +284,7 @@
    "area": "health",
    "published": "2026-11-16T13:00:40Z",
    "seconds": 8936,
-   "views": 349482,
+   "views": 350919,
    "topics": [
     "Mental Health & Mood",
     "Supplements"
@@ -285,7 +298,7 @@
    "area": "reality-tv",
    "published": "2026-11-16T02:00:09Z",
    "seconds": 5177,
-   "views": 25070,
+   "views": 25136,
    "topics": [
     "Survivor/US"
    ]
@@ -298,7 +311,7 @@
    "area": "ai",
    "published": "2026-11-14T18:30:45Z",
    "seconds": 2304,
-   "views": 206198,
+   "views": 207639,
    "topics": [
     "Future of Work"
    ]
@@ -337,7 +350,7 @@
    "area": "reality-tv",
    "published": "2026-11-13T18:19:06Z",
    "seconds": 595,
-   "views": 26372,
+   "views": 26435,
    "topics": [
     "The Traitors/US"
    ]
@@ -363,7 +376,7 @@
    "area": "reality-tv",
    "published": "2026-11-13T02:05:09Z",
    "seconds": 3748,
-   "views": 38324,
+   "views": 38408,
    "topics": [
     "The Traitors/US"
    ]
@@ -376,7 +389,7 @@
    "area": "ai",
    "published": "2026-11-12T20:50:54Z",
    "seconds": 406,
-   "views": 129115,
+   "views": 129139,
    "topics": [
     "Models & News"
    ]
@@ -389,7 +402,7 @@
    "area": "reality-tv",
    "published": "2026-11-12T16:49:36Z",
    "seconds": 635,
-   "views": 38049,
+   "views": 38099,
    "topics": [
     "Survivor/US"
    ]
@@ -402,7 +415,7 @@
    "area": "reality-tv",
    "published": "2026-11-12T16:35:56Z",
    "seconds": 655,
-   "views": 50063,
+   "views": 50132,
    "topics": [
     "Survivor/US"
    ]
@@ -428,7 +441,7 @@
    "area": "health",
    "published": "2026-11-12T13:00:29Z",
    "seconds": 2316,
-   "views": 125000,
+   "views": 125101,
    "topics": [
     "Focus & Productivity",
     "Mental Health & Mood"
@@ -455,7 +468,7 @@
    "area": "ai",
    "published": "2026-11-11T21:22:35Z",
    "seconds": 3861,
-   "views": 15752,
+   "views": 15759,
    "topics": [
     "Models & News"
    ]
@@ -468,7 +481,7 @@
    "area": "ai",
    "published": "2026-11-11T20:35:24Z",
    "seconds": 974,
-   "views": 177598,
+   "views": 177619,
    "topics": [
     "Models & News",
     "Building with AI/Vibe Coding & Apps"
@@ -482,7 +495,7 @@
    "area": "ai",
    "published": "2026-11-11T18:00:16Z",
    "seconds": 2912,
-   "views": 144118,
+   "views": 144338,
    "topics": [
     "Building with AI/Agents & Workflows"
    ]
@@ -508,7 +521,7 @@
    "area": "reality-tv",
    "published": "2026-11-11T08:06:16Z",
    "seconds": 7175,
-   "views": 7833,
+   "views": 7831,
    "topics": [
     "Netflix/Love Is Blind"
    ]
@@ -534,7 +547,7 @@
    "area": "ai",
    "published": "2026-11-10T23:08:45Z",
    "seconds": 553,
-   "views": 320470,
+   "views": 320532,
    "topics": [
     "Building with AI/Vibe Coding & Apps",
     "Models & News"
@@ -561,7 +574,7 @@
    "area": "ai",
    "published": "2026-11-10T16:50:27Z",
    "seconds": 1176,
-   "views": 98888,
+   "views": 98963,
    "topics": [
     "Models & News"
    ]
@@ -587,7 +600,7 @@
    "area": "ai",
    "published": "2026-11-09T20:25:37Z",
    "seconds": 510,
-   "views": 430012,
+   "views": 430040,
    "topics": [
     "Models & News"
    ]
@@ -600,7 +613,7 @@
    "area": "ai",
    "published": "2026-11-09T18:15:17Z",
    "seconds": 3120,
-   "views": 173363,
+   "views": 173641,
    "topics": [
     "Building with AI/Agents & Workflows",
     "Content & Growth"
@@ -614,7 +627,7 @@
    "area": "music",
    "published": "2026-11-09T16:40:18Z",
    "seconds": 948,
-   "views": 13793,
+   "views": 13805,
    "topics": [
     "Mixing"
    ]
@@ -627,7 +640,7 @@
    "area": "ai",
    "published": "2026-11-09T15:22:02Z",
    "seconds": 647,
-   "views": 262071,
+   "views": 262226,
    "topics": [
     "Building with AI/Using AI Well"
    ]
@@ -640,7 +653,7 @@
    "area": "health",
    "published": "2026-11-09T13:00:23Z",
    "seconds": 8211,
-   "views": 571295,
+   "views": 571809,
    "topics": [
     "Mental Health & Mood"
    ]
@@ -758,7 +771,7 @@
    "area": "reality-tv",
    "published": "2026-11-06T03:28:36Z",
    "seconds": 3988,
-   "views": 36873,
+   "views": 36885,
    "topics": [
     "The Traitors/US"
    ]
@@ -784,7 +797,7 @@
    "area": "ai",
    "published": "2026-11-05T14:00:01Z",
    "seconds": 323,
-   "views": 774523,
+   "views": 775325,
    "topics": [
     "Building with AI/Using AI Well"
    ]
@@ -810,7 +823,7 @@
    "area": "health",
    "published": "2026-11-05T13:00:08Z",
    "seconds": 2302,
-   "views": 121086,
+   "views": 121119,
    "topics": [
     "Longevity & Aging"
    ]
@@ -901,7 +914,7 @@
    "area": "ai",
    "published": "2026-11-02T22:16:58Z",
    "seconds": 866,
-   "views": 1466662,
+   "views": 1467301,
    "topics": [
     "Building with AI/Using AI Well"
    ]
@@ -927,7 +940,7 @@
    "area": "ai",
    "published": "2026-11-02T19:15:08Z",
    "seconds": 2972,
-   "views": 220601,
+   "views": 220712,
    "topics": [
     "Business/Starting Out",
     "Building with AI/Agents & Workflows"
@@ -941,7 +954,7 @@
    "area": "health",
    "published": "2026-11-02T13:00:28Z",
    "seconds": 8305,
-   "views": 470934,
+   "views": 471131,
    "topics": [
     "Motivation & Habits"
    ]
@@ -967,7 +980,7 @@
    "area": "ai",
    "published": "2026-11-01T21:43:00Z",
    "seconds": 290,
-   "views": 447218,
+   "views": 447989,
    "topics": [
     "Building with AI/Claude Code"
    ]
@@ -980,7 +993,7 @@
    "area": "ai",
    "published": "2026-10-31T22:34:52Z",
    "seconds": 712,
-   "views": 111630,
+   "views": 111632,
    "topics": [
     "Models & News",
     "Future of Work"
@@ -1020,7 +1033,7 @@
    "area": "ai",
    "published": "2026-10-30T18:39:44Z",
    "seconds": 786,
-   "views": 101641,
+   "views": 101654,
    "topics": [
     "Building with AI/Vibe Coding & Apps",
     "Models & News"
@@ -1060,7 +1073,7 @@
    "area": "ai",
    "published": "2026-10-30T01:13:58Z",
    "seconds": 557,
-   "views": 41205,
+   "views": 41204,
    "topics": [
     "Content & Growth"
    ]
@@ -1125,7 +1138,7 @@
    "area": "ai",
    "published": "2026-10-29T13:39:28Z",
    "seconds": 1704,
-   "views": 173713,
+   "views": 173771,
    "topics": [
     "Business/Starting Out"
    ]
@@ -1177,7 +1190,7 @@
    "area": "ai",
    "published": "2026-10-28T18:01:27Z",
    "seconds": 479,
-   "views": 55035,
+   "views": 55043,
    "topics": [
     "Models & News",
     "Future of Work"
@@ -1218,7 +1231,7 @@
    "area": "ai",
    "published": "2026-10-28T01:29:53Z",
    "seconds": 807,
-   "views": 105509,
+   "views": 105529,
    "topics": [
     "Models & News"
    ]
@@ -1297,7 +1310,7 @@
    "area": "health",
    "published": "2026-10-26T12:00:00Z",
    "seconds": 9818,
-   "views": 211674,
+   "views": 211703,
    "topics": [
     "Motivation & Habits"
    ]
@@ -1493,7 +1506,7 @@
    "area": "ai",
    "published": "2026-10-22T16:37:15Z",
    "seconds": 286,
-   "views": 119579,
+   "views": 119580,
    "topics": [
     "Future of Work"
    ]
@@ -1558,7 +1571,7 @@
    "area": "ai",
    "published": "2026-10-21T19:15:33Z",
    "seconds": 1873,
-   "views": 59122,
+   "views": 59127,
    "topics": [
     "Building with AI/Agents & Workflows"
    ]
@@ -1571,7 +1584,7 @@
    "area": "ai",
    "published": "2026-10-21T18:48:52Z",
    "seconds": 546,
-   "views": 246822,
+   "views": 246824,
    "topics": [
     "Future of Work"
    ]
@@ -1662,7 +1675,7 @@
    "area": "ai",
    "published": "2026-10-20T15:46:58Z",
    "seconds": 1112,
-   "views": 170061,
+   "views": 170091,
    "topics": [
     "Business/Starting Out",
     "Building with AI/Using AI Well"
@@ -1689,7 +1702,7 @@
    "area": "ai",
    "published": "2026-10-19T20:00:11Z",
    "seconds": 747,
-   "views": 26386,
+   "views": 26390,
    "topics": [
     "Building with AI/Using AI Well"
    ]
@@ -1702,7 +1715,7 @@
    "area": "ai",
    "published": "2026-10-19T17:50:26Z",
    "seconds": 1475,
-   "views": 328636,
+   "views": 328692,
    "topics": [
     "Startup Ideas"
    ]
@@ -1741,7 +1754,7 @@
    "area": "ai",
    "published": "2026-10-19T01:08:27Z",
    "seconds": 362,
-   "views": 127745,
+   "views": 127749,
    "topics": [
     "Future of Work",
     "Models & News"
@@ -1755,7 +1768,7 @@
    "area": "ai",
    "published": "2026-10-18T15:21:27Z",
    "seconds": 723,
-   "views": 213303,
+   "views": 213351,
    "topics": [
     "Building with AI/Using AI Well"
    ]
@@ -1833,7 +1846,7 @@
    "area": "music",
    "published": "2026-10-16T15:35:10Z",
    "seconds": 1715,
-   "views": 26308,
+   "views": 26311,
    "topics": [
     "Producing/Melody & Chords"
    ]
@@ -1859,7 +1872,7 @@
    "area": "ai",
    "published": "2026-10-16T15:07:03Z",
    "seconds": 2176,
-   "views": 167790,
+   "views": 167826,
    "topics": [
     "Building with AI/Using AI Well",
     "Future of Work"
@@ -1939,7 +1952,7 @@
    "area": "ai",
    "published": "2026-10-15T19:40:25Z",
    "seconds": 799,
-   "views": 443026,
+   "views": 443060,
    "topics": [
     "Future of Work"
    ]
@@ -2030,7 +2043,7 @@
    "area": "reality-tv",
    "published": "2026-10-14T14:00:06Z",
    "seconds": 5579,
-   "views": 6918,
+   "views": 6914,
    "topics": [
     "Netflix/Love Is Blind"
    ]
@@ -2149,7 +2162,7 @@
    "area": "ai",
    "published": "2026-10-10T21:33:04Z",
    "seconds": 647,
-   "views": 1821743,
+   "views": 1821827,
    "topics": [
     "Building with AI/Vibe Coding & Apps"
    ]
@@ -2253,7 +2266,7 @@
    "area": "ai",
    "published": "2026-10-08T20:44:31Z",
    "seconds": 1968,
-   "views": 39152,
+   "views": 39162,
    "topics": [
     "Models & News"
    ]
@@ -2266,7 +2279,7 @@
    "area": "ai",
    "published": "2026-10-08T18:30:11Z",
    "seconds": 1469,
-   "views": 135460,
+   "views": 135481,
    "topics": [
     "Building with AI/Using AI Well"
    ]
@@ -2305,7 +2318,7 @@
    "area": "health",
    "published": "2026-10-08T12:00:29Z",
    "seconds": 1846,
-   "views": 320027,
+   "views": 320098,
    "topics": [
     "Mental Health & Mood"
    ]
@@ -2331,7 +2344,7 @@
    "area": "ai",
    "published": "2026-10-07T21:04:30Z",
    "seconds": 1478,
-   "views": 110855,
+   "views": 110892,
    "topics": [
     "Building with AI/Agents & Workflows"
    ]
@@ -2344,7 +2357,7 @@
    "area": "music",
    "published": "2026-10-07T15:49:48Z",
    "seconds": 2702,
-   "views": 19764,
+   "views": 19770,
    "topics": [
     "Producing"
    ]
@@ -2435,7 +2448,7 @@
    "area": "ai",
    "published": "2026-10-05T14:00:07Z",
    "seconds": 1440,
-   "views": 578595,
+   "views": 578683,
    "topics": [
     "Future of Work",
     "Business/Starting Out"
@@ -2449,7 +2462,7 @@
    "area": "health",
    "published": "2026-10-05T12:00:01Z",
    "seconds": 8137,
-   "views": 135672,
+   "views": 135681,
    "topics": [
     "Other"
    ]
@@ -2488,7 +2501,7 @@
    "area": "ai",
    "published": "2026-10-03T14:45:11Z",
    "seconds": 1776,
-   "views": 151466,
+   "views": 151507,
    "topics": [
     "Building with AI/Using AI Well",
     "Productivity & Mindset"
@@ -2606,7 +2619,7 @@
    "area": "ai",
    "published": "2026-10-01T20:30:04Z",
    "seconds": 3239,
-   "views": 124681,
+   "views": 124699,
    "topics": [
     "Future of Work",
     "Building with AI/Agents & Workflows"
@@ -2646,7 +2659,7 @@
    "area": "health",
    "published": "2026-10-01T12:00:35Z",
    "seconds": 2242,
-   "views": 554893,
+   "views": 554962,
    "topics": [
     "Focus & Productivity"
    ]
@@ -2750,7 +2763,7 @@
    "area": "ai",
    "published": "2026-09-29T21:25:07Z",
    "seconds": 1136,
-   "views": 184460,
+   "views": 184461,
    "topics": [
     "Models & News"
    ]
@@ -2881,7 +2894,7 @@
    "area": "health",
    "published": "2026-09-28T12:00:07Z",
    "seconds": 7339,
-   "views": 415800,
+   "views": 415838,
    "topics": [
     "Other"
    ]
@@ -3038,7 +3051,7 @@
    "area": "ai",
    "published": "2026-09-25T06:42:57Z",
    "seconds": 1560,
-   "views": 200891,
+   "views": 200966,
    "topics": [
     "Building with AI/Claude Code"
    ]
@@ -3116,7 +3129,7 @@
    "area": "health",
    "published": "2026-09-24T12:00:24Z",
    "seconds": 2134,
-   "views": 282164,
+   "views": 282279,
    "topics": [
     "Training & Exercise"
    ]
@@ -3168,7 +3181,7 @@
    "area": "ai",
    "published": "2026-09-23T18:27:51Z",
    "seconds": 2885,
-   "views": 124933,
+   "views": 124934,
    "topics": [
     "Business/Getting Clients",
     "Building with AI/Agents & Workflows"
@@ -3339,7 +3352,7 @@
    "area": "health",
    "published": "2026-09-21T12:00:15Z",
    "seconds": 8874,
-   "views": 357448,
+   "views": 357467,
    "topics": [
     "Nutrition"
    ]
@@ -3391,7 +3404,7 @@
    "area": "ai",
    "published": "2026-09-20T12:00:25Z",
    "seconds": 198,
-   "views": 43034,
+   "views": 43036,
    "topics": [
     "Future of Work"
    ]
@@ -3469,7 +3482,7 @@
    "area": "ai",
    "published": "2026-09-18T18:35:33Z",
    "seconds": 1705,
-   "views": 780637,
+   "views": 780632,
    "topics": [
     "Models & News"
    ]
@@ -3560,7 +3573,7 @@
    "area": "music",
    "published": "2026-09-17T23:20:52Z",
    "seconds": 10439,
-   "views": 10639,
+   "views": 10640,
    "topics": [
     "Producing/Sampling",
     "Producing/Workflow & Ableton"
@@ -3704,7 +3717,7 @@
    "area": "ai",
    "published": "2026-09-15T23:52:40Z",
    "seconds": 581,
-   "views": 107300,
+   "views": 107304,
    "topics": [
     "Building with AI/Agents & Workflows"
    ]
@@ -3730,7 +3743,7 @@
    "area": "ai",
    "published": "2026-09-15T18:25:04Z",
    "seconds": 1650,
-   "views": 201957,
+   "views": 201994,
    "topics": [
     "Models & News"
    ]
@@ -3795,7 +3808,7 @@
    "area": "ai",
    "published": "2026-09-14T17:30:17Z",
    "seconds": 1890,
-   "views": 208653,
+   "views": 208695,
    "topics": [
     "Building with AI/Claude Code",
     "Building with AI/Agents & Workflows"
@@ -3835,7 +3848,7 @@
    "area": "health",
    "published": "2026-09-14T12:00:13Z",
    "seconds": 10199,
-   "views": 583080,
+   "views": 583138,
    "topics": [
     "Mental Health & Mood"
    ]
@@ -3939,7 +3952,7 @@
    "area": "music",
    "published": "2026-09-12T07:42:13Z",
    "seconds": 5671,
-   "views": 12582,
+   "views": 12583,
    "topics": [
     "Producing"
    ]
@@ -4031,7 +4044,7 @@
    "area": "ai",
    "published": "2026-09-10T18:11:19Z",
    "seconds": 1372,
-   "views": 160638,
+   "views": 160641,
    "topics": [
     "Models & News"
    ]
@@ -4161,7 +4174,7 @@
    "area": "ai",
    "published": "2026-09-08T16:30:21Z",
    "seconds": 2326,
-   "views": 539821,
+   "views": 539889,
    "topics": [
     "Models & News"
    ]
@@ -4421,7 +4434,7 @@
    "area": "health",
    "published": "2026-09-03T12:00:39Z",
    "seconds": 1789,
-   "views": 287998,
+   "views": 288017,
    "topics": [
     "Sleep",
     "Focus & Productivity"
@@ -4448,7 +4461,7 @@
    "area": "ai",
    "published": "2026-09-02T18:15:30Z",
    "seconds": 1484,
-   "views": 271985,
+   "views": 272006,
    "topics": [
     "Building with AI/Using AI Well"
    ]
@@ -4500,7 +4513,7 @@
    "area": "ai",
    "published": "2026-09-02T14:32:06Z",
    "seconds": 18140,
-   "views": 329698,
+   "views": 329756,
    "topics": [
     "Future of Work"
    ]
@@ -4592,7 +4605,7 @@
    "area": "health",
    "published": "2026-08-31T12:00:33Z",
    "seconds": 9223,
-   "views": 227440,
+   "views": 227445,
    "topics": [
     "Focus & Productivity"
    ]
@@ -4748,7 +4761,7 @@
    "area": "health",
    "published": "2026-08-27T12:00:25Z",
    "seconds": 2086,
-   "views": 416786,
+   "views": 416859,
    "topics": [
     "Nutrition",
     "Mental Health & Mood"
@@ -4788,7 +4801,7 @@
    "area": "ai",
    "published": "2026-08-26T18:40:21Z",
    "seconds": 1738,
-   "views": 164229,
+   "views": 164230,
    "topics": [
     "Building with AI/Agents & Workflows"
    ]
@@ -4892,7 +4905,7 @@
    "area": "health",
    "published": "2026-08-24T12:00:32Z",
    "seconds": 8422,
-   "views": 385832,
+   "views": 385888,
    "topics": [
     "Motivation & Habits"
    ]
@@ -4996,7 +5009,7 @@
    "area": "ai",
    "published": "2026-08-21T20:10:35Z",
    "seconds": 2661,
-   "views": 269756,
+   "views": 269818,
    "topics": [
     "Building with AI/Agents & Workflows"
    ]
@@ -5192,7 +5205,7 @@
    "area": "ai",
    "published": "2026-08-17T18:00:14Z",
    "seconds": 2890,
-   "views": 75218,
+   "views": 75216,
    "topics": [
     "Building with AI/Claude Code"
    ]
@@ -5374,7 +5387,7 @@
    "area": "health",
    "published": "2026-08-13T12:00:10Z",
    "seconds": 2041,
-   "views": 123542,
+   "views": 123557,
    "topics": [
     "Hormones",
     "Longevity & Aging"
@@ -5492,7 +5505,7 @@
    "area": "ai",
    "published": "2026-08-10T18:00:30Z",
    "seconds": 2050,
-   "views": 369766,
+   "views": 369768,
    "topics": [
     "Startup Ideas"
    ]
@@ -5518,7 +5531,7 @@
    "area": "health",
    "published": "2026-08-10T12:00:30Z",
    "seconds": 7693,
-   "views": 220726,
+   "views": 220772,
    "topics": [
     "Other"
    ]
@@ -5609,7 +5622,7 @@
    "area": "ai",
    "published": "2026-08-08T14:15:23Z",
    "seconds": 21769,
-   "views": 248312,
+   "views": 248418,
    "topics": [
     "Building with AI/Claude Code",
     "Content & Growth"
@@ -5727,7 +5740,7 @@
    "area": "health",
    "published": "2026-08-06T12:00:35Z",
    "seconds": 1851,
-   "views": 186498,
+   "views": 186553,
    "topics": [
     "Focus & Productivity",
     "Motivation & Habits"
@@ -5754,7 +5767,7 @@
    "area": "ai",
    "published": "2026-08-05T20:40:33Z",
    "seconds": 2639,
-   "views": 100562,
+   "views": 100576,
    "topics": [
     "Building with AI/Agents & Workflows",
     "Content & Growth"
@@ -5833,7 +5846,7 @@
    "area": "music",
    "published": "2026-08-04T01:21:18Z",
    "seconds": 8085,
-   "views": 6684,
+   "views": 6683,
    "topics": [
     "Producing/Workflow & Ableton"
    ]
@@ -5885,7 +5898,7 @@
    "area": "health",
    "published": "2026-08-03T12:00:30Z",
    "seconds": 8861,
-   "views": 137375,
+   "views": 137383,
    "topics": [
     "Other"
    ]
@@ -5963,7 +5976,7 @@
    "area": "music",
    "published": "2026-07-31T17:44:24Z",
    "seconds": 3035,
-   "views": 13812,
+   "views": 13815,
    "topics": [
     "Producing/Genre Guides"
    ]
@@ -6329,7 +6342,7 @@
    "area": "music",
    "published": "2026-07-24T15:43:22Z",
    "seconds": 1847,
-   "views": 9238,
+   "views": 9240,
    "topics": [
     "Mixing"
    ]
@@ -6513,7 +6526,7 @@
    "area": "ai",
    "published": "2026-07-20T19:00:04Z",
    "seconds": 3094,
-   "views": 264757,
+   "views": 264776,
    "topics": [
     "Future of Work"
    ]
@@ -6565,7 +6578,7 @@
    "area": "music",
    "published": "2026-07-20T04:11:09Z",
    "seconds": 8757,
-   "views": 36586,
+   "views": 36596,
    "topics": [
     "Producing/Workflow & Ableton"
    ]
@@ -7009,7 +7022,7 @@
    "area": "ai",
    "published": "2026-07-10T22:00:27Z",
    "seconds": 3360,
-   "views": 78639,
+   "views": 78640,
    "topics": [
     "Models & News"
    ]
@@ -7088,7 +7101,7 @@
    "area": "ai",
    "published": "2026-07-09T17:30:15Z",
    "seconds": 2957,
-   "views": 45748,
+   "views": 45749,
    "topics": [
     "Models & News"
    ]
@@ -7479,7 +7492,7 @@
    "area": "music",
    "published": "2026-06-26T00:17:41Z",
    "seconds": 4443,
-   "views": 29656,
+   "views": 29673,
    "topics": [
     "Sound Design/Synths"
    ]
@@ -7687,7 +7700,7 @@
    "area": "music",
    "published": "2026-06-19T14:03:25Z",
    "seconds": 2723,
-   "views": 10584,
+   "views": 10585,
    "topics": [
     "Producing/Genre Guides"
    ]
@@ -7765,7 +7778,7 @@
    "area": "music",
    "published": "2026-06-16T22:13:16Z",
    "seconds": 5037,
-   "views": 10510,
+   "views": 10509,
    "topics": [
     "Sound Design/Synths"
    ]
@@ -7883,7 +7896,7 @@
    "area": "music",
    "published": "2026-06-12T14:39:05Z",
    "seconds": 2002,
-   "views": 8968,
+   "views": 8974,
    "topics": [
     "Producing/Genre Guides"
    ]
@@ -8840,7 +8853,7 @@
    "area": "music",
    "published": "2026-05-08T14:57:01Z",
    "seconds": 936,
-   "views": 36357,
+   "views": 36358,
    "topics": [
     "Mindset & Career"
    ]
@@ -10015,7 +10028,7 @@
    "area": "music",
    "published": "2026-04-03T14:32:32Z",
    "seconds": 2800,
-   "views": 22565,
+   "views": 22566,
    "topics": [
     "Producing/Genre Guides"
    ]
@@ -11061,7 +11074,7 @@
    "area": "music",
    "published": "2026-03-09T16:41:30Z",
    "seconds": 2421,
-   "views": 23119,
+   "views": 23126,
    "topics": [
     "Producing/Genre Guides"
    ]
