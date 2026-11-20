@@ -4,6 +4,12 @@ on:
   schedule:
     - cron: "7 10 * * *"   # about 5-6am Eastern, daily
   workflow_dispatch:
+    inputs:
+      mode:
+        description: "full = rescan every upload; quick = newest uploads + live streams (the app's Update button)"
+        type: choice
+        options: [full, quick]
+        default: full
   push:
     branches: [main]
     paths:
@@ -27,7 +33,7 @@ jobs:
       - name: Pull channel uploads
         env:
           YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
-        run: python3 tools/fetch_catalog.py
+        run: python3 tools/fetch_catalog.py ${{ inputs.mode == 'quick' && '--quick' || '' }}
       - name: Commit if changed
         run: |
           git config user.name "github-actions[bot]"

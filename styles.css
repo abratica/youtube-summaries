@@ -333,3 +333,13 @@ body.sheet-open { overflow: hidden; }
   .sheet .pc-bot { padding-left: max(14px, env(safe-area-inset-left)); padding-right: max(14px, env(safe-area-inset-right)); padding-bottom: max(10px, env(safe-area-inset-bottom)); }
   .sheet .pc-mid { gap: 56px; }
 }
+
+/* ── Update button + live row ── */
+.upd-line { margin-top: 2px; font-size: 12px; min-height: 1em; }
+.live h2 { color: #e5302a; }
+.live-badge, .when-badge {
+  position: absolute; left: 6px; bottom: 6px; color: #fff;
+  font: 700 11px/1 Inter, sans-serif; padding: 4px 6px; border-radius: 4px; letter-spacing: .02em;
+}
+.live-badge { background: #e5302a; }
+.when-badge { background: rgba(0,0,0,.78); }

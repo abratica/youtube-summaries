@@ -9,6 +9,10 @@ channel costs a few dozen units out of the free 10,000 per day.
   ("topics": []) for the daily tagging task to fill in.
 - Descriptions go to data/descriptions.json, which the tagger reads and the
   app never loads, so the app's data file stays small.
+- Streams that are live now or scheduled soon go to data/live.json (the app's
+  "Live & upcoming" row). Once a stream ends it becomes a normal video.
+- --quick (the app's Update button) only reads each channel's newest 50 uploads
+  and merges them in, keeping everything else as it was. Takes a few seconds.
 """
 
 import json
@@ -17,7 +21,7 @@ import re
 import sys
 import urllib.parse
 import urllib.request
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import rules_reality  # noqa: E402
@@ -69,7 +73,7 @@ def resolve(ch):
     return item["id"], item["snippet"]["title"], item["contentDetails"]["relatedPlaylists"]["uploads"]
 
 
-def uploads(playlist):
+def uploads(playlist, pages=None):
     ids, token = [], None
     while True:
         kw = dict(part="contentDetails", playlistId=playlist, maxResults=50)
@@ -78,19 +82,49 @@ def uploads(playlist):
         res = get("playlistItems", **kw)
         ids += [i["contentDetails"]["videoId"] for i in res["items"]]
         token = res.get("nextPageToken")
-        if not token:
+        pages = pages - 1 if pages else None
+        if not token or pages == 0:
             return ids
 
 
 def details(ids):
     out = []
     for i in range(0, len(ids), 50):
-        res = get("videos", part="snippet,contentDetails,status,statistics", id=",".join(ids[i:i + 50]))
+        res = get("videos", part="snippet,contentDetails,status,statistics,liveStreamingDetails", id=",".join(ids[i:i + 50]))
         out += res["items"]
     return out
 
 
-def main():
+def parse_time(t):
+    try:
+        return datetime.fromisoformat(t.replace("Z", "+00:00"))
+    except Exception:
+        return None
+
+
+def live_entry(item, ch, cid, name, rule, now):
+    """A stream that is live now, or scheduled within the next week, for the app's live row."""
+    state = item["snippet"].get("liveBroadcastContent", "none")
+    if state not in ("live", "upcoming") or item["status"].get("privacyStatus") != "public":
+        return None
+    lsd = item.get("liveStreamingDetails", {})
+    start = parse_time(lsd.get("actualStartTime") or lsd.get("scheduledStartTime") or "")
+    if not start:
+        return None
+    if state == "live" and start < now - timedelta(hours=12):
+        return None  # stuck or 24/7 stream
+    if state == "upcoming" and not (now - timedelta(hours=2) < start < now + timedelta(days=7)):
+        return None  # long-past placeholder, or too far out
+    title = item["snippet"]["title"]
+    topics = rule(title, item["snippet"].get("description", "")) if rule else []
+    if rule and not topics:
+        return None
+    return {"id": item["id"], "title": title, "channel": name, "channelId": cid,
+            "area": ch.get("area", "other"), "state": state,
+            "start": start.strftime("%Y-%m-%dT%H:%M:%SZ"), "topics": topics}
+
+
+def main(quick=False):
     channels = load(os.path.join(ROOT, "channels.json"), [])
     vpath = os.path.join(ROOT, "data", "videos.json")
     dpath = os.path.join(ROOT, "data", "descriptions.json")
@@ -98,7 +132,8 @@ def main():
     descs = load(dpath, {})
 
     videos, added, skipped, filtered = [], 0, 0, 0
-    resolved = {}
+    resolved, live = {}, []
+    now = datetime.now(timezone.utc)
     for ch in channels:
         try:
             cid, cname, playlist = resolve(ch)
@@ -110,16 +145,21 @@ def main():
             continue
         name = ch.get("name") or cname
         resolved[cid] = {"youtubeTitle": cname, "name": name, "area": ch.get("area")}
-        for item in details(uploads(playlist)):
+        rule = RULES.get(ch.get("rules"))
+        for item in details(uploads(playlist, pages=1 if quick else None)):
             vid = item["id"]
             secs = iso_seconds(item["contentDetails"].get("duration"))
-            live = item["snippet"].get("liveBroadcastContent", "none")
-            if secs <= SHORTS_MAX_SECONDS or live != "none" or item["status"].get("privacyStatus") != "public":
+            if item["snippet"].get("liveBroadcastContent", "none") != "none":
+                entry = live_entry(item, ch, cid, name, rule, now)
+                if entry:
+                    live.append(entry)
+                skipped += 1
+                continue
+            if secs <= SHORTS_MAX_SECONDS or item["status"].get("privacyStatus") != "public":
                 skipped += 1
                 continue
             desc = item["snippet"].get("description", "")
             prev = old.get(vid, {})
-            rule = RULES.get(ch.get("rules"))
             if rule:
                 # Rule channels: keep only matching videos, and tag them by rule every run
                 # (so improving the rules re-tags the whole back catalog).
@@ -146,10 +186,17 @@ def main():
                 descs[vid] = desc
         print(f"{name}: {sum(v['channelId'] == cid for v in videos)} videos")
 
+    if quick:
+        # only the newest uploads were read: keep everything else exactly as it was
+        fresh = {v["id"] for v in videos}
+        videos += [v for v in old.values() if v["id"] not in fresh]
+        resolved = load(os.path.join(ROOT, "data", "channels-resolved.json"), resolved)
+
     seen = set()
     videos = [v for v in videos if not (v["id"] in seen or seen.add(v["id"]))]
     keep = {v["id"] for v in videos}
-    descs = {k: v for k, v in descs.items() if k in keep}
+    if not quick:
+        descs = {k: v for k, v in descs.items() if k in keep}
     videos.sort(key=lambda v: v["published"], reverse=True)
     save(vpath, {
         "updated": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
@@ -157,12 +204,17 @@ def main():
     })
     save(dpath, descs)
     save(os.path.join(ROOT, "data", "channels-resolved.json"), resolved)
+    seen = set()
+    live = [x for x in live if not (x["id"] in seen or seen.add(x["id"]))]
+    live.sort(key=lambda x: (x["state"] != "live", x["start"]))
+    save(os.path.join(ROOT, "data", "live.json"), {
+        "updated": now.strftime("%Y-%m-%dT%H:%M:%SZ"), "live": live})
     untagged = sum(not v["topics"] for v in videos)
     print(f"total {len(videos)}, new {added}, skipped shorts/live/private {skipped}, "
-          f"filtered out by rules {filtered}, untagged {untagged}")
+          f"filtered out by rules {filtered}, untagged {untagged}, live/upcoming {len(live)}")
 
 
 if __name__ == "__main__":
     if not os.environ.get("YOUTUBE_API_KEY"):
         sys.exit("YOUTUBE_API_KEY is not set")
-    main()
+    main(quick="--quick" in sys.argv)

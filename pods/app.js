@@ -480,15 +480,44 @@
     play(a.dataset.id);
   });
 
+  const setUpdated = (iso) => {
+    $("#updated").dataset.def = "Updated " + new Date(iso).toLocaleString("en-US", { month: "short", day: "numeric", hour: "numeric", minute: "2-digit" });
+    if (!$("#updated").dataset.msg) $("#updated").textContent = $("#updated").dataset.def;
+  };
+  const status = (msg) => {
+    const el = $("#updated");
+    el.dataset.msg = msg || "";
+    el.textContent = msg || el.dataset.def || "";
+  };
+  let dataUpdated = "", lastLoad = Date.now(), booted = false;
+  function useEpisodes(data) {
+    if (data.updated === dataUpdated) return;
+    dataUpdated = data.updated;
+    shows = data.shows || {};
+    episodes = data.episodes.map((e) => ({ ...e, area: e.area || "reality-tv",
+      _hay: (e.title + " " + showName({ show: e.show }) + " " + podcastOf({ show: e.show }) + " " + e.topics.map(leaf).join(" ")).toLowerCase() }));
+    // keep the episode that's loaded in the player pointing at a known episode
+    byId = { ...byId, ...Object.fromEntries(episodes.map((e) => [e.id, e])) };
+    setUpdated(data.updated);
+    if (booted) render();
+  }
+  // Coming back to the app after a while (phones keep it open in the background): reload.
+  document.addEventListener("visibilitychange", () => {
+    if (document.hidden || !booted || Date.now() - lastLoad < 5 * 60e3) return;
+    lastLoad = Date.now();
+    fetch("data/episodes.json", { cache: "no-cache" }).then((r) => r.json()).then(useEpisodes).catch(() => {});
+  });
+  window.PSUpdate && PSUpdate.attach({
+    button: $("#update"), workflow: "pods-update.yml", dataUrl: "data/episodes.json", status,
+    onData: (data) => { lastLoad = Date.now(); useEpisodes(data); },
+  });
+
   Promise.all([
     fetch("data/episodes.json", { cache: "no-cache" }).then((r) => r.json()),
     fetch("topics.json", { cache: "no-cache" }).then((r) => r.json()),
   ]).then(([data, tconf]) => {
-    shows = data.shows || {};
     areas = tconf.areas.map((a) => ({ ...a, topics: a.topics.map((x) => (typeof x === "string" ? { name: x, sub: [] } : { name: x.name, sub: x.sub || [] })) }));
-    episodes = data.episodes.map((e) => ({ ...e, area: e.area || "reality-tv",
-      _hay: (e.title + " " + showName({ show: e.show }) + " " + podcastOf({ show: e.show }) + " " + e.topics.map(leaf).join(" ")).toLowerCase() }));
-    byId = Object.fromEntries(episodes.map((e) => [e.id, e]));
+    useEpisodes(data);
     if (state.area !== "all" && !areas.some((a) => a.id === state.area)) state.area = "all";
     if (state.topic !== "All" && state.topic !== "Untagged" && !areaTopics().some((t) => t.name === state.topic)) Object.assign(state, { topic: "All", sub: "All" });
     if (!STATUSES.some((x) => x.id === state.status)) state.status = "all";
@@ -496,7 +525,7 @@
     const last = byId[store.get("current", "")];
     if (last && !P(last.id).w) load(last, false);
     render();
-    $("#foot").textContent = "Updated " + new Date(data.updated).toLocaleString("en-US", { month: "short", day: "numeric", hour: "numeric", minute: "2-digit" });
+    booted = true;
   }).catch(() => {
     $("#count").textContent = "Couldn't load episodes. Check your connection.";
   });

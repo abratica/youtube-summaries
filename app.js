@@ -317,6 +317,79 @@
     }
   }, { rootMargin: "800px" }).observe($("#more"));
 
+  /* ── Live & upcoming row ──
+     Streams from data/live.json, shown on every tab whatever the filters. Tapping one
+     opens it on YouTube. A LIVE badge is dropped 6 hours after the stream started, and
+     an upcoming one 2 hours after its start time, in case nobody has tapped Update since. */
+  let live = [];
+  const fmtTime = (d) => d.toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit" });
+  function whenLabel(x) {
+    const d = new Date(x.start), now = new Date();
+    if (x.state === "live") return null;
+    if (d <= now) return "Starting soon";
+    const day = (n) => new Date(now.getFullYear(), now.getMonth(), now.getDate() + n).toDateString();
+    if (d.toDateString() === day(0)) return (d.getHours() >= 17 ? "Tonight " : "Today ") + fmtTime(d);
+    if (d.toDateString() === day(1)) return "Tomorrow " + fmtTime(d);
+    return d.toLocaleDateString("en-US", { weekday: "short", month: "short", day: "numeric" }) + " " + fmtTime(d);
+  }
+  function renderLive() {
+    const now = Date.now();
+    const items = live.filter((x) => {
+      const t = new Date(x.start).getTime();
+      return x.state === "live" ? now - t < 6 * 3600e3 : t - now > -2 * 3600e3;
+    });
+    const el = $("#live");
+    el.hidden = !items.length;
+    if (!items.length) return;
+    const n = items.filter((x) => x.state === "live").length;
+    el.innerHTML = `<h2>${n ? "Live now" + (items.length > n ? " &amp; upcoming" : "") : "Upcoming live"}</h2><div class="shelf-row">${items.map((x) => {
+      const when = whenLabel(x);
+      return `<a class="shelf-card live-card" href="https://www.youtube.com/watch?v=${esc(x.id)}" target="_blank" rel="noopener">
+        <div class="thumb"><img loading="lazy" decoding="async" alt="" src="https://i.ytimg.com/vi/${esc(x.id)}/mqdefault.jpg">
+        ${when ? `<span class="when-badge">${esc(when)}</span>` : '<span class="live-badge">● LIVE</span>'}</div>
+        <p class="title">${esc(x.title)}</p><p class="info">${esc(x.channel)}</p></a>`;
+    }).join("")}</div>`;
+  }
+  setInterval(renderLive, 60e3);
+  const loadLive = () => fetch("data/live.json", { cache: "no-cache" }).then((r) => (r.ok ? r.json() : { live: [] }))
+    .then((d) => { live = d.live || []; renderLive(); }).catch(() => {});
+
+  const setUpdated = (iso) => {
+    $("#updated").dataset.def = "Updated " + new Date(iso).toLocaleString("en-US", { month: "short", day: "numeric", hour: "numeric", minute: "2-digit" });
+    if (!$("#updated").dataset.msg) $("#updated").textContent = $("#updated").dataset.def;
+  };
+  const status = (msg) => {
+    const el = $("#updated");
+    el.dataset.msg = msg || "";
+    el.textContent = msg || el.dataset.def || "";
+  };
+
+  let dataUpdated = "", lastLoad = 0, booted = false;
+  function useVideos(data) {
+    if (data.updated === dataUpdated) return;
+    dataUpdated = data.updated;
+    videos = data.videos.map((v) => ({
+      ...v,
+      _hay: (v.title + " " + v.channel + " " + v.topics.map(leaf).join(" ")).toLowerCase(),
+    }));
+    byId = Object.fromEntries(videos.map((v) => [v.id, v]));
+    setUpdated(data.updated);
+    if (booted) render();
+  }
+  // Coming back to the app after a while (phones keep it open in the background): reload.
+  document.addEventListener("visibilitychange", () => {
+    if (document.hidden || !booted || Date.now() - lastLoad < 5 * 60e3) return;
+    lastLoad = Date.now();
+    fetch("data/videos.json", { cache: "no-cache" }).then((r) => r.json()).then(useVideos).catch(() => {});
+    loadLive();
+  });
+  window.PSUpdate && PSUpdate.attach({
+    button: $("#update"), workflow: "update.yml", inputs: { mode: "quick" }, dataUrl: "data/videos.json", status,
+    onData: async (data) => { lastLoad = Date.now(); useVideos(data); await loadLive(); },
+  });
+
+  lastLoad = Date.now();
+  loadLive();
   Promise.all([
     fetch("data/videos.json", { cache: "no-cache" }).then((r) => r.json()),
     fetch("topics.json", { cache: "no-cache" }).then((r) => r.json()),
@@ -327,16 +400,12 @@
       topics: a.topics.map((x) => (typeof x === "string" ? { name: x, sub: [] } : { name: x.name, sub: x.sub || [] })),
     }));
     channelArea = Object.fromEntries(chans.filter((c) => c.id).map((c) => [c.id, c.area]));
-    videos = data.videos.map((v) => ({
-      ...v,
-      _hay: (v.title + " " + v.channel + " " + v.topics.map(leaf).join(" ")).toLowerCase(),
-    }));
-    byId = Object.fromEntries(videos.map((v) => [v.id, v]));
+    useVideos(data);
+    booted = true;
     if (!STATUSES.some((x) => x.id === state.status)) state.status = "all";
     if (state.area !== "all" && !areas.some((a) => a.id === state.area)) state.area = "all";
     if (!LENGTHS.some((l) => l.id === state.length)) state.length = "any";
     render();
-    $("#foot").textContent = "Updated " + new Date(data.updated).toLocaleString("en-US", { month: "short", day: "numeric", hour: "numeric", minute: "2-digit" });
   }).catch(() => {
     $("#count").textContent = "Couldn't load the library. Check your connection.";
   });

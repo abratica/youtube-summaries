@@ -231,3 +231,6 @@ body.has-mini .install-bar { bottom: calc(84px + env(safe-area-inset-bottom)); }
   .art { width: 96px; }
   .title { font-size: 16px; }
 }
+
+/* ── Update button ── */
+.upd-line { margin-top: 2px; font-size: 12px; min-height: 1em; }
